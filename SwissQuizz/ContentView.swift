@@ -7,15 +7,46 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct QuizMenuView: View {
+    let quiz: any Quiz
+    var buttonFunction = {}
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Button {
+            buttonFunction()
+        } label: {
+            HStack {
+                Label(quiz.label, systemImage: quiz.systemImage)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Spacer()
+                Text("\(quiz.maxScore) pts")
+            }
         }
-        .padding()
+    }
+}
+
+struct ContentView: View {
+    @State private var currentQuiz: (any Quiz)?
+    private let quizes: [any Quiz] = [CapitalsQuiz(), CitiesQuiz(), FlagsQuiz()]
+    
+    var body: some View {
+        if let quiz = currentQuiz {
+            QuizView(quiz: quiz) { currentQuiz = nil }
+        } else {
+            VStack {
+                Text("SwissQuiz")
+//                    .font(.largeTitle)
+                    .font(Font.custom("CevicheOne-Regular", size: 32))
+                
+                ForEach(quizes, id: \.slug) { quiz in
+                    QuizMenuView(quiz: quiz) { currentQuiz = quiz }
+                }
+                
+                Spacer()
+            }
+            .padding()
+            .buttonStyle(.bordered)
+        }
     }
 }
 
