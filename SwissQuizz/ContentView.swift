@@ -8,44 +8,66 @@
 import SwiftUI
 
 struct QuizMenuView: View {
-    let quiz: any Quiz
+    let quiz: Quiz
     var buttonFunction = {}
     
     var body: some View {
         Button {
             buttonFunction()
         } label: {
-            HStack {
-                Label(quiz.label, systemImage: quiz.systemImage)
+            VStack {
+                HStack {
+                        Label(quiz.label, systemImage: quiz.systemImage)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .symbolRenderingMode(.hierarchical)
+                                            
+                    Spacer()
+
+                    Text("\(quiz.maxScore) pts")
+                }
+                .font(.custom("BubblegumSans-Regular", size: 24))
+                
+                Text(quiz.description)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Spacer()
-                Text("\(quiz.maxScore) pts")
             }
+            .padding()
+            .background(Color.red.opacity(0.2))
+            .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
+            .foregroundStyle(.red)
         }
+        .buttonStyle(.plain)
     }
 }
 
 struct ContentView: View {
-    @State private var currentQuiz: (any Quiz)?
-    private let quizes: [any Quiz] = [CapitalsQuiz(), CitiesQuiz(), FlagsQuiz()]
+    @State private var currentQuiz = Quiz.capitals
+    @State private var gameMode = false
+    private let quizes: [Quiz] = [Quiz.capitals, Quiz.cities, Quiz.flags, Quiz.food]
     
     var body: some View {
-        if let quiz = currentQuiz {
-            QuizView(quiz: quiz) { currentQuiz = nil }
-        } else {
-            VStack {
-                Text("SwissQuiz")
-//                    .font(.largeTitle)
-                    .font(Font.custom("CevicheOne-Regular", size: 32))
-                
-                ForEach(quizes, id: \.slug) { quiz in
-                    QuizMenuView(quiz: quiz) { currentQuiz = quiz }
+        VStack {
+            Text("SwissQuiz")
+                .font(.custom("BubblegumSans-Regular", size: 72))
+                .foregroundStyle(.red)
+            
+            Text("Select the quiz category that you want to play")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundStyle(.secondary)
+            
+            ForEach(quizes) { quiz in
+                QuizMenuView(quiz: quiz) {
+                    currentQuiz = quiz
+                    gameMode = true
                 }
                 
-                Spacer()
             }
-            .padding()
-            .buttonStyle(.bordered)
+
+            Spacer()
+        }
+        .padding()
+        .buttonStyle(.bordered)
+        .fullScreenCover(isPresented: $gameMode) {
+            QuizView(quiz: currentQuiz) { gameMode = false }
         }
     }
 }

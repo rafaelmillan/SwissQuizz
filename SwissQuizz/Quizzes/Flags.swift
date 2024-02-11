@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct FlagsQuiz: Quiz {
-    var slug: String { "flags" }
-    var label: String { "Flags" }
-    var systemImage: String { "building" }
-    var questions: [Question] {
-        [
+extension Quiz {
+    static let flags = Quiz(
+        id: "flags",
+        label: "Flags",
+        description: "Find which canton a flag belongs to",
+        systemImage: "flag.filled.and.flag.crossed",
+        questions: [
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/aargau",
@@ -257,7 +258,7 @@ struct FlagsQuiz: Quiz {
                 prompt: "Which canton is this flag from?",
                 image: "flags/zug",
                 answers: [
-                    Answer(text: "Vaud", isCorrect: true),
+                    Answer(text: "Zug", isCorrect: true),
                     Answer(text: "Zürich"),
                     Answer(text: "Lucerne"),
                     Answer(text: "Aargau")
@@ -274,5 +275,5 @@ struct FlagsQuiz: Quiz {
                 ]
             )
         ]
-    }
+    )
 }

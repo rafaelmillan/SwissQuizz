@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Vacherin_Mont_d'Or.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -14,9 +14,12 @@
 		532257E92B2B767C001660A1 /* Lakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532257E82B2B767C001660A1 /* Lakes.swift */; };
 		532257EB2B2B7681001660A1 /* Cantons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532257EA2B2B7681001660A1 /* Cantons.swift */; };
 		532257ED2B2B7AE2001660A1 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532257EC2B2B7AE2001660A1 /* Food.swift */; };
+		532AB0252B6CF01900048355 /* FinalScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AB0242B6CF01900048355 /* FinalScoreView.swift */; };
+		532AB0272B6CF04F00048355 /* CloseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AB0262B6CF04F00048355 /* CloseButtonView.swift */; };
 		5344001F2B4AC2F500D57D05 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5344001E2B4AC2F400D57D05 /* Quiz.swift */; };
 		5345AC272B498159002E80E7 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5345AC262B498159002E80E7 /* QuestionView.swift */; };
 		534F59A42B65193600659261 /* CevicheOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534F59A32B65193600659261 /* CevicheOne-Regular.ttf */; };
+		534F59A72B66646A00659261 /* BubblegumSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534F59A62B66646A00659261 /* BubblegumSans-Regular.ttf */; };
 		53626D4B2B28D31000931BE8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53626D4A2B28D31000931BE8 /* Question.swift */; };
 		53626D4D2B28D32300931BE8 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53626D4C2B28D32300931BE8 /* Answer.swift */; };
 		539045562B45D3E2006421FB /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539045552B45D3E2006421FB /* AnswerView.swift */; };
@@ -35,10 +38,13 @@
 		532257E82B2B767C001660A1 /* Lakes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lakes.swift; sourceTree = "<group>"; };
 		532257EA2B2B7681001660A1 /* Cantons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cantons.swift; sourceTree = "<group>"; };
 		532257EC2B2B7AE2001660A1 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		532AB0242B6CF01900048355 /* FinalScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScoreView.swift; sourceTree = "<group>"; };
+		532AB0262B6CF04F00048355 /* CloseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButtonView.swift; sourceTree = "<group>"; };
 		5344001E2B4AC2F400D57D05 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		5345AC262B498159002E80E7 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		534F59A32B65193600659261 /* CevicheOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CevicheOne-Regular.ttf"; sourceTree = "<group>"; };
 		534F59A52B6519A800659261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		534F59A62B66646A00659261 /* BubblegumSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BubblegumSans-Regular.ttf"; sourceTree = "<group>"; };
 		53626D4A2B28D31000931BE8 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		53626D4C2B28D32300931BE8 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		539045552B45D3E2006421FB /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
@@ -88,6 +94,7 @@
 		534F59A22B65191200659261 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				534F59A62B66646A00659261 /* BubblegumSans-Regular.ttf */,
 				534F59A32B65193600659261 /* CevicheOne-Regular.ttf */,
 			);
 			path = Fonts;
@@ -117,6 +124,8 @@
 				53C45E392B1E47A1006C4836 /* SwissQuizzApp.swift */,
 				53C45E3B2B1E47A1006C4836 /* ContentView.swift */,
 				53C45E472B1E4A8D006C4836 /* QuizView.swift */,
+				532AB0262B6CF04F00048355 /* CloseButtonView.swift */,
+				532AB0242B6CF01900048355 /* FinalScoreView.swift */,
 				5345AC262B498159002E80E7 /* QuestionView.swift */,
 				539045552B45D3E2006421FB /* AnswerView.swift */,
 				5344001D2B4AC2D300D57D05 /* Models */,
@@ -195,6 +204,7 @@
 			files = (
 				53C45E412B1E47A3006C4836 /* Preview Assets.xcassets in Resources */,
 				53C45E3E2B1E47A3006C4836 /* Assets.xcassets in Resources */,
+				534F59A72B66646A00659261 /* BubblegumSans-Regular.ttf in Resources */,
 				534F59A42B65193600659261 /* CevicheOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				532AB0252B6CF01900048355 /* FinalScoreView.swift in Sources */,
 				53C45E3C2B1E47A1006C4836 /* ContentView.swift in Sources */,
 				53626D4B2B28D31000931BE8 /* Question.swift in Sources */,
 				539045562B45D3E2006421FB /* AnswerView.swift in Sources */,
@@ -219,6 +230,7 @@
 				5345AC272B498159002E80E7 /* QuestionView.swift in Sources */,
 				5344001F2B4AC2F500D57D05 /* Quiz.swift in Sources */,
 				532257EB2B2B7681001660A1 /* Cantons.swift in Sources */,
+				532AB0272B6CF04F00048355 /* CloseButtonView.swift in Sources */,
 				53C45E482B1E4A8D006C4836 /* QuizView.swift in Sources */,
 				532257E32B2B75FC001660A1 /* Flags.swift in Sources */,
 			);
@@ -354,6 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwissQuizz/Preview Content\"";
+				DEVELOPMENT_TEAM = GW72JAWC42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwissQuizz/Info.plist;
@@ -383,6 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwissQuizz/Preview Content\"";
+				DEVELOPMENT_TEAM = GW72JAWC42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwissQuizz/Info.plist;

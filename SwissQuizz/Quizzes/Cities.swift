@@ -8,12 +8,13 @@
 import Foundation
 import MapKit
 
-struct CitiesQuiz: Quiz {
-    var slug: String { "cities" }
-    var label: String { "Cities" }
-    var systemImage: String { "building" }
-    var questions: [Question] {
-        [
+extension Quiz {
+    static let cities = Quiz(
+        id: "cities",
+        label: "City Guessr",
+        description: "Spot Swiss cities from space",
+        systemImage: "building.2.fill",
+        questions: [
             Question(
                 prompt: "Which city is this?",
                 coordinates: CLLocationCoordinate2D(latitude: 47.374444, longitude: 8.541111),
@@ -147,5 +148,5 @@ struct CitiesQuiz: Quiz {
                 ]
             )
         ]
-    }
+    )
 }

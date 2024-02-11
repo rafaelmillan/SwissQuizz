@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct CapitalsQuiz: Quiz {
-    var slug: String { "capitals" }
-    var label: String { "Capitals" }
-    var systemImage: String { "building" }
-    var questions: [Question] {
-        [
+extension Quiz {
+    static let capitals = Quiz(
+        id: "capitals",
+        label: "Capitals",
+        description: "Find the capital of each canton",
+        systemImage: "building.columns.fill",
+        questions: [
             Question(
                 prompt: "What is the capital of Aargau?",
                 answers: [
@@ -248,5 +249,5 @@ struct CapitalsQuiz: Quiz {
                 ]
             )
         ]
-    }
+    )
 }

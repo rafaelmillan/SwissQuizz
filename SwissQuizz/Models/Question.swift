@@ -7,6 +7,7 @@
 
 import Foundation
 import MapKit
+import GameplayKit
 
 struct Question {
     var prompt: String
@@ -27,5 +28,9 @@ struct Question {
         } else {
             return nil
         }
+    }
+    
+    func shuffledAnswers(seed: Int) -> [Answer] {
+        GKMersenneTwisterRandomSource(seed: UInt64(seed)).arrayByShufflingObjects(in: answers) as! [Answer]
     }
 }
