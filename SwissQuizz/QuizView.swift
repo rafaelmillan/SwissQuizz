@@ -57,6 +57,8 @@ struct QuizView: View {
         VStack {
             if showScoreScreen {
                 FinalScoreView(score: score, onDismiss: endGame)
+                    .background()
+                    .transition(.move(edge: .bottom))
             } else {
                 VStack {
                     if let mapRegion = currentQuestion.mapRegion {
@@ -140,10 +142,10 @@ struct QuizView: View {
     }
     
     func advanceQuestion() {
-        if currentQuestionIndex + 1 == quiz.questions.count {
-            calculateAndShowFinalScore()
-        } else {
-            withAnimation {
+        withAnimation {
+            if currentQuestionIndex + 1 == quiz.questions.count {
+                calculateAndShowFinalScore()
+            } else {
                 currentQuestionIndex += 1
             }
         }
@@ -151,5 +153,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView(quiz: Quiz.cities)
+    QuizView(quiz: Quiz.test)
 }

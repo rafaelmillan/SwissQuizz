@@ -20,6 +20,7 @@
 		5345AC272B498159002E80E7 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5345AC262B498159002E80E7 /* QuestionView.swift */; };
 		534F59A42B65193600659261 /* CevicheOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534F59A32B65193600659261 /* CevicheOne-Regular.ttf */; };
 		534F59A72B66646A00659261 /* BubblegumSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534F59A62B66646A00659261 /* BubblegumSans-Regular.ttf */; };
+		5350E0F72B78D3BF00BDAE35 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350E0F62B78D3BF00BDAE35 /* Test.swift */; };
 		53626D4B2B28D31000931BE8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53626D4A2B28D31000931BE8 /* Question.swift */; };
 		53626D4D2B28D32300931BE8 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53626D4C2B28D32300931BE8 /* Answer.swift */; };
 		539045562B45D3E2006421FB /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539045552B45D3E2006421FB /* AnswerView.swift */; };
@@ -45,6 +46,7 @@
 		534F59A32B65193600659261 /* CevicheOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CevicheOne-Regular.ttf"; sourceTree = "<group>"; };
 		534F59A52B6519A800659261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		534F59A62B66646A00659261 /* BubblegumSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BubblegumSans-Regular.ttf"; sourceTree = "<group>"; };
+		5350E0F62B78D3BF00BDAE35 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		53626D4A2B28D31000931BE8 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		53626D4C2B28D32300931BE8 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		539045552B45D3E2006421FB /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			children = (
 				532257E02B2B759F001660A1 /* Capitals.swift */,
 				532257E22B2B75FC001660A1 /* Flags.swift */,
+				5350E0F62B78D3BF00BDAE35 /* Test.swift */,
 				532257E42B2B764F001660A1 /* Growth.swift */,
 				532257E62B2B7671001660A1 /* Cities.swift */,
 				532257E82B2B767C001660A1 /* Lakes.swift */,
@@ -227,6 +230,7 @@
 				532257E12B2B759F001660A1 /* Capitals.swift in Sources */,
 				532257E92B2B767C001660A1 /* Lakes.swift in Sources */,
 				532257E72B2B7671001660A1 /* Cities.swift in Sources */,
+				5350E0F72B78D3BF00BDAE35 /* Test.swift in Sources */,
 				5345AC272B498159002E80E7 /* QuestionView.swift in Sources */,
 				5344001F2B4AC2F500D57D05 /* Quiz.swift in Sources */,
 				532257EB2B2B7681001660A1 /* Cantons.swift in Sources */,

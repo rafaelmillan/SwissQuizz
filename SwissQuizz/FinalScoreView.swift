@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FinalScoreView: View {
     var score: Int
-    @State private var displayedScore = 0
     var onDismiss = {}
     
     var body: some View {
@@ -27,19 +26,13 @@ struct FinalScoreView: View {
             
             Text("Your final score is")
                 .font(.custom("BubblegumSans-Regular", size: 24))
-            Text("\(displayedScore)")
+            Text("\(score)")
                 .font(.custom("BubblegumSans-Regular", size: 48))
-                .contentTransition(.numericText())
             
             Spacer()
         }
         .foregroundStyle(.red)
         .padding()
-        .onAppear {
-            withAnimation {
-                displayedScore = score
-            }
-        }
     }
 }
 #Preview {
