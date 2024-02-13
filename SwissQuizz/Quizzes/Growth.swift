@@ -16,20 +16,20 @@ import Foundation
 //        [
 //            Question(
 //                prompt: "What is the capital of Geneva?",
-//                answers: [
-//                    Answer(text: "Geneva", isCorrect: true),
-//                    Answer(text: "Meyrin"),
-//                    Answer(text: "Carouge"),
-//                    Answer(text: "Lancy")
+//                choices: [
+//                    Choice(text: "Geneva", isCorrect: true),
+//                    Choice(text: "Meyrin"),
+//                    Choice(text: "Carouge"),
+//                    Choice(text: "Lancy")
 //                ]
 //            ),
 //            Question(
 //                prompt: "What is the capital of Vaud?",
-//                answers: [
-//                    Answer(text: "Lausanne", isCorrect: true),
-//                    Answer(text: "Nyon"),
-//                    Answer(text: "Montreux"),
-//                    Answer(text: "Vevey")
+//                choices: [
+//                    Choice(text: "Lausanne", isCorrect: true),
+//                    Choice(text: "Nyon"),
+//                    Choice(text: "Montreux"),
+//                    Choice(text: "Vevey")
 //                ]
 //            )
 //        ]

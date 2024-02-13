@@ -17,261 +17,261 @@ extension Quiz {
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/aargau",
-                answers: [
-                    Answer(text: "Aargau", isCorrect: true),
-                    Answer(text: "Luzern"),
-                    Answer(text: "Zug"),
-                    Answer(text: "Zürich")
+                choices: [
+                    Choice(text: "Aargau", isCorrect: true),
+                    Choice(text: "Luzern"),
+                    Choice(text: "Zug"),
+                    Choice(text: "Zürich")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/appenzellAusserrhoden",
-                answers: [
-                    Answer(text: "Appenzell Ausserrhoden", isCorrect: true),
-                    Answer(text: "Fribourg"),
-                    Answer(text: "Basel-Stadt"),
-                    Answer(text: "Schaffhausen")
+                choices: [
+                    Choice(text: "Appenzell Ausserrhoden", isCorrect: true),
+                    Choice(text: "Fribourg"),
+                    Choice(text: "Basel-Stadt"),
+                    Choice(text: "Schaffhausen")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/appenzellInnerrhoden",
-                answers: [
-                    Answer(text: "Fribourg"),
-                    Answer(text: "Appenzell Innerrhoden", isCorrect: true),
-                    Answer(text: "Basel-Stadt"),
-                    Answer(text: "Schaffhausen")
+                choices: [
+                    Choice(text: "Fribourg"),
+                    Choice(text: "Appenzell Innerrhoden", isCorrect: true),
+                    Choice(text: "Basel-Stadt"),
+                    Choice(text: "Schaffhausen")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/baselLandschaft",
-                answers: [
-                    Answer(text: "Basel-Landschaft", isCorrect: true),
-                    Answer(text: "Jura"),
-                    Answer(text: "Valais"),
-                    Answer(text: "Obwalden")
+                choices: [
+                    Choice(text: "Basel-Landschaft", isCorrect: true),
+                    Choice(text: "Jura"),
+                    Choice(text: "Valais"),
+                    Choice(text: "Obwalden")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/baselStadt",
-                answers: [
-                    Answer(text: "Basel-Stadt", isCorrect: true),
-                    Answer(text: "Appenzell Innerrhoden"),
-                    Answer(text: "Fribourg"),
-                    Answer(text: "Appenzell Ausserrhoden")
+                choices: [
+                    Choice(text: "Basel-Stadt", isCorrect: true),
+                    Choice(text: "Appenzell Innerrhoden"),
+                    Choice(text: "Fribourg"),
+                    Choice(text: "Appenzell Ausserrhoden")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/bern",
-                answers: [
-                    Answer(text: "Bern", isCorrect: true),
-                    Answer(text: "Geneva"),
-                    Answer(text: "Glarus"),
-                    Answer(text: "Schaffhausen")
+                choices: [
+                    Choice(text: "Bern", isCorrect: true),
+                    Choice(text: "Geneva"),
+                    Choice(text: "Glarus"),
+                    Choice(text: "Schaffhausen")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/fribourg",
-                answers: [
-                    Answer(text: "Fribourg", isCorrect: true),
-                    Answer(text: "Zug"),
-                    Answer(text: "Basel-Stadt"),
-                    Answer(text: "Solothurn")
+                choices: [
+                    Choice(text: "Fribourg", isCorrect: true),
+                    Choice(text: "Zug"),
+                    Choice(text: "Basel-Stadt"),
+                    Choice(text: "Solothurn")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/geneva",
-                answers: [
-                    Answer(text: "Geneva", isCorrect: true),
-                    Answer(text: "Glarus"),
-                    Answer(text: "Bern"),
-                    Answer(text: "Schaffhausen")
+                choices: [
+                    Choice(text: "Geneva", isCorrect: true),
+                    Choice(text: "Glarus"),
+                    Choice(text: "Bern"),
+                    Choice(text: "Schaffhausen")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/glarus",
-                answers: [
-                    Answer(text: "Glarus", isCorrect: true),
-                    Answer(text: "Schwyz"),
-                    Answer(text: "Bern"),
-                    Answer(text: "Nidwalden")
+                choices: [
+                    Choice(text: "Glarus", isCorrect: true),
+                    Choice(text: "Schwyz"),
+                    Choice(text: "Bern"),
+                    Choice(text: "Nidwalden")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/grisons",
-                answers: [
-                    Answer(text: "Grisons", isCorrect: true),
-                    Answer(text: "Thurgau"),
-                    Answer(text: "Geneva"),
-                    Answer(text: "Obwalden")
+                choices: [
+                    Choice(text: "Grisons", isCorrect: true),
+                    Choice(text: "Thurgau"),
+                    Choice(text: "Geneva"),
+                    Choice(text: "Obwalden")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/jura",
-                answers: [
-                    Answer(text: "Jura", isCorrect: true),
-                    Answer(text: "Valais"),
-                    Answer(text: "Basel-Landschaft"),
-                    Answer(text: "Obwalden")
+                choices: [
+                    Choice(text: "Jura", isCorrect: true),
+                    Choice(text: "Valais"),
+                    Choice(text: "Basel-Landschaft"),
+                    Choice(text: "Obwalden")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/lucerne",
-                answers: [
-                    Answer(text: "Lucerne", isCorrect: true),
-                    Answer(text: "Zürich"),
-                    Answer(text: "Zug"),
-                    Answer(text: "Aargau")
+                choices: [
+                    Choice(text: "Lucerne", isCorrect: true),
+                    Choice(text: "Zürich"),
+                    Choice(text: "Zug"),
+                    Choice(text: "Aargau")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/neuchatel",
-                answers: [
-                    Answer(text: "Neuchâtel", isCorrect: true),
-                    Answer(text: "Ticino"),
-                    Answer(text: "Vaud"),
-                    Answer(text: "St. Gallen")
+                choices: [
+                    Choice(text: "Neuchâtel", isCorrect: true),
+                    Choice(text: "Ticino"),
+                    Choice(text: "Vaud"),
+                    Choice(text: "St. Gallen")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/nidwalden",
-                answers: [
-                    Answer(text: "Nidwalden", isCorrect: true),
-                    Answer(text: "Schwyz"),
-                    Answer(text: "Solothurn"),
-                    Answer(text: "Jura")
+                choices: [
+                    Choice(text: "Nidwalden", isCorrect: true),
+                    Choice(text: "Schwyz"),
+                    Choice(text: "Solothurn"),
+                    Choice(text: "Jura")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/obwalden",
-                answers: [
-                    Answer(text: "Obwalden", isCorrect: true),
-                    Answer(text: "Valais"),
-                    Answer(text: "Solothurn"),
-                    Answer(text: "Jura")
+                choices: [
+                    Choice(text: "Obwalden", isCorrect: true),
+                    Choice(text: "Valais"),
+                    Choice(text: "Solothurn"),
+                    Choice(text: "Jura")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/schaffhausen",
-                answers: [
-                    Answer(text: "Schaffhausen", isCorrect: true),
-                    Answer(text: "Uri"),
-                    Answer(text: "Appenzell Innerrhoden"),
-                    Answer(text: "Geneva")
+                choices: [
+                    Choice(text: "Schaffhausen", isCorrect: true),
+                    Choice(text: "Uri"),
+                    Choice(text: "Appenzell Innerrhoden"),
+                    Choice(text: "Geneva")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/schwyz",
-                answers: [
-                    Answer(text: "Schwyz", isCorrect: true),
-                    Answer(text: "Glarus"),
-                    Answer(text: "Ticino"),
-                    Answer(text: "Solothurn")
+                choices: [
+                    Choice(text: "Schwyz", isCorrect: true),
+                    Choice(text: "Glarus"),
+                    Choice(text: "Ticino"),
+                    Choice(text: "Solothurn")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/solothurn",
-                answers: [
-                    Answer(text: "Solothurn", isCorrect: true),
-                    Answer(text: "Obwalden"),
-                    Answer(text: "Valais"),
-                    Answer(text: "Jura")
+                choices: [
+                    Choice(text: "Solothurn", isCorrect: true),
+                    Choice(text: "Obwalden"),
+                    Choice(text: "Valais"),
+                    Choice(text: "Jura")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/stGallen",
-                answers: [
-                    Answer(text: "St. Gallen", isCorrect: true),
-                    Answer(text: "Thurgau"),
-                    Answer(text: "Vaud"),
-                    Answer(text: "Neuchâtel")
+                choices: [
+                    Choice(text: "St. Gallen", isCorrect: true),
+                    Choice(text: "Thurgau"),
+                    Choice(text: "Vaud"),
+                    Choice(text: "Neuchâtel")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/thurgau",
-                answers: [
-                    Answer(text: "Thurgau", isCorrect: true),
-                    Answer(text: "St. Gallen"),
-                    Answer(text: "Grisons"),
-                    Answer(text: "Appenzell Innerrhoden")
+                choices: [
+                    Choice(text: "Thurgau", isCorrect: true),
+                    Choice(text: "St. Gallen"),
+                    Choice(text: "Grisons"),
+                    Choice(text: "Appenzell Innerrhoden")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/ticino",
-                answers: [
-                    Answer(text: "Ticino", isCorrect: true),
-                    Answer(text: "Neuchâtel"),
-                    Answer(text: "Glarus"),
-                    Answer(text: "Schwyz")
+                choices: [
+                    Choice(text: "Ticino", isCorrect: true),
+                    Choice(text: "Neuchâtel"),
+                    Choice(text: "Glarus"),
+                    Choice(text: "Schwyz")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/uri",
-                answers: [
-                    Answer(text: "Uri", isCorrect: true),
-                    Answer(text: "Schaffhausen"),
-                    Answer(text: "Bern"),
-                    Answer(text: "Thurgau")
+                choices: [
+                    Choice(text: "Uri", isCorrect: true),
+                    Choice(text: "Schaffhausen"),
+                    Choice(text: "Bern"),
+                    Choice(text: "Thurgau")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/valais",
-                answers: [
-                    Answer(text: "Valais", isCorrect: true),
-                    Answer(text: "Solothurn"),
-                    Answer(text: "Obwalden"),
-                    Answer(text: "Jura")
+                choices: [
+                    Choice(text: "Valais", isCorrect: true),
+                    Choice(text: "Solothurn"),
+                    Choice(text: "Obwalden"),
+                    Choice(text: "Jura")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/vaud",
-                answers: [
-                    Answer(text: "Vaud", isCorrect: true),
-                    Answer(text: "Thurgau"),
-                    Answer(text: "St. Gallen"),
-                    Answer(text: "Geneva")
+                choices: [
+                    Choice(text: "Vaud", isCorrect: true),
+                    Choice(text: "Thurgau"),
+                    Choice(text: "St. Gallen"),
+                    Choice(text: "Geneva")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/zug",
-                answers: [
-                    Answer(text: "Zug", isCorrect: true),
-                    Answer(text: "Zürich"),
-                    Answer(text: "Lucerne"),
-                    Answer(text: "Aargau")
+                choices: [
+                    Choice(text: "Zug", isCorrect: true),
+                    Choice(text: "Zürich"),
+                    Choice(text: "Lucerne"),
+                    Choice(text: "Aargau")
                 ]
             ),
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/zurich",
-                answers: [
-                    Answer(text: "Zürich", isCorrect: true),
-                    Answer(text: "Zug"),
-                    Answer(text: "Lucerne"),
-                    Answer(text: "Aargau")
+                choices: [
+                    Choice(text: "Zürich", isCorrect: true),
+                    Choice(text: "Zug"),
+                    Choice(text: "Lucerne"),
+                    Choice(text: "Aargau")
                 ]
             )
         ]

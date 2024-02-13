@@ -17,11 +17,11 @@ extension Quiz {
             Question(
                 prompt: "Which canton is this flag from?",
                 image: "flags/aargau",
-                answers: [
-                    Answer(text: "Aargau", isCorrect: true),
-                    Answer(text: "Luzern"),
-                    Answer(text: "Zug"),
-                    Answer(text: "Zürich")
+                choices: [
+                    Choice(text: "Aargau", isCorrect: true),
+                    Choice(text: "Luzern"),
+                    Choice(text: "Zug"),
+                    Choice(text: "Zürich")
                 ]
             ),
         ]

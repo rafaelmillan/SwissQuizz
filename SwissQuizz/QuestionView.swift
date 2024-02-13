@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct QuestionView: View {
-    @State var question: Question
-    @State private var showCorrection = false
-    @Binding var score: Int
+    var question: Question
     var seed: Int
     var onCorrection: (Bool) -> Void = { _ in }
     var onDismissal: () -> Void = {}
@@ -24,51 +22,14 @@ struct QuestionView: View {
                     .fixedSize(horizontal: false, vertical: true)
                     .foregroundStyle(.red)
                 
-                if question.allowMultipleAnswers {
+                if question.allowMultipleChoices {
                     Text("Multiple answers are possible")
                         .font(.subheadline)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .foregroundStyle(.secondary)
                 }
                 
-                // TODO: Reset answer responses
-                ForEach(question.shuffledAnswers(seed: seed), id: \.text) { answer in
-                    AnswerView(answer: answer, showCorrection: showCorrection) { selectedAnswer in
-                        guard !question.allowMultipleAnswers else { return }
-                        
-                        question.answers.forEach { answer in
-                            if answer.isSelected && answer.text != selectedAnswer.text {
-                                answer.isSelected.toggle()
-                            }
-                        }
-                    }
-                }
-                .id(question.id)
-                
-                if !showCorrection {
-                    Button {
-                        showCorrection = true
-                        onCorrection(question.answeredCorrectly)
-                    } label: {
-                        Text("Check")
-                            .frame(maxWidth: .infinity)
-                            .font(.custom("BubblegumSans-Regular", size: 24))
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.red)
-                    .disabled(question.answers.allSatisfy({ !$0.isSelected }))
-                } else {
-                    Button {
-                        showCorrection = false
-                        onDismissal()
-                    } label: {
-                        Text("Continue")
-                            .frame(maxWidth: .infinity)
-                            .font(.custom("BubblegumSans-Regular", size: 24))
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.red)
-                }
+                ChoicesView(answer: Answer(question: question), seed: seed, onDismissal: onDismissal, onCorrection: onCorrection)
             }
             .padding()
         }
@@ -76,5 +37,5 @@ struct QuestionView: View {
 }
 
 #Preview {
-    QuestionView(question: Quiz.cities.questions[0], score: .constant(0), seed: 1)
+    QuestionView(question: Quiz.capitals.questions[0], seed: 1)
 }

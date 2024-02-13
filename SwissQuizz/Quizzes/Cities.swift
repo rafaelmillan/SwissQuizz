@@ -17,134 +17,122 @@ extension Quiz {
         questions: [
             Question(
                 prompt: "Which city is this?",
-                coordinates: CLLocationCoordinate2D(latitude: 47.374444, longitude: 8.541111),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05),
-                answers: [
-                    Answer(text: "Zürich", isCorrect: true),
-                    Answer(text: "Geneva"),
-                    Answer(text: "Luzerne"),
-                    Answer(text: "Lausanne")
+                coordinates: Coordinates(latitude: 47.374444, longitude: 8.541111),
+                choices: [
+                    Choice(text: "Zürich", isCorrect: true),
+                    Choice(text: "Geneva"),
+                    Choice(text: "Luzerne"),
+                    Choice(text: "Lausanne")
                 ]
             ),
             Question(
                 prompt: "Which city is this?",
-                coordinates: CLLocationCoordinate2D(latitude: 46.201667, longitude: 6.146944),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05),
-                answers: [
-                    Answer(text: "Geneva", isCorrect: true),
-                    Answer(text: "Zürich"),
-                    Answer(text: "Luzerne"),
-                    Answer(text: "Lugano")
+                coordinates: Coordinates(latitude: 46.201667, longitude: 6.146944),
+                choices: [
+                    Choice(text: "Geneva", isCorrect: true),
+                    Choice(text: "Zürich"),
+                    Choice(text: "Luzerne"),
+                    Choice(text: "Lugano")
                 ]
             ),
             Question(
                 prompt: "Which city is this?",
-                coordinates: CLLocationCoordinate2D(latitude: 47.554722, longitude: 7.590556),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05),
-                answers: [
-                    Answer(text: "Basel", isCorrect: true),
-                    Answer(text: "Biel/Bienne"),
-                    Answer(text: "Winterthur"),
-                    Answer(text: "St. Gallen")
+                coordinates: Coordinates(latitude: 47.554722, longitude: 7.590556),
+                choices: [
+                    Choice(text: "Basel", isCorrect: true),
+                    Choice(text: "Biel/Bienne"),
+                    Choice(text: "Winterthur"),
+                    Choice(text: "St. Gallen")
                 ]
             ),
             Question(
                 prompt: "Which city is this?",
-                coordinates: CLLocationCoordinate2D(latitude: 46.519833, longitude: 6.6335),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05),
-                answers: [
-                    Answer(text: "Lausanne", isCorrect: true),
-                    Answer(text: "Bellinzona"),
-                    Answer(text: "Zürich"),
-                    Answer(text: "Thun")
+                coordinates: Coordinates(latitude: 46.519833, longitude: 6.6335),
+                choices: [
+                    Choice(text: "Lausanne", isCorrect: true),
+                    Choice(text: "Bellinzona"),
+                    Choice(text: "Zürich"),
+                    Choice(text: "Thun")
                 ]
             ),
             Question(
                 prompt: "Which city is this?",
-                coordinates: CLLocationCoordinate2D(latitude: 46.948056, longitude: 7.4475),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05),
-                answers: [
-                    Answer(text: "Bern", isCorrect: true),
-                    Answer(text: "Basel"),
-                    Answer(text: "St. Gallen"),
-                    Answer(text: "Bellinzona")
+                coordinates: Coordinates(latitude: 46.948056, longitude: 7.4475),
+                choices: [
+                    Choice(text: "Bern", isCorrect: true),
+                    Choice(text: "Basel"),
+                    Choice(text: "St. Gallen"),
+                    Choice(text: "Bellinzona")
                 ]
             ),
             Question(
                 prompt: "Which city is this?",
-                coordinates: CLLocationCoordinate2D(latitude: 47.498889, longitude: 8.728611),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05),
-                answers: [
-                    Answer(text: "Winterthur", isCorrect: true),
-                    Answer(text: "Basel"),
-                    Answer(text: "St. Gallen"),
-                    Answer(text: "Biel/Bienne")
+                coordinates: Coordinates(latitude: 47.498889, longitude: 8.728611),
+                choices: [
+                    Choice(text: "Winterthur", isCorrect: true),
+                    Choice(text: "Basel"),
+                    Choice(text: "St. Gallen"),
+                    Choice(text: "Biel/Bienne")
                 ]
             ),
             Question(
                 prompt: "Which city is this?",
-                coordinates: CLLocationCoordinate2D(latitude: 47.05, longitude: 8.3),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05),
-                answers: [
-                    Answer(text: "Lucerne", isCorrect: true),
-                    Answer(text: "Thun"),
-                    Answer(text: "Lugano"),
-                    Answer(text: "Bellinzona")
+                coordinates: Coordinates(latitude: 47.05, longitude: 8.3),
+                choices: [
+                    Choice(text: "Lucerne", isCorrect: true),
+                    Choice(text: "Thun"),
+                    Choice(text: "Lugano"),
+                    Choice(text: "Bellinzona")
                 ]
             ),
             Question(
                 prompt: "Which city is this?",
-                coordinates: CLLocationCoordinate2D(latitude: 47.424167, longitude: 9.370833),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05),
-                answers: [
-                    Answer(text: "St. Gallen", isCorrect: true),
-                    Answer(text: "Basel"),
-                    Answer(text: "Bern"),
-                    Answer(text: "Winterthur")
+                coordinates: Coordinates(latitude: 47.424167, longitude: 9.370833),
+                choices: [
+                    Choice(text: "St. Gallen", isCorrect: true),
+                    Choice(text: "Basel"),
+                    Choice(text: "Bern"),
+                    Choice(text: "Winterthur")
                 ]
             ),
             Question(
                 prompt: "Which city is this?",
-                coordinates: CLLocationCoordinate2D(latitude: 46.005, longitude: 8.9525),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05),
-                answers: [
-                    Answer(text: "Lugano", isCorrect: true),
-                    Answer(text: "Lucerne"),
-                    Answer(text: "Lausanne"),
-                    Answer(text: "Thun")
+                coordinates: Coordinates(latitude: 46.005, longitude: 8.9525),
+                choices: [
+                    Choice(text: "Lugano", isCorrect: true),
+                    Choice(text: "Lucerne"),
+                    Choice(text: "Lausanne"),
+                    Choice(text: "Thun")
                 ]
             ),
             Question(
                 prompt: "Which city is this?",
-                coordinates: CLLocationCoordinate2D(latitude: 47.133333, longitude: 7.25),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05),
-                answers: [
-                    Answer(text: "Biel/Bienne", isCorrect: true),
-                    Answer(text: "Zürich"),
-                    Answer(text: "Geneva"),
-                    Answer(text: "Thun")
+                coordinates: Coordinates(latitude: 47.133333, longitude: 7.25),
+                choices: [
+                    Choice(text: "Biel/Bienne", isCorrect: true),
+                    Choice(text: "Zürich"),
+                    Choice(text: "Geneva"),
+                    Choice(text: "Thun")
                 ]
             ),
             Question(
                 prompt: "Which city is this?",
-                coordinates: CLLocationCoordinate2D(latitude: 46.766667, longitude: 7.633333),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05),
-                answers: [
-                    Answer(text: "Thun", isCorrect: true),
-                    Answer(text: "Lugano"),
-                    Answer(text: "Bellinzona"),
-                    Answer(text: "Lucerne")
+                coordinates: Coordinates(latitude: 46.766667, longitude: 7.633333),
+                choices: [
+                    Choice(text: "Thun", isCorrect: true),
+                    Choice(text: "Lugano"),
+                    Choice(text: "Bellinzona"),
+                    Choice(text: "Lucerne")
                 ]
             ),
             Question(
                 prompt: "Which city is this?",
-                coordinates: CLLocationCoordinate2D(latitude: 46.195371, longitude: 9.029676),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05),
-                answers: [
-                    Answer(text: "Bellinzona", isCorrect: true),
-                    Answer(text: "Lugano"),
-                    Answer(text: "Lucerne"),
-                    Answer(text: "Thun")
+                coordinates: Coordinates(latitude: 46.195371, longitude: 9.029676),
+                choices: [
+                    Choice(text: "Bellinzona", isCorrect: true),
+                    Choice(text: "Lugano"),
+                    Choice(text: "Lucerne"),
+                    Choice(text: "Thun")
                 ]
             )
         ]

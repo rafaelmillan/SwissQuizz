@@ -7,42 +7,18 @@
 
 import SwiftUI
 
-struct QuizMenuView: View {
-    let quiz: Quiz
-    var buttonFunction = {}
-    
-    var body: some View {
-        Button {
-            buttonFunction()
-        } label: {
-            VStack {
-                HStack {
-                        Label(quiz.label, systemImage: quiz.systemImage)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .symbolRenderingMode(.hierarchical)
-                                            
-                    Spacer()
-
-                    Text("\(quiz.maxScore) pts")
-                }
-                .font(.custom("BubblegumSans-Regular", size: 24))
-                
-                Text(quiz.description)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-            }
-            .padding()
-            .background(Color.red.opacity(0.2))
-            .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
-            .foregroundStyle(.red)
-        }
-        .buttonStyle(.plain)
-    }
-}
-
 struct ContentView: View {
-    @State private var currentQuiz = Quiz.capitals
-    @State private var gameMode = false
+    @State private var currentQuiz: Quiz?
     private let quizes: [Quiz] = [Quiz.capitals, Quiz.cities, Quiz.flags, Quiz.food]
+    private var gameMode: Binding<Bool> {
+        Binding {
+            currentQuiz != nil
+        } set: {
+            if !$0 {
+                currentQuiz = nil
+            }
+        }
+    }
     
     var body: some View {
         VStack {
@@ -55,19 +31,17 @@ struct ContentView: View {
                 .foregroundStyle(.secondary)
             
             ForEach(quizes) { quiz in
-                QuizMenuView(quiz: quiz) {
-                    currentQuiz = quiz
-                    gameMode = true
-                }
-                
+                QuizMenuView(quiz: quiz) { currentQuiz = quiz }
             }
 
             Spacer()
         }
         .padding()
         .buttonStyle(.bordered)
-        .fullScreenCover(isPresented: $gameMode) {
-            QuizView(quiz: currentQuiz) { gameMode = false }
+        .fullScreenCover(isPresented: gameMode) {
+            if let currentQuiz = currentQuiz {
+                QuizView(quiz: currentQuiz)
+            }
         }
     }
 }

@@ -12,25 +12,17 @@ import GameplayKit
 struct Question {
     var prompt: String
     var image: String?
-    var coordinates: CLLocationCoordinate2D?
-    var span: MKCoordinateSpan?
-    var allowMultipleAnswers = false
-    var answers: [Answer]
+    var coordinates: Coordinates?
+    var allowMultipleChoices = false
+    var choices: [Choice]
     var id = UUID()
-    
-    var answeredCorrectly: Bool {
-        answers.allSatisfy({ $0.answeredCorrectly })
+
+    func shuffledChoices(seed: Int) -> [Choice] {
+        GKMersenneTwisterRandomSource(seed: UInt64(seed)).arrayByShufflingObjects(in: choices) as! [Choice]
     }
-    
-    var mapRegion: MKCoordinateRegion? {
-        if let coordinates = coordinates, let span = span {
-            return MKCoordinateRegion(center: coordinates, span: span)
-        } else {
-            return nil
-        }
-    }
-    
-    func shuffledAnswers(seed: Int) -> [Answer] {
-        GKMersenneTwisterRandomSource(seed: UInt64(seed)).arrayByShufflingObjects(in: answers) as! [Answer]
-    }
+}
+
+struct Coordinates {
+    let latitude: Double
+    let longitude: Double
 }

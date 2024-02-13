@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct CloseButtonView: View {
-    var action = {}
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        Button(action: action) {
+        Button {
+          dismiss()
+        } label: {
             Image(systemName: "xmark.circle.fill")
                 .resizable()
                 .frame(width: 32, height: 32)

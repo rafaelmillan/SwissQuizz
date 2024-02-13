@@ -8,36 +8,6 @@
 import SwiftUI
 import MapKit
 
-struct HudView: View {
-    var score: Int
-    var questionCount: Int
-    var currentQuestionIndex: Int
-    var onClose = {}
-    
-    var body: some View {
-        ZStack {
-            HStack(spacing: 50) {
-                CloseButtonView(action: onClose)
-
-                Spacer()
-                
-                Text("\(score) pts")
-                    .font(.custom("BubblegumSans-Regular", size: 24))
-                    .foregroundStyle(.red)
-                    .contentTransition(.numericText())
-            }
-            
-            ProgressView(value: Float(currentQuestionIndex + 1), total: Float(questionCount)) {} currentValueLabel: {
-                Text("\(currentQuestionIndex + 1)/\(questionCount) questions")
-            }
-            .progressViewStyle(.linear)
-            .tint(.red)
-            .frame(width: 150)
-        }
-        .padding()
-    }
-}
-
 struct QuizView: View {
     var quiz: Quiz
     var seed = Int.random(in: 1...1000)
@@ -56,26 +26,26 @@ struct QuizView: View {
     var body: some View {
         VStack {
             if showScoreScreen {
-                FinalScoreView(score: score, onDismiss: endGame)
+                FinalScoreView(score: score)
                     .background()
                     .transition(.move(edge: .bottom))
             } else {
                 VStack {
-                    if let mapRegion = currentQuestion.mapRegion {
+                    if let coordinates = currentQuestion.coordinates {
                         ZStack(alignment: .top) {
-                            Map(initialPosition: .region(mapRegion), interactionModes: [])
-                                .mapStyle(.imagery)
-                                .id(currentQuestion.id)
+                            MapView(coordinates: coordinates)
+                                .disabled(true)
                                 .transition(.asymmetric(
                                     insertion: .move(edge: .trailing),
                                     removal: .move(edge: .leading)
                                 ))
+                                .edgesIgnoringSafeArea(.all)
+                                .id(currentQuestion.id)
                             
                             HudView(
                                 score: score,
                                 questionCount: quiz.questions.count,
-                                currentQuestionIndex: currentQuestionIndex,
-                                onClose: endGame
+                                currentQuestionIndex: currentQuestionIndex
                             )
                             .background(.thinMaterial)
                             .clipShape(.capsule)
@@ -85,8 +55,7 @@ struct QuizView: View {
                         HudView(
                             score: score,
                             questionCount: quiz.questions.count,
-                            currentQuestionIndex: currentQuestionIndex,
-                            onClose: endGame
+                            currentQuestionIndex: currentQuestionIndex
                         )
                     }
                                    
@@ -109,7 +78,7 @@ struct QuizView: View {
                     }
 
                     
-                    QuestionView(question: currentQuestion, score: $score, seed: seed + currentQuestionIndex, onCorrection: updateScore, onDismissal: advanceQuestion)
+                    QuestionView(question: currentQuestion, seed: seed + currentQuestionIndex, onCorrection: updateScore, onDismissal: advanceQuestion)
                         .id(currentQuestionIndex)
                         .transition(.asymmetric(
                             insertion: .move(edge: .trailing),
@@ -153,5 +122,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView(quiz: Quiz.test)
+    QuizView(quiz: Quiz.cities)
 }

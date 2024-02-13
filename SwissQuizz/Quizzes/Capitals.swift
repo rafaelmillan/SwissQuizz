@@ -16,236 +16,236 @@ extension Quiz {
         questions: [
             Question(
                 prompt: "What is the capital of Aargau?",
-                answers: [
-                    Answer(text: "Aarau", isCorrect: true),
-                    Answer(text: "Aargau"),
-                    Answer(text: "Wettingen"),
-                    Answer(text: "Baden")
+                choices: [
+                    Choice(text: "Aarau", isCorrect: true),
+                    Choice(text: "Aargau"),
+                    Choice(text: "Wettingen"),
+                    Choice(text: "Baden")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Appenzell Innerrhoden?",
-                answers: [
-                    Answer(text: "Appenzell", isCorrect: true),
-                    Answer(text: "Gonten"),
-                    Answer(text: "Oberegg"),
-                    Answer(text: "Herisau")
+                choices: [
+                    Choice(text: "Appenzell", isCorrect: true),
+                    Choice(text: "Gonten"),
+                    Choice(text: "Oberegg"),
+                    Choice(text: "Herisau")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Appenzell Ausserrhoden?",
-                answers: [
-                    Answer(text: "Herisau", isCorrect: true),
-                    Answer(text: "Teufen"),
-                    Answer(text: "Speicher"),
-                    Answer(text: "Appenzell")
+                choices: [
+                    Choice(text: "Herisau", isCorrect: true),
+                    Choice(text: "Teufen"),
+                    Choice(text: "Speicher"),
+                    Choice(text: "Appenzell")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Bern?",
-                answers: [
-                    Answer(text: "Bern", isCorrect: true),
-                    Answer(text: "Biel/Bienne"),
-                    Answer(text: "Thun"),
-                    Answer(text: "Köniz")
+                choices: [
+                    Choice(text: "Bern", isCorrect: true),
+                    Choice(text: "Biel/Bienne"),
+                    Choice(text: "Thun"),
+                    Choice(text: "Köniz")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Basel-Landschaft?",
-                answers: [
-                    Answer(text: "Liestal", isCorrect: true),
-                    Answer(text: "Basel"),
-                    Answer(text: "Allschwil"),
-                    Answer(text: "Reinach")
+                choices: [
+                    Choice(text: "Liestal", isCorrect: true),
+                    Choice(text: "Basel"),
+                    Choice(text: "Allschwil"),
+                    Choice(text: "Reinach")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Basel-Stadt?",
-                answers: [
-                    Answer(text: "Basel", isCorrect: true),
-                    Answer(text: "Bettingen"),
-                    Answer(text: "Riehen"),
-                    Answer(text: "Liestal")
+                choices: [
+                    Choice(text: "Basel", isCorrect: true),
+                    Choice(text: "Bettingen"),
+                    Choice(text: "Riehen"),
+                    Choice(text: "Liestal")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Fribourg?",
-                answers: [
-                    Answer(text: "Fribourg", isCorrect: true),
-                    Answer(text: "Bulle"),
-                    Answer(text: "Villars-sur-Glâne"),
-                    Answer(text: "Murten")
+                choices: [
+                    Choice(text: "Fribourg", isCorrect: true),
+                    Choice(text: "Bulle"),
+                    Choice(text: "Villars-sur-Glâne"),
+                    Choice(text: "Murten")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Geneva?",
-                answers: [
-                    Answer(text: "Geneva", isCorrect: true),
-                    Answer(text: "Vernier"),
-                    Answer(text: "Lancy"),
-                    Answer(text: "Meyrin")
+                choices: [
+                    Choice(text: "Geneva", isCorrect: true),
+                    Choice(text: "Vernier"),
+                    Choice(text: "Lancy"),
+                    Choice(text: "Meyrin")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Glarus?",
-                answers: [
-                    Answer(text: "Glarus", isCorrect: true),
-                    Answer(text: "Netstal"),
-                    Answer(text: "Ennenda"),
-                    Answer(text: "Riedern")
+                choices: [
+                    Choice(text: "Glarus", isCorrect: true),
+                    Choice(text: "Netstal"),
+                    Choice(text: "Ennenda"),
+                    Choice(text: "Riedern")
                 ]
             ),
             Question(
                 prompt: "What is the capital of the Grisons?",
-                answers: [
-                    Answer(text: "Chur", isCorrect: true),
-                    Answer(text: "Grisons"),
-                    Answer(text: "St. Moritz"),
-                    Answer(text: "Davos")
+                choices: [
+                    Choice(text: "Chur", isCorrect: true),
+                    Choice(text: "Grisons"),
+                    Choice(text: "St. Moritz"),
+                    Choice(text: "Davos")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Jura?",
-                answers: [
-                    Answer(text: "Delémont", isCorrect: true),
-                    Answer(text: "Porrentruy"),
-                    Answer(text: "Saint-Ursanne"),
-                    Answer(text: "Jura")
+                choices: [
+                    Choice(text: "Delémont", isCorrect: true),
+                    Choice(text: "Porrentruy"),
+                    Choice(text: "Saint-Ursanne"),
+                    Choice(text: "Jura")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Lucerne?",
-                answers: [
-                    Answer(text: "Lucerne", isCorrect: true),
-                    Answer(text: "Emmen"),
-                    Answer(text: "Kriens"),
-                    Answer(text: "Horw")
+                choices: [
+                    Choice(text: "Lucerne", isCorrect: true),
+                    Choice(text: "Emmen"),
+                    Choice(text: "Kriens"),
+                    Choice(text: "Horw")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Neuchâtel?",
-                answers: [
-                    Answer(text: "Neuchâtel", isCorrect: true),
-                    Answer(text: "La Chaux-de-Fonds"),
-                    Answer(text: "Val-de-Travers"),
-                    Answer(text: "Le Locle")
+                choices: [
+                    Choice(text: "Neuchâtel", isCorrect: true),
+                    Choice(text: "La Chaux-de-Fonds"),
+                    Choice(text: "Val-de-Travers"),
+                    Choice(text: "Le Locle")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Nidwalden?",
-                answers: [
-                    Answer(text: "Stans", isCorrect: true),
-                    Answer(text: "Nidwalden"),
-                    Answer(text: "Stansstad"),
-                    Answer(text: "Sarnen")
+                choices: [
+                    Choice(text: "Stans", isCorrect: true),
+                    Choice(text: "Nidwalden"),
+                    Choice(text: "Stansstad"),
+                    Choice(text: "Sarnen")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Obwalden?",
-                answers: [
-                    Answer(text: "Sarnen", isCorrect: true),
-                    Answer(text: "Obwalden"),
-                    Answer(text: "Stans"),
-                    Answer(text: "Alpnach")
+                choices: [
+                    Choice(text: "Sarnen", isCorrect: true),
+                    Choice(text: "Obwalden"),
+                    Choice(text: "Stans"),
+                    Choice(text: "Alpnach")
                 ]
             ),
             Question(
                 prompt: "What is the capital of St. Gallen?",
-                answers: [
-                    Answer(text: "St. Gallen", isCorrect: true),
-                    Answer(text: "Rapperswil-Jona"),
-                    Answer(text: "Wil"),
-                    Answer(text: "Gossau")
+                choices: [
+                    Choice(text: "St. Gallen", isCorrect: true),
+                    Choice(text: "Rapperswil-Jona"),
+                    Choice(text: "Wil"),
+                    Choice(text: "Gossau")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Schaffhausen?",
-                answers: [
-                    Answer(text: "Schaffhausen", isCorrect: true),
-                    Answer(text: "Rapperswil-Jona"),
-                    Answer(text: "Neuhausen am Rheinfall"),
-                    Answer(text: "Stein am Rhein")
+                choices: [
+                    Choice(text: "Schaffhausen", isCorrect: true),
+                    Choice(text: "Rapperswil-Jona"),
+                    Choice(text: "Neuhausen am Rheinfall"),
+                    Choice(text: "Stein am Rhein")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Solothurn?",
-                answers: [
-                    Answer(text: "Solothurn", isCorrect: true),
-                    Answer(text: "Olten"),
-                    Answer(text: "Grenchen"),
-                    Answer(text: "Zuchwil")
+                choices: [
+                    Choice(text: "Solothurn", isCorrect: true),
+                    Choice(text: "Olten"),
+                    Choice(text: "Grenchen"),
+                    Choice(text: "Zuchwil")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Schwyz?",
-                answers: [
-                    Answer(text: "Schwyz", isCorrect: true),
-                    Answer(text: "Arth"),
-                    Answer(text: "Lachen"),
-                    Answer(text: "Freienbach")
+                choices: [
+                    Choice(text: "Schwyz", isCorrect: true),
+                    Choice(text: "Arth"),
+                    Choice(text: "Lachen"),
+                    Choice(text: "Freienbach")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Thurgau?",
-                answers: [
-                    Answer(text: "Frauenfeld", isCorrect: true),
-                    Answer(text: "Thurgau"),
-                    Answer(text: "Kreuzlingen"),
-                    Answer(text: "Arbon")
+                choices: [
+                    Choice(text: "Frauenfeld", isCorrect: true),
+                    Choice(text: "Thurgau"),
+                    Choice(text: "Kreuzlingen"),
+                    Choice(text: "Arbon")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Ticino?",
-                answers: [
-                    Answer(text: "Bellinzona", isCorrect: true),
-                    Answer(text: "Lugano"),
-                    Answer(text: "Locarno"),
-                    Answer(text: "Ticino")
+                choices: [
+                    Choice(text: "Bellinzona", isCorrect: true),
+                    Choice(text: "Lugano"),
+                    Choice(text: "Locarno"),
+                    Choice(text: "Ticino")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Uri?",
-                answers: [
-                    Answer(text: "Altdorf", isCorrect: true),
-                    Answer(text: "Uri"),
-                    Answer(text: "Schattdorf"),
-                    Answer(text: "Bürglen")
+                choices: [
+                    Choice(text: "Altdorf", isCorrect: true),
+                    Choice(text: "Uri"),
+                    Choice(text: "Schattdorf"),
+                    Choice(text: "Bürglen")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Vaud?",
-                answers: [
-                    Answer(text: "Lausanne", isCorrect: true),
-                    Answer(text: "Vaud"),
-                    Answer(text: "Yverdon-les-Bains"),
-                    Answer(text: "Montreux")
+                choices: [
+                    Choice(text: "Lausanne", isCorrect: true),
+                    Choice(text: "Vaud"),
+                    Choice(text: "Yverdon-les-Bains"),
+                    Choice(text: "Montreux")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Valais?",
-                answers: [
-                    Answer(text: "Sion", isCorrect: true),
-                    Answer(text: "Valais"),
-                    Answer(text: "Martigny"),
-                    Answer(text: "Sierre")
+                choices: [
+                    Choice(text: "Sion", isCorrect: true),
+                    Choice(text: "Valais"),
+                    Choice(text: "Martigny"),
+                    Choice(text: "Sierre")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Zug?",
-                answers: [
-                    Answer(text: "Zug", isCorrect: true),
-                    Answer(text: "Baar"),
-                    Answer(text: "Cham"),
-                    Answer(text: "Risch")
+                choices: [
+                    Choice(text: "Zug", isCorrect: true),
+                    Choice(text: "Baar"),
+                    Choice(text: "Cham"),
+                    Choice(text: "Risch")
                 ]
             ),
             Question(
                 prompt: "What is the capital of Zürich?",
-                answers: [
-                    Answer(text: "Zürich", isCorrect: true),
-                    Answer(text: "Winterthur"),
-                    Answer(text: "Uster"),
-                    Answer(text: "Dübendorf")
+                choices: [
+                    Choice(text: "Zürich", isCorrect: true),
+                    Choice(text: "Winterthur"),
+                    Choice(text: "Uster"),
+                    Choice(text: "Dübendorf")
                 ]
             )
         ]

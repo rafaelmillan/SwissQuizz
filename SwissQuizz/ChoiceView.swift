@@ -1,5 +1,5 @@
 //
-//  AnswerView.swift
+//  ChoiceView.swift
 //  SwissQuizz
 //
 //  Created by Rafael Millan on 03.01.2024.
@@ -7,6 +7,33 @@
 
 import Foundation
 import SwiftUI
+
+struct ChoiceView: View {
+    var choice: Choice
+    @ObservedObject var answer: Answer
+    var showCorrection = false
+    var onSelection: (Choice) -> Void = { _ in }
+    
+    private var isSelected: Binding<Bool> {
+        Binding {
+            answer.isSelected(choice)
+        } set: {
+            if $0 {
+                answer.select(choice)
+            } else {
+                answer.unselect(choice)
+            }
+        }
+    }
+    
+    var body: some View {
+        Toggle(isOn: isSelected) {
+            Text(choice.text)
+        }
+        .toggleStyle(CheckToggleStyle(showCorrection: showCorrection, isCorrect: choice.isCorrect))
+        .disabled(showCorrection)
+    }
+}
 
 struct CheckToggleStyle: ToggleStyle {
     var showCorrection = false
@@ -47,29 +74,10 @@ struct CheckToggleStyle: ToggleStyle {
     }
 }
 
-struct AnswerView: View {
-    @State var answer: Answer
-    var showCorrection = false
-    var onSelection: (Answer) -> Void = { _ in }
-    
-    var body: some View {
-        Toggle(isOn: $answer.isSelected) {
-            Text(answer.text)
-        }
-        .toggleStyle(CheckToggleStyle(showCorrection: showCorrection, isCorrect: answer.isCorrect))
-        .disabled(showCorrection)
-        .onChange(of: answer.isSelected) {
-            if answer.isSelected {
-                onSelection(answer)
-            }
-        }
-    }
-}
-
 #Preview {
     Group {
-        AnswerView(answer: Quiz.capitals.questions[0].answers[0])
-        AnswerView(answer: Quiz.capitals.questions[0].answers[0], showCorrection: true)
-        AnswerView(answer: Quiz.capitals.questions[0].answers[1], showCorrection: true)
+        ChoiceView(choice: Quiz.capitals.questions[0].choices[0], answer: Answer(question: Quiz.capitals.questions[0]))
+        ChoiceView(choice: Quiz.capitals.questions[0].choices[0], answer: Answer(question: Quiz.capitals.questions[0]), showCorrection: true)
+        ChoiceView(choice: Quiz.capitals.questions[0].choices[1], answer: Answer(question: Quiz.capitals.questions[0]), showCorrection: true)
     }
 }

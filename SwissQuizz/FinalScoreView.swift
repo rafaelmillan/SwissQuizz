@@ -9,12 +9,11 @@ import SwiftUI
 
 struct FinalScoreView: View {
     var score: Int
-    var onDismiss = {}
     
     var body: some View {
         VStack {
             HStack {
-                CloseButtonView(action: onDismiss)
+                CloseButtonView()
                 Spacer()
             }
             
