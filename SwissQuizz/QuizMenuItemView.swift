@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct QuizMenuView: View {
+struct QuizMenuItemView: View {
     let quiz: Quiz
     var buttonFunction = {}
     
@@ -40,5 +40,5 @@ struct QuizMenuView: View {
 }
 
 #Preview {
-    QuizMenuView(quiz: Quiz.capitals)
+    QuizMenuItemView(quiz: Quiz.capitals)
 }

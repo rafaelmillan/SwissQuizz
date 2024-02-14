@@ -30,7 +30,7 @@ struct QuizView: View {
                     .background()
                     .transition(.move(edge: .bottom))
             } else {
-                VStack {
+                VStack(spacing: 0) {
                     if let coordinates = currentQuestion.coordinates {
                         ZStack(alignment: .top) {
                             MapView(coordinates: coordinates)
@@ -57,24 +57,24 @@ struct QuizView: View {
                             questionCount: quiz.questions.count,
                             currentQuestionIndex: currentQuestionIndex
                         )
-                    }
-                                   
-                    if let image = currentQuestion.image {
-                        Image(image)
-                            .resizable()
-                            .scaledToFit()
-                            .border(.secondary)
-                            .id(currentQuestion.id)
-                            .frame(maxWidth: .infinity)
-                            .background()
-                            .transition(.asymmetric(
-                                insertion: .move(edge: .trailing),
-                                removal: .move(edge: .leading)
-                            ))
-                            
+                        
+                        if let image = currentQuestion.image {
+                            Image(image)
+                                .resizable()
+                                .scaledToFit()
+                                .border(.secondary)
+                                .id(currentQuestion.id)
+                                .frame(maxWidth: .infinity)
+                                .background()
+                                .transition(.asymmetric(
+                                    insertion: .move(edge: .trailing),
+                                    removal: .move(edge: .leading)
+                                ))
+                                
 
-                    } else {
-                        Spacer()
+                        } else {
+                            Spacer()
+                        }
                     }
 
                     
@@ -122,5 +122,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView(quiz: Quiz.cities)
+    QuizView(quiz: Quiz.food)
 }

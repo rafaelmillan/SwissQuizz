@@ -14,28 +14,26 @@ struct QuestionView: View {
     var onDismissal: () -> Void = {}
 
     var body: some View {
-        VStack {
-            VStack {
-                Text(question.prompt)
-                    .font(.custom("BubblegumSans-Regular", size: 36))
+        VStack(spacing: 5) {
+            Text(question.prompt)
+                .font(.custom("BubblegumSans-Regular", size: 36))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .fixedSize(horizontal: false, vertical: true)
+                .foregroundStyle(.red)
+            
+            if question.allowMultipleChoices {
+                Text("Multiple answers are possible")
+                    .font(.subheadline)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .foregroundStyle(.red)
-                
-                if question.allowMultipleChoices {
-                    Text("Multiple answers are possible")
-                        .font(.subheadline)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .foregroundStyle(.secondary)
-                }
-                
-                ChoicesView(answer: Answer(question: question), seed: seed, onDismissal: onDismissal, onCorrection: onCorrection)
+                    .foregroundStyle(.secondary)
             }
-            .padding()
+            
+            ChoicesView(answer: Answer(question: question), seed: seed, onDismissal: onDismissal, onCorrection: onCorrection)
         }
+        .padding()
     }
 }
 
 #Preview {
-    QuestionView(question: Quiz.capitals.questions[0], seed: 1)
+    QuestionView(question: Quiz.food.questions[0], seed: 1)
 }

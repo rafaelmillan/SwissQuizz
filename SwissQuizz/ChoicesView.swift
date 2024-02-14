@@ -18,33 +18,35 @@ struct ChoicesView: View {
     }
     
     var body: some View {
-        ForEach(question.shuffledChoices(seed: seed), id: \.text) { choice in
-            ChoiceView(choice: choice, answer: answer, showCorrection: showCorrection)
-        }
-        .id(question.id)
-        
-        if !showCorrection {
-            Button {
-                showCorrection = true
-                onCorrection(answer.isCorrect)
-            } label: {
-                Text("Check")
-                    .frame(maxWidth: .infinity)
-                    .font(.custom("BubblegumSans-Regular", size: 24))
+        VStack {
+            ForEach(question.shuffledChoices(seed: seed), id: \.text) { choice in
+                ChoiceView(choice: choice, answer: answer, showCorrection: showCorrection)
             }
-            .buttonStyle(.borderedProminent)
-            .tint(.red)
-        } else {
-            Button {
-                showCorrection = false
-                onDismissal()
-            } label: {
-                Text("Continue")
-                    .frame(maxWidth: .infinity)
-                    .font(.custom("BubblegumSans-Regular", size: 24))
+            .id(question.id)
+            
+            if !showCorrection {
+                Button {
+                    showCorrection = true
+                    onCorrection(answer.isCorrect)
+                } label: {
+                    Text("Check")
+                        .frame(maxWidth: .infinity)
+                        .font(.custom("BubblegumSans-Regular", size: 24))
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(.red)
+            } else {
+                Button {
+                    showCorrection = false
+                    onDismissal()
+                } label: {
+                    Text("Continue")
+                        .frame(maxWidth: .infinity)
+                        .font(.custom("BubblegumSans-Regular", size: 24))
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(.red)
             }
-            .buttonStyle(.borderedProminent)
-            .tint(.red)
         }
     }
 }

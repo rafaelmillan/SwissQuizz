@@ -30,7 +30,7 @@ struct ChoiceView: View {
         Toggle(isOn: isSelected) {
             Text(choice.text)
         }
-        .toggleStyle(CheckToggleStyle(showCorrection: showCorrection, isCorrect: choice.isCorrect))
+        .toggleStyle(CheckToggleStyle(showCorrection: showCorrection, isCorrect: choice.isCorrect, multipleChoice: answer.question.allowMultipleChoices))
         .disabled(showCorrection)
     }
 }
@@ -38,6 +38,13 @@ struct ChoiceView: View {
 struct CheckToggleStyle: ToggleStyle {
     var showCorrection = false
     var isCorrect: Bool
+    var multipleChoice: Bool
+    private var selectedIcon: String {
+        multipleChoice ? "checkmark.square.fill" : "checkmark.circle.fill"
+    }
+    private var unselectedIcon: String {
+        multipleChoice ? "square" : "circle"
+    }
     
     func makeBody(configuration: Configuration) -> some View {
         Button {
@@ -47,7 +54,7 @@ struct CheckToggleStyle: ToggleStyle {
                 Label {
                     configuration.label
                 } icon: {
-                    Image(systemName: configuration.isOn ? "checkmark.square.fill" : "square")
+                    Image(systemName: configuration.isOn ? selectedIcon : unselectedIcon)
                         .imageScale(.large)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
