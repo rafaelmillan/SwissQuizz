@@ -15,75 +15,75 @@ extension Quiz {
         systemImage: "fork.knife",
         questions: [
             Question(
-                prompt: "Where can Gruyère AOP come from?",
+                prompt: String(localized: "Where can Gruyère AOP come from?"),
                 image: "foods/gruyere",
                 allowMultipleChoices: true,
                 choices: [
-                    Choice(text: "Fribourg", isCorrect: true),
-                    Choice(text: "Vaud", isCorrect: true),
-                    Choice(text: "Neuchâtel", isCorrect: true),
-                    Choice(text: "Jura", isCorrect: true),
-                    Choice(text: "Bern", isCorrect: true)
+                    Choice(text: String(localized: "Fribourg"), isCorrect: true),
+                    Choice(text: String(localized: "Vaud"), isCorrect: true),
+                    Choice(text: String(localized: "Neuchâtel"), isCorrect: true),
+                    Choice(text: String(localized: "Jura"), isCorrect: true),
+                    Choice(text: String(localized: "Bern"), isCorrect: true)
                 ]
             ),
             Question(
-                prompt: "Where can Tête de Moine AOP come from?",
+                prompt: String(localized: "Where can Tête de Moine AOP come from?"),
                 image: "foods/teteDeMoine",
                 allowMultipleChoices: true,
                 choices: [
-                    Choice(text: "Fribourg"),
-                    Choice(text: "Vaud"),
-                    Choice(text: "Neuchâtel"),
-                    Choice(text: "Jura", isCorrect: true),
-                    Choice(text: "Bern", isCorrect: true)
+                    Choice(text: String(localized: "Fribourg")),
+                    Choice(text: String(localized: "Vaud")),
+                    Choice(text: String(localized: "Neuchâtel")),
+                    Choice(text: String(localized: "Jura"), isCorrect: true),
+                    Choice(text: String(localized: "Bern"), isCorrect: true)
                 ]
             ),
             Question(
-                prompt: "Where can Botzi pears AOP come from?",
+                prompt: String(localized: "Where can Botzi pears AOP come from?"),
                 image: "foods/poireABotzi",
                 allowMultipleChoices: true,
                 choices: [
-                    Choice(text: "Fribourg", isCorrect: true),
-                    Choice(text: "Vaud", isCorrect: true),
-                    Choice(text: "Neuchâtel"),
-                    Choice(text: "Jura"),
-                    Choice(text: "Bern", isCorrect: true)
+                    Choice(text: String(localized: "Fribourg"), isCorrect: true),
+                    Choice(text: String(localized: "Vaud"), isCorrect: true),
+                    Choice(text: String(localized: "Neuchâtel")),
+                    Choice(text: String(localized: "Jura")),
+                    Choice(text: String(localized: "Bern"), isCorrect: true)
                 ]
             ),
             Question(
-                prompt: "Where can L'Étivaz AOP come from?",
+                prompt: String(localized: "Where can L'Étivaz AOP come from?"),
                 image: "foods/lEtivaz",
                 allowMultipleChoices: true,
                 choices: [
-                    Choice(text: "Fribourg"),
-                    Choice(text: "Vaud", isCorrect: true),
-                    Choice(text: "Neuchâtel"),
-                    Choice(text: "Jura"),
-                    Choice(text: "Bern")
+                    Choice(text: String(localized: "Fribourg")),
+                    Choice(text: String(localized: "Vaud"), isCorrect: true),
+                    Choice(text: String(localized: "Neuchâtel")),
+                    Choice(text: String(localized: "Jura")),
+                    Choice(text: String(localized: "Bern"))
                 ]
             ),
             Question(
-                prompt: "Where can Vacherin Mont-d’Or AOP come from?",
+                prompt: String(localized: "Where can Vacherin Mont-d’Or AOP come from?"),
                 image: "foods/vacherinMontDOr",
                 allowMultipleChoices: true,
                 choices: [
-                    Choice(text: "Fribourg"),
-                    Choice(text: "Vaud", isCorrect: true),
-                    Choice(text: "Neuchâtel"),
-                    Choice(text: "Jura"),
-                    Choice(text: "Geneva")
+                    Choice(text: String(localized: "Fribourg")),
+                    Choice(text: String(localized: "Vaud"), isCorrect: true),
+                    Choice(text: String(localized: "Neuchâtel")),
+                    Choice(text: String(localized: "Jura")),
+                    Choice(text: String(localized: "Geneva"))
                 ]
             ),
             Question(
-                prompt: "Where can Sbrinz AOP come from?",
+                prompt: String(localized: "Where can Sbrinz AOP come from?"),
                 image: "foods/sbrinz",
                 allowMultipleChoices: true,
                 choices: [
-                    Choice(text: "Luzern", isCorrect: true),
-                    Choice(text: "Zug", isCorrect: true),
-                    Choice(text: "Schwyz", isCorrect: true),
-                    Choice(text: "Obwald", isCorrect: true),
-                    Choice(text: "Nidwald", isCorrect: true)
+                    Choice(text: String(localized: "Luzern"), isCorrect: true),
+                    Choice(text: String(localized: "Zug"), isCorrect: true),
+                    Choice(text: String(localized: "Schwyz"), isCorrect: true),
+                    Choice(text: String(localized: "Obwald"), isCorrect: true),
+                    Choice(text: String(localized: "Nidwald"), isCorrect: true)
                 ]
             )
         ]

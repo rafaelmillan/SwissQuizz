@@ -10,242 +10,242 @@ import Foundation
 extension Quiz {
     static let capitals = Quiz(
         id: "capitals",
-        label: "Capitals",
-        description: "Find the capital of each canton",
+        label: String(localized: "Capitals"),
+        description: String(localized: "Find the capital of each canton"),
         systemImage: "building.columns.fill",
         questions: [
             Question(
-                prompt: "What is the capital of Aargau?",
+                prompt: String(localized: "What is the capital of Aargau?"),
                 choices: [
-                    Choice(text: "Aarau", isCorrect: true),
-                    Choice(text: "Aargau"),
-                    Choice(text: "Wettingen"),
-                    Choice(text: "Baden")
+                    Choice(text: String(localized: "Aarau"), isCorrect: true),
+                    Choice(text: String(localized: "Aargau")),
+                    Choice(text: String(localized: "Wettingen")),
+                    Choice(text: String(localized: "Baden"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Appenzell Innerrhoden?",
+                prompt: String(localized: "What is the capital of Appenzell Innerrhoden?"),
                 choices: [
-                    Choice(text: "Appenzell", isCorrect: true),
-                    Choice(text: "Gonten"),
-                    Choice(text: "Oberegg"),
-                    Choice(text: "Herisau")
+                    Choice(text: String(localized: "Appenzell"), isCorrect: true),
+                    Choice(text: String(localized: "Gonten")),
+                    Choice(text: String(localized: "Oberegg")),
+                    Choice(text: String(localized: "Herisau"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Appenzell Ausserrhoden?",
+                prompt: String(localized: "What is the capital of Appenzell Ausserrhoden?"),
                 choices: [
-                    Choice(text: "Herisau", isCorrect: true),
-                    Choice(text: "Teufen"),
-                    Choice(text: "Speicher"),
-                    Choice(text: "Appenzell")
+                    Choice(text: String(localized: "Herisau"), isCorrect: true),
+                    Choice(text: String(localized: "Teufen")),
+                    Choice(text: String(localized: "Speicher")),
+                    Choice(text: String(localized: "Appenzell"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Bern?",
+                prompt: String(localized: "What is the capital of Bern?"),
                 choices: [
-                    Choice(text: "Bern", isCorrect: true),
-                    Choice(text: "Biel/Bienne"),
-                    Choice(text: "Thun"),
-                    Choice(text: "Köniz")
+                    Choice(text: String(localized: "Bern"), isCorrect: true),
+                    Choice(text: String(localized: "Biel/Bienne")),
+                    Choice(text: String(localized: "Thun")),
+                    Choice(text: String(localized: "Köniz"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Basel-Landschaft?",
+                prompt: String(localized: "What is the capital of Basel-Landschaft?"),
                 choices: [
-                    Choice(text: "Liestal", isCorrect: true),
-                    Choice(text: "Basel"),
-                    Choice(text: "Allschwil"),
-                    Choice(text: "Reinach")
+                    Choice(text: String(localized: "Liestal"), isCorrect: true),
+                    Choice(text: String(localized: "Basel")),
+                    Choice(text: String(localized: "Allschwil")),
+                    Choice(text: String(localized: "Reinach"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Basel-Stadt?",
+                prompt: String(localized: "What is the capital of Basel-Stadt?"),
                 choices: [
-                    Choice(text: "Basel", isCorrect: true),
-                    Choice(text: "Bettingen"),
-                    Choice(text: "Riehen"),
-                    Choice(text: "Liestal")
+                    Choice(text: String(localized: "Basel"), isCorrect: true),
+                    Choice(text: String(localized: "Bettingen")),
+                    Choice(text: String(localized: "Riehen")),
+                    Choice(text: String(localized: "Liestal"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Fribourg?",
+                prompt: String(localized: "What is the capital of Fribourg?"),
                 choices: [
-                    Choice(text: "Fribourg", isCorrect: true),
-                    Choice(text: "Bulle"),
-                    Choice(text: "Villars-sur-Glâne"),
-                    Choice(text: "Murten")
+                    Choice(text: String(localized: "Fribourg"), isCorrect: true),
+                    Choice(text: String(localized: "Bulle")),
+                    Choice(text: String(localized: "Villars-sur-Glâne")),
+                    Choice(text: String(localized: "Murten"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Geneva?",
+                prompt: String(localized: "What is the capital of Geneva?"),
                 choices: [
-                    Choice(text: "Geneva", isCorrect: true),
-                    Choice(text: "Vernier"),
-                    Choice(text: "Lancy"),
-                    Choice(text: "Meyrin")
+                    Choice(text: String(localized: "Geneva"), isCorrect: true),
+                    Choice(text: String(localized: "Vernier")),
+                    Choice(text: String(localized: "Lancy")),
+                    Choice(text: String(localized: "Meyrin"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Glarus?",
+                prompt: String(localized: "What is the capital of Glarus?"),
                 choices: [
-                    Choice(text: "Glarus", isCorrect: true),
-                    Choice(text: "Netstal"),
-                    Choice(text: "Ennenda"),
-                    Choice(text: "Riedern")
+                    Choice(text: String(localized: "Glarus"), isCorrect: true),
+                    Choice(text: String(localized: "Netstal")),
+                    Choice(text: String(localized: "Ennenda")),
+                    Choice(text: String(localized: "Riedern"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of the Grisons?",
+                prompt: String(localized: "What is the capital of the Grisons?"),
                 choices: [
-                    Choice(text: "Chur", isCorrect: true),
-                    Choice(text: "Grisons"),
-                    Choice(text: "St. Moritz"),
-                    Choice(text: "Davos")
+                    Choice(text: String(localized: "Chur"), isCorrect: true),
+                    Choice(text: String(localized: "Grisons")),
+                    Choice(text: String(localized: "St. Moritz")),
+                    Choice(text: String(localized: "Davos"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Jura?",
+                prompt: String(localized: "What is the capital of Jura?"),
                 choices: [
-                    Choice(text: "Delémont", isCorrect: true),
-                    Choice(text: "Porrentruy"),
-                    Choice(text: "Saint-Ursanne"),
-                    Choice(text: "Jura")
+                    Choice(text: String(localized: "Delémont"), isCorrect: true),
+                    Choice(text: String(localized: "Porrentruy")),
+                    Choice(text: String(localized: "Saint-Ursanne")),
+                    Choice(text: String(localized: "Jura"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Lucerne?",
+                prompt: String(localized: "What is the capital of Lucerne?"),
                 choices: [
-                    Choice(text: "Lucerne", isCorrect: true),
-                    Choice(text: "Emmen"),
-                    Choice(text: "Kriens"),
-                    Choice(text: "Horw")
+                    Choice(text: String(localized: "Lucerne"), isCorrect: true),
+                    Choice(text: String(localized: "Emmen")),
+                    Choice(text: String(localized: "Kriens")),
+                    Choice(text: String(localized: "Horw"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Neuchâtel?",
+                prompt: String(localized: "What is the capital of Neuchâtel?"),
                 choices: [
-                    Choice(text: "Neuchâtel", isCorrect: true),
-                    Choice(text: "La Chaux-de-Fonds"),
-                    Choice(text: "Val-de-Travers"),
-                    Choice(text: "Le Locle")
+                    Choice(text: String(localized: "Neuchâtel"), isCorrect: true),
+                    Choice(text: String(localized: "La Chaux-de-Fonds")),
+                    Choice(text: String(localized: "Val-de-Travers")),
+                    Choice(text: String(localized: "Le Locle"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Nidwalden?",
+                prompt: String(localized: "What is the capital of Nidwalden?"),
                 choices: [
-                    Choice(text: "Stans", isCorrect: true),
-                    Choice(text: "Nidwalden"),
-                    Choice(text: "Stansstad"),
-                    Choice(text: "Sarnen")
+                    Choice(text: String(localized: "Stans"), isCorrect: true),
+                    Choice(text: String(localized: "Nidwalden")),
+                    Choice(text: String(localized: "Stansstad")),
+                    Choice(text: String(localized: "Sarnen"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Obwalden?",
+                prompt: String(localized: "What is the capital of Obwalden?"),
                 choices: [
-                    Choice(text: "Sarnen", isCorrect: true),
-                    Choice(text: "Obwalden"),
-                    Choice(text: "Stans"),
-                    Choice(text: "Alpnach")
+                    Choice(text: String(localized: "Sarnen"), isCorrect: true),
+                    Choice(text: String(localized: "Obwalden")),
+                    Choice(text: String(localized: "Stans")),
+                    Choice(text: String(localized: "Alpnach"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of St. Gallen?",
+                prompt: String(localized: "What is the capital of St. Gallen?"),
                 choices: [
-                    Choice(text: "St. Gallen", isCorrect: true),
-                    Choice(text: "Rapperswil-Jona"),
-                    Choice(text: "Wil"),
-                    Choice(text: "Gossau")
+                    Choice(text: String(localized: "St. Gallen"), isCorrect: true),
+                    Choice(text: String(localized: "Rapperswil-Jona")),
+                    Choice(text: String(localized: "Wil")),
+                    Choice(text: String(localized: "Gossau"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Schaffhausen?",
+                prompt: String(localized: "What is the capital of Schaffhausen?"),
                 choices: [
-                    Choice(text: "Schaffhausen", isCorrect: true),
-                    Choice(text: "Rapperswil-Jona"),
-                    Choice(text: "Neuhausen am Rheinfall"),
-                    Choice(text: "Stein am Rhein")
+                    Choice(text: String(localized: "Schaffhausen"), isCorrect: true),
+                    Choice(text: String(localized: "Rapperswil-Jona")),
+                    Choice(text: String(localized: "Neuhausen am Rheinfall")),
+                    Choice(text: String(localized: "Stein am Rhein"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Solothurn?",
+                prompt: String(localized: "What is the capital of Solothurn?"),
                 choices: [
-                    Choice(text: "Solothurn", isCorrect: true),
-                    Choice(text: "Olten"),
-                    Choice(text: "Grenchen"),
-                    Choice(text: "Zuchwil")
+                    Choice(text: String(localized: "Solothurn"), isCorrect: true),
+                    Choice(text: String(localized: "Olten")),
+                    Choice(text: String(localized: "Grenchen")),
+                    Choice(text: String(localized: "Zuchwil"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Schwyz?",
+                prompt: String(localized: "What is the capital of Schwyz?"),
                 choices: [
-                    Choice(text: "Schwyz", isCorrect: true),
-                    Choice(text: "Arth"),
-                    Choice(text: "Lachen"),
-                    Choice(text: "Freienbach")
+                    Choice(text: String(localized: "Schwyz"), isCorrect: true),
+                    Choice(text: String(localized: "Arth")),
+                    Choice(text: String(localized: "Lachen")),
+                    Choice(text: String(localized: "Freienbach"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Thurgau?",
+                prompt: String(localized: "What is the capital of Thurgau?"),
                 choices: [
-                    Choice(text: "Frauenfeld", isCorrect: true),
-                    Choice(text: "Thurgau"),
-                    Choice(text: "Kreuzlingen"),
-                    Choice(text: "Arbon")
+                    Choice(text: String(localized: "Frauenfeld"), isCorrect: true),
+                    Choice(text: String(localized: "Thurgau")),
+                    Choice(text: String(localized: "Kreuzlingen")),
+                    Choice(text: String(localized: "Arbon"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Ticino?",
+                prompt: String(localized: "What is the capital of Ticino?"),
                 choices: [
-                    Choice(text: "Bellinzona", isCorrect: true),
-                    Choice(text: "Lugano"),
-                    Choice(text: "Locarno"),
-                    Choice(text: "Ticino")
+                    Choice(text: String(localized: "Bellinzona"), isCorrect: true),
+                    Choice(text: String(localized: "Lugano")),
+                    Choice(text: String(localized: "Locarno")),
+                    Choice(text: String(localized: "Ticino"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Uri?",
+                prompt: String(localized: "What is the capital of Uri?"),
                 choices: [
-                    Choice(text: "Altdorf", isCorrect: true),
-                    Choice(text: "Uri"),
-                    Choice(text: "Schattdorf"),
-                    Choice(text: "Bürglen")
+                    Choice(text: String(localized: "Altdorf"), isCorrect: true),
+                    Choice(text: String(localized: "Uri")),
+                    Choice(text: String(localized: "Schattdorf")),
+                    Choice(text: String(localized: "Bürglen"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Vaud?",
+                prompt: String(localized: "What is the capital of Vaud?"),
                 choices: [
-                    Choice(text: "Lausanne", isCorrect: true),
-                    Choice(text: "Vaud"),
-                    Choice(text: "Yverdon-les-Bains"),
-                    Choice(text: "Montreux")
+                    Choice(text: String(localized: "Lausanne"), isCorrect: true),
+                    Choice(text: String(localized: "Vaud")),
+                    Choice(text: String(localized: "Yverdon-les-Bains")),
+                    Choice(text: String(localized: "Montreux"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Valais?",
+                prompt: String(localized: "What is the capital of Valais?"),
                 choices: [
-                    Choice(text: "Sion", isCorrect: true),
-                    Choice(text: "Valais"),
-                    Choice(text: "Martigny"),
-                    Choice(text: "Sierre")
+                    Choice(text: String(localized: "Sion"), isCorrect: true),
+                    Choice(text: String(localized: "Valais")),
+                    Choice(text: String(localized: "Martigny")),
+                    Choice(text: String(localized: "Sierre"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Zug?",
+                prompt: String(localized: "What is the capital of Zug?"),
                 choices: [
-                    Choice(text: "Zug", isCorrect: true),
-                    Choice(text: "Baar"),
-                    Choice(text: "Cham"),
-                    Choice(text: "Risch")
+                    Choice(text: String(localized: "Zug"), isCorrect: true),
+                    Choice(text: String(localized: "Baar")),
+                    Choice(text: String(localized: "Cham")),
+                    Choice(text: String(localized: "Risch"))
                 ]
             ),
             Question(
-                prompt: "What is the capital of Zürich?",
+                prompt: String(localized: "What is the capital of Zürich?"),
                 choices: [
-                    Choice(text: "Zürich", isCorrect: true),
-                    Choice(text: "Winterthur"),
-                    Choice(text: "Uster"),
-                    Choice(text: "Dübendorf")
+                    Choice(text: String(localized: "Zürich"), isCorrect: true),
+                    Choice(text: String(localized: "Winterthur")),
+                    Choice(text: String(localized: "Uster")),
+                    Choice(text: String(localized: "Dübendorf"))
                 ]
             )
         ]

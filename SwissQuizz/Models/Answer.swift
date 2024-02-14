@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 class Answer: ObservableObject {
     @Published var choices: Set<Choice>
     let question: Question

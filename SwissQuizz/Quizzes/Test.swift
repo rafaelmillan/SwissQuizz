@@ -15,13 +15,13 @@ extension Quiz {
         systemImage: "flag.filled.and.flag.crossed",
         questions: [
             Question(
-                prompt: "Which canton is this flag from?",
+                prompt: String(localized: "Which canton is this flag from?"),
                 image: "flags/aargau",
                 choices: [
-                    Choice(text: "Aargau", isCorrect: true),
-                    Choice(text: "Luzern"),
-                    Choice(text: "Zug"),
-                    Choice(text: "Zürich")
+                    Choice(text: String(localized: "Aargau"), isCorrect: true),
+                    Choice(text: String(localized: "Luzern")),
+                    Choice(text: String(localized: "Zug")),
+                    Choice(text: String(localized: "Zürich"))
                 ]
             ),
         ]

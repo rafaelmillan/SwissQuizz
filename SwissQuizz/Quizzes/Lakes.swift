@@ -15,21 +15,21 @@ import Foundation
 //    var questions: [Question] {
 //        [
 //            Question(
-//                prompt: "What is the capital of Geneva?",
+//                prompt: String(localized: "What is the capital of Geneva?",
 //                choices: [
-//                    Choice(text: "Geneva", isCorrect: true),
-//                    Choice(text: "Meyrin"),
-//                    Choice(text: "Carouge"),
-//                    Choice(text: "Lancy")
+//                    Choice(text: String(localized: "Geneva"), isCorrect: true),
+//                    Choice(text: String(localized: "Meyrin"),
+//                    Choice(text: String(localized: "Carouge"),
+//                    Choice(text: String(localized: "Lancy")
 //                ]
 //            ),
 //            Question(
-//                prompt: "What is the capital of Vaud?",
+//                prompt: String(localized: "What is the capital of Vaud?",
 //                choices: [
-//                    Choice(text: "Lausanne", isCorrect: true),
-//                    Choice(text: "Nyon"),
-//                    Choice(text: "Montreux"),
-//                    Choice(text: "Vevey")
+//                    Choice(text: String(localized: "Lausanne"), isCorrect: true),
+//                    Choice(text: String(localized: "Nyon"),
+//                    Choice(text: String(localized: "Montreux"),
+//                    Choice(text: String(localized: "Vevey")
 //                ]
 //            )
 //        ]

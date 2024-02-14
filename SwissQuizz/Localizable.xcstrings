@@ -1,0 +1,494 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld" : {
+
+    },
+    "%lld pts" : {
+
+    },
+    "%lld/%lld questions" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld/%2$lld questions"
+          }
+        }
+      }
+    },
+    "©swisstopo" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "©swisstopo"
+          }
+        }
+      }
+    },
+    "Aarau" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aarau"
+          }
+        }
+      }
+    },
+    "Aargau" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aargau"
+          }
+        }
+      }
+    },
+    "Allschwil" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allschwil"
+          }
+        }
+      }
+    },
+    "Alpnach" : {
+
+    },
+    "Altdorf" : {
+
+    },
+    "Appenzell" : {
+
+    },
+    "Appenzell Ausserrhoden" : {
+
+    },
+    "Appenzell Innerrhoden" : {
+
+    },
+    "Arbon" : {
+
+    },
+    "Arth" : {
+
+    },
+    "Baar" : {
+
+    },
+    "Baden" : {
+
+    },
+    "Basel" : {
+
+    },
+    "Basel-Landschaft" : {
+
+    },
+    "Basel-Stadt" : {
+
+    },
+    "Bellinzona" : {
+
+    },
+    "Bern" : {
+
+    },
+    "Bettingen" : {
+
+    },
+    "Biel/Bienne" : {
+
+    },
+    "Bulle" : {
+
+    },
+    "Bürglen" : {
+
+    },
+    "Capitals" : {
+
+    },
+    "Cham" : {
+
+    },
+    "Check" : {
+
+    },
+    "Chur" : {
+
+    },
+    "Continue" : {
+
+    },
+    "Davos" : {
+
+    },
+    "Delémont" : {
+
+    },
+    "Dübendorf" : {
+
+    },
+    "Emmen" : {
+
+    },
+    "Ennenda" : {
+
+    },
+    "Find the capital of each canton" : {
+
+    },
+    "Frauenfeld" : {
+
+    },
+    "Freienbach" : {
+
+    },
+    "Fribourg" : {
+
+    },
+    "Geneva" : {
+
+    },
+    "Glarus" : {
+
+    },
+    "Gonten" : {
+
+    },
+    "Gossau" : {
+
+    },
+    "Grenchen" : {
+
+    },
+    "Grisons" : {
+
+    },
+    "Herisau" : {
+
+    },
+    "Horw" : {
+
+    },
+    "Jura" : {
+
+    },
+    "Köniz" : {
+
+    },
+    "Kreuzlingen" : {
+
+    },
+    "Kriens" : {
+
+    },
+    "La Chaux-de-Fonds" : {
+
+    },
+    "Lachen" : {
+
+    },
+    "Lancy" : {
+
+    },
+    "Lausanne" : {
+
+    },
+    "Le Locle" : {
+
+    },
+    "Liestal" : {
+
+    },
+    "Locarno" : {
+
+    },
+    "Lucerne" : {
+
+    },
+    "Lugano" : {
+
+    },
+    "Luzern" : {
+
+    },
+    "Luzerne" : {
+
+    },
+    "Martigny" : {
+
+    },
+    "Meyrin" : {
+
+    },
+    "Montreux" : {
+
+    },
+    "Multiple answers are possible" : {
+
+    },
+    "Murten" : {
+
+    },
+    "Netstal" : {
+
+    },
+    "Neuchâtel" : {
+
+    },
+    "Neuhausen am Rheinfall" : {
+
+    },
+    "Nidwald" : {
+
+    },
+    "Nidwalden" : {
+
+    },
+    "Oberegg" : {
+
+    },
+    "Obwald" : {
+
+    },
+    "Obwalden" : {
+
+    },
+    "Olten" : {
+
+    },
+    "Porrentruy" : {
+
+    },
+    "Rapperswil-Jona" : {
+
+    },
+    "Reinach" : {
+
+    },
+    "Riedern" : {
+
+    },
+    "Riehen" : {
+
+    },
+    "Risch" : {
+
+    },
+    "Saint-Ursanne" : {
+
+    },
+    "Sarnen" : {
+
+    },
+    "Schaffhausen" : {
+
+    },
+    "Schattdorf" : {
+
+    },
+    "Schwyz" : {
+
+    },
+    "Select the quiz category that you want to play" : {
+
+    },
+    "Sierre" : {
+
+    },
+    "Sion" : {
+
+    },
+    "Solothurn" : {
+
+    },
+    "Speicher" : {
+
+    },
+    "St. Gallen" : {
+
+    },
+    "St. Moritz" : {
+
+    },
+    "Stans" : {
+
+    },
+    "Stansstad" : {
+
+    },
+    "Stein am Rhein" : {
+
+    },
+    "SwissQuiz" : {
+
+    },
+    "Teufen" : {
+
+    },
+    "Thun" : {
+
+    },
+    "Thurgau" : {
+
+    },
+    "Ticino" : {
+
+    },
+    "Uri" : {
+
+    },
+    "Uster" : {
+
+    },
+    "Val-de-Travers" : {
+
+    },
+    "Valais" : {
+
+    },
+    "Vaud" : {
+
+    },
+    "Vernier" : {
+
+    },
+    "Villars-sur-Glâne" : {
+
+    },
+    "Wettingen" : {
+
+    },
+    "What is the capital of Aargau?" : {
+
+    },
+    "What is the capital of Appenzell Ausserrhoden?" : {
+
+    },
+    "What is the capital of Appenzell Innerrhoden?" : {
+
+    },
+    "What is the capital of Basel-Landschaft?" : {
+
+    },
+    "What is the capital of Basel-Stadt?" : {
+
+    },
+    "What is the capital of Bern?" : {
+
+    },
+    "What is the capital of Fribourg?" : {
+
+    },
+    "What is the capital of Geneva?" : {
+
+    },
+    "What is the capital of Glarus?" : {
+
+    },
+    "What is the capital of Jura?" : {
+
+    },
+    "What is the capital of Lucerne?" : {
+
+    },
+    "What is the capital of Neuchâtel?" : {
+
+    },
+    "What is the capital of Nidwalden?" : {
+
+    },
+    "What is the capital of Obwalden?" : {
+
+    },
+    "What is the capital of Schaffhausen?" : {
+
+    },
+    "What is the capital of Schwyz?" : {
+
+    },
+    "What is the capital of Solothurn?" : {
+
+    },
+    "What is the capital of St. Gallen?" : {
+
+    },
+    "What is the capital of the Grisons?" : {
+
+    },
+    "What is the capital of Thurgau?" : {
+
+    },
+    "What is the capital of Ticino?" : {
+
+    },
+    "What is the capital of Uri?" : {
+
+    },
+    "What is the capital of Valais?" : {
+
+    },
+    "What is the capital of Vaud?" : {
+
+    },
+    "What is the capital of Zug?" : {
+
+    },
+    "What is the capital of Zürich?" : {
+
+    },
+    "Where can Botzi pears AOP come from?" : {
+
+    },
+    "Where can Gruyère AOP come from?" : {
+
+    },
+    "Where can L'Étivaz AOP come from?" : {
+
+    },
+    "Where can Sbrinz AOP come from?" : {
+
+    },
+    "Where can Tête de Moine AOP come from?" : {
+
+    },
+    "Where can Vacherin Mont-d’Or AOP come from?" : {
+
+    },
+    "Which canton is this flag from?" : {
+
+    },
+    "Which city is this?" : {
+
+    },
+    "Wil" : {
+
+    },
+    "Winterthur" : {
+
+    },
+    "Your final score is" : {
+
+    },
+    "Yverdon-les-Bains" : {
+
+    },
+    "Zuchwil" : {
+
+    },
+    "Zug" : {
+
+    },
+    "Zürich" : {
+
+    }
+  },
+  "version" : "1.0"
+}

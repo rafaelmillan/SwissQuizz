@@ -16,6 +16,7 @@
 		532257ED2B2B7AE2001660A1 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532257EC2B2B7AE2001660A1 /* Food.swift */; };
 		532AB0252B6CF01900048355 /* FinalScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AB0242B6CF01900048355 /* FinalScoreView.swift */; };
 		532AB0272B6CF04F00048355 /* CloseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AB0262B6CF04F00048355 /* CloseButtonView.swift */; };
+		5334B1082B7C0D0300651944 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5334B1072B7C0D0300651944 /* Localizable.xcstrings */; };
 		5344001F2B4AC2F500D57D05 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5344001E2B4AC2F400D57D05 /* Quiz.swift */; };
 		5345AC272B498159002E80E7 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5345AC262B498159002E80E7 /* QuestionView.swift */; };
 		534F59A42B65193600659261 /* CevicheOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534F59A32B65193600659261 /* CevicheOne-Regular.ttf */; };
@@ -49,6 +50,7 @@
 		532257EC2B2B7AE2001660A1 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		532AB0242B6CF01900048355 /* FinalScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScoreView.swift; sourceTree = "<group>"; };
 		532AB0262B6CF04F00048355 /* CloseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButtonView.swift; sourceTree = "<group>"; };
+		5334B1072B7C0D0300651944 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		5344001E2B4AC2F400D57D05 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		5345AC262B498159002E80E7 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		534F59A32B65193600659261 /* CevicheOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CevicheOne-Regular.ttf"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				534F59A22B65191200659261 /* Fonts */,
 				53C45E392B1E47A1006C4836 /* SwissQuizzApp.swift */,
 				53C45E3B2B1E47A1006C4836 /* ContentView.swift */,
+				5334B1072B7C0D0300651944 /* Localizable.xcstrings */,
 				5350E0FC2B790CF900BDAE35 /* QuizMenuView.swift */,
 				53C45E472B1E4A8D006C4836 /* QuizView.swift */,
 				5350E1092B7915BE00BDAE35 /* MapView.swift */,
@@ -215,6 +218,10 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				it,
+				rm,
+				de,
 			);
 			mainGroup = 53C45E2D2B1E47A1006C4836;
 			packageReferences = (
@@ -235,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53C45E412B1E47A3006C4836 /* Preview Assets.xcassets in Resources */,
+				5334B1082B7C0D0300651944 /* Localizable.xcstrings in Resources */,
 				53C45E3E2B1E47A3006C4836 /* Assets.xcassets in Resources */,
 				534F59A72B66646A00659261 /* BubblegumSans-Regular.ttf in Resources */,
 				534F59A42B65193600659261 /* CevicheOne-Regular.ttf in Resources */,
