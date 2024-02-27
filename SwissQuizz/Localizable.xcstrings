@@ -138,6 +138,9 @@
     "Emmen" : {
 
     },
+    "Enable Game Center" : {
+
+    },
     "Ennenda" : {
 
     },
@@ -177,6 +180,9 @@
     "Horw" : {
 
     },
+    "I want to enable Game Center" : {
+
+    },
     "Jura" : {
 
     },
@@ -204,7 +210,13 @@
     "Le Locle" : {
 
     },
+    "Leaderboard" : {
+
+    },
     "Liestal" : {
+
+    },
+    "Loading leaderboard..." : {
 
     },
     "Locarno" : {
@@ -264,7 +276,13 @@
     "Olten" : {
 
     },
+    "Please log in to GameCenter to continue." : {
+
+    },
     "Porrentruy" : {
+
+    },
+    "Quizzes" : {
 
     },
     "Rapperswil-Jona" : {
@@ -333,6 +351,9 @@
     "Teufen" : {
 
     },
+    "There was an error loading the leaderboard." : {
+
+    },
     "Thun" : {
 
     },
@@ -340,6 +361,9 @@
 
     },
     "Ticino" : {
+
+    },
+    "To display the leaderboard please enable Game Center for this app. You can always turn it off in the Settings." : {
 
     },
     "Uri" : {

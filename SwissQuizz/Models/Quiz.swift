@@ -7,6 +7,7 @@
 
 import Foundation
 import GameplayKit
+import GameKit
 
 struct Quiz: Identifiable, Hashable {
     var id: String
@@ -21,9 +22,17 @@ struct Quiz: Identifiable, Hashable {
     
     func updateMaxScore(_ newScore: Int) {
         let newMaxScore = [newScore, maxScore].max() ?? 0
+
+        if GKLocalPlayer.local.isAuthenticated {
+            GKLeaderboard.submitScore(newMaxScore, context: 0, player: GKLocalPlayer.local,
+                                      leaderboardIDs: ["general"]) { error in
+                if error != nil {
+                    print("Error: \(error!.localizedDescription).")
+                }
+            }
+        }
         
         UserDefaults.standard.set(newMaxScore, forKey: id)
-        
     }
     
     func shuffledQuestions(seed: Int) -> [Question] {

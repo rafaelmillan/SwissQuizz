@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    @State private var selection = 1
     
     var body: some View {
-        TabView {
+        TabView(selection: $selection) {
             QuizzesView()
                 .tabItem {
                     Label("Quizzes", systemImage: "checkmark.rectangle.stack.fill")
                 }
+                .tag(1)
             LeaderboardView()
                 .tabItem {
                     Label("Leaderboard", systemImage: "list.star")
                 }
+                .tag(2)
         }
     }
 }

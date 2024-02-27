@@ -122,5 +122,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView(quiz: Quiz.food)
+    QuizView(quiz: Quiz.cities)
 }
