@@ -65,10 +65,21 @@ class Leaderboard {
         } onError: {}
     }
     
+    func submitScore(_ score: Int) {
+        guard isGameCenterOn else { return }
+        
+        withAuthenticatedUser() {
+            GKLeaderboard.submitScore(score, context: 0, player: GKLocalPlayer.local, leaderboardIDs: ["general"]) { error in
+                if error != nil {
+                    print("Error: \(error!.localizedDescription).")
+                }
+            }
+        } onError: {}
+    }
+    
     private init() { }
     
     private func withAuthenticatedUser(onSuccess: @escaping () -> Void, onError:  @escaping () -> Void) {
-        
         guard !GKLocalPlayer.local.isAuthenticated else {
             onSuccess()
             return

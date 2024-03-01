@@ -132,6 +132,9 @@
     "Delémont" : {
 
     },
+    "Do you want to use Game Center to submit your scores and see other users' scores? You can always turn it off in the Settings." : {
+
+    },
     "Dübendorf" : {
 
     },
@@ -156,6 +159,9 @@
     "Fribourg" : {
 
     },
+    "Game Center" : {
+
+    },
     "Geneva" : {
 
     },
@@ -178,9 +184,6 @@
 
     },
     "Horw" : {
-
-    },
-    "I want to enable Game Center" : {
 
     },
     "Jura" : {
@@ -363,7 +366,7 @@
     "Ticino" : {
 
     },
-    "To display the leaderboard please enable Game Center for this app. You can always turn it off in the Settings." : {
+    "Total max score" : {
 
     },
     "Uri" : {

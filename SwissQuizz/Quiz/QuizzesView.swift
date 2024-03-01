@@ -21,7 +21,7 @@ struct QuizzesView: View {
     }
     
     var body: some View {
-        VStack {
+        ScrollView {
             Text("SwissQuiz")
                 .font(.custom("BubblegumSans-Regular", size: 72))
                 .foregroundStyle(.red)
@@ -33,8 +33,16 @@ struct QuizzesView: View {
             ForEach(quizes) { quiz in
                 QuizMenuItemView(quiz: quiz) { currentQuiz = quiz }
             }
-
-            Spacer()
+            if Quiz.maxScoreSum > 0 {
+                HStack() {
+                    Image(systemName: "star.fill")
+                    Text("\(Quiz.maxScoreSum) pts")                .font(.custom("BubblegumSans-Regular", size: 36))
+                    Image(systemName: "star.fill")
+                }
+                .foregroundStyle(.red)
+                Text("Total max score")
+                    .foregroundStyle(.secondary)
+            }
         }
         .padding()
         .buttonStyle(.bordered)

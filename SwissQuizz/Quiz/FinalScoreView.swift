@@ -18,19 +18,20 @@ struct FinalScoreView: View {
             }
             
             Spacer()
-            
-            Image(systemName: "trophy")
-                .resizable()
-                .frame(width: 150, height: 150)
-            
-            Text("Your final score is")
-                .font(.custom("BubblegumSans-Regular", size: 24))
-            Text("\(score)")
-                .font(.custom("BubblegumSans-Regular", size: 48))
+
+            Group {
+                Image(systemName: "trophy")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                Text("Your final score is")
+                    .font(.custom("BubblegumSans-Regular", size: 24))
+                Text("\(score)")
+                    .font(.custom("BubblegumSans-Regular", size: 48))
+            }
+            .foregroundStyle(.red)
             
             Spacer()
         }
-        .foregroundStyle(.red)
         .padding()
     }
 }

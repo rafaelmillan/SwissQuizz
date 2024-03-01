@@ -12,7 +12,7 @@ struct CloseButtonView: View {
     
     var body: some View {
         Button {
-          dismiss()
+            dismiss()
         } label: {
             Image(systemName: "xmark.circle.fill")
                 .resizable()

@@ -12,13 +12,15 @@ struct EnableLeaderboardView: View {
     
     var body: some View {
         GroupBox(label:
-            Label("Enable Game Center", systemImage: "person.3.fill")
+            Label("Game Center", systemImage: "person.3.fill")
         ) {
-            Text("To display the leaderboard please enable Game Center for this app. You can always turn it off in the Settings.")
+            Text("Do you want to use Game Center to submit your scores and see other users' scores? You can always turn it off in the Settings.")
             .font(.footnote)
             .frame(maxWidth: .infinity, alignment: .leading)
-            Toggle(isOn: $isGameCenterOn) {
-                Text("I want to enable Game Center")
+            Toggle(isOn: $isGameCenterOn.animation()) {
+                Text("Enable Game Center")
+            }.onChange(of: isGameCenterOn) {
+                Leaderboard.shared.isGameCenterOn = $0
             }
         }
         .padding()
@@ -26,5 +28,5 @@ struct EnableLeaderboardView: View {
 }
 
 #Preview {
-    EnableLeaderboardView(isGameCenterOn: .constant(true))
+    EnableLeaderboardView(isGameCenterOn: .constant(false))
 }

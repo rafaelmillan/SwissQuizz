@@ -126,6 +126,7 @@
 				53626D4A2B28D31000931BE8 /* Question.swift */,
 				53626D4C2B28D32300931BE8 /* Choice.swift */,
 				5350E0F82B79095E00BDAE35 /* Answer.swift */,
+				53581B282B8E53A100286A67 /* Player.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,7 +148,7 @@
 				53581B2E2B8E548E00286A67 /* LeaderboardLoadingView.swift */,
 				53581B2C2B8E53E000286A67 /* LeaderboardItemView.swift */,
 				53581B2A2B8E53C500286A67 /* Leaderboard.swift */,
-				53581B282B8E53A100286A67 /* Player.swift */,
+				539254732B80C994008E8EB9 /* GameCenterLeaderboardView.swift */,
 			);
 			path = Leaderboard;
 			sourceTree = "<group>";
@@ -177,18 +178,8 @@
 				53C45E392B1E47A1006C4836 /* SwissQuizzApp.swift */,
 				53C45E3B2B1E47A1006C4836 /* ContentView.swift */,
 				53581B272B8E534300286A67 /* Leaderboard */,
-				539254732B80C994008E8EB9 /* GameCenterLeaderboardView.swift */,
 				5334B1072B7C0D0300651944 /* Localizable.xcstrings */,
-				5326F1482B7D5A7D00F5D81B /* QuizzesView.swift */,
-				5350E0FC2B790CF900BDAE35 /* QuizMenuItemView.swift */,
-				53C45E472B1E4A8D006C4836 /* QuizView.swift */,
-				5350E1092B7915BE00BDAE35 /* MapView.swift */,
-				5350E0FE2B790FBA00BDAE35 /* HudView.swift */,
-				532AB0262B6CF04F00048355 /* CloseButtonView.swift */,
-				532AB0242B6CF01900048355 /* FinalScoreView.swift */,
-				5345AC262B498159002E80E7 /* QuestionView.swift */,
-				5350E0FA2B79098000BDAE35 /* ChoicesView.swift */,
-				539045552B45D3E2006421FB /* ChoiceView.swift */,
+				53F6B9F82B90F75C0094AA5B /* Quiz */,
 				5344001D2B4AC2D300D57D05 /* Models */,
 				532257DF2B2B7574001660A1 /* Quizzes */,
 				53C45E3D2B1E47A3006C4836 /* Assets.xcassets */,
@@ -203,6 +194,23 @@
 				53C45E402B1E47A3006C4836 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		53F6B9F82B90F75C0094AA5B /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				5326F1482B7D5A7D00F5D81B /* QuizzesView.swift */,
+				5350E0FC2B790CF900BDAE35 /* QuizMenuItemView.swift */,
+				53C45E472B1E4A8D006C4836 /* QuizView.swift */,
+				5350E1092B7915BE00BDAE35 /* MapView.swift */,
+				5350E0FE2B790FBA00BDAE35 /* HudView.swift */,
+				532AB0262B6CF04F00048355 /* CloseButtonView.swift */,
+				532AB0242B6CF01900048355 /* FinalScoreView.swift */,
+				5345AC262B498159002E80E7 /* QuestionView.swift */,
+				5350E0FA2B79098000BDAE35 /* ChoicesView.swift */,
+				539045552B45D3E2006421FB /* ChoiceView.swift */,
+			);
+			path = Quiz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -11,21 +11,11 @@ import GameKit
 struct LeaderboardView: View {
     @State private var players: [Player]?
     @State private var error: LeaderboardError?
-    @State private var showGameCenterSetting = !Leaderboard.shared.isGameCenterOn
-    
-    private var isGameCenterOn: Binding<Bool> {
-        Binding {
-            Leaderboard.shared.isGameCenterOn
-        } set: {
-            Leaderboard.shared.isGameCenterOn = $0
-            showGameCenterSetting = false
-        }
-    }
+    @State private var isGameCenterOn = Leaderboard.shared.isGameCenterOn
 
     var body: some View {
-        if showGameCenterSetting {
-            EnableLeaderboardView(isGameCenterOn: isGameCenterOn)
-            
+        if !isGameCenterOn {
+            EnableLeaderboardView(isGameCenterOn: $isGameCenterOn)
         } else if let players = players {
             VStack {
                 Text("Leaderboard")
