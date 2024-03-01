@@ -34,7 +34,7 @@ class Leaderboard {
                         if let entries = entries {
                             let players = entries.map { entry in
                                 Player(
-                                    formattedScore: entry.formattedScore,
+                                    score: entry.score,
                                     displayName: entry.player.displayName,
                                     rank: entry.rank,
                                     gkPlayer: entry.player

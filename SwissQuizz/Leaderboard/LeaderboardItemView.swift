@@ -30,7 +30,7 @@ struct LeaderboardItemView: View {
             Text(player.displayName)
                 .font(.title3)
             Spacer()
-            Text(player.formattedScore)
+            Text("\(player.score) pts")
         }
         .foregroundStyle(.red)
         .onAppear {
@@ -46,5 +46,5 @@ struct LeaderboardItemView: View {
 }
 
 #Preview {
-    LeaderboardItemView(player: Player(formattedScore: "1.000 points", displayName: "Rafael", rank: 1, gkPlayer: GKLocalPlayer.local))
+    LeaderboardItemView(player: Player(score: 1000, displayName: "Rafael", rank: 1, gkPlayer: GKLocalPlayer.local))
 }

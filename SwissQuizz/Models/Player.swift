@@ -9,7 +9,7 @@ import Foundation
 import GameKit
 
 struct Player {
-    let formattedScore: String
+    let score: Int
     let displayName: String
     let rank: Int
     var gkPlayer: GKPlayer
