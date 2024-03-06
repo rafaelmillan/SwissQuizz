@@ -38,7 +38,7 @@ struct LeaderboardItemView: View {
         }
     }
     
-    func loadImage() {
+    @MainActor func loadImage() {
         Leaderboard.shared.playerPhoto(gkPlayer: player.gkPlayer) { image in
             self.image = image
         }

@@ -75,6 +75,9 @@
     "Arbon" : {
 
     },
+    "Are you sure that you want to reset all your high scores?" : {
+
+    },
     "Arth" : {
 
     },
@@ -111,6 +114,9 @@
     "Bürglen" : {
 
     },
+    "Cancel" : {
+
+    },
     "Capitals" : {
 
     },
@@ -126,13 +132,13 @@
     "Continue" : {
 
     },
+    "Credits" : {
+
+    },
     "Davos" : {
 
     },
     "Delémont" : {
-
-    },
-    "Do you want to use Game Center to submit your scores and see other users' scores? You can always turn it off in the Settings." : {
 
     },
     "Dübendorf" : {
@@ -160,6 +166,9 @@
 
     },
     "Game Center" : {
+
+    },
+    "Game Center is required to see the leaderboard and submit your scores." : {
 
     },
     "Geneva" : {
@@ -285,6 +294,9 @@
     "Porrentruy" : {
 
     },
+    "Profile" : {
+
+    },
     "Quizzes" : {
 
     },
@@ -292,6 +304,12 @@
 
     },
     "Reinach" : {
+
+    },
+    "Reset" : {
+
+    },
+    "Reset All High Scores" : {
 
     },
     "Riedern" : {
@@ -349,6 +367,9 @@
 
     },
     "SwissQuiz" : {
+
+    },
+    "swisstopo" : {
 
     },
     "Teufen" : {
@@ -493,6 +514,9 @@
 
     },
     "Which city is this?" : {
+
+    },
+    "Wikipedia" : {
 
     },
     "Wil" : {

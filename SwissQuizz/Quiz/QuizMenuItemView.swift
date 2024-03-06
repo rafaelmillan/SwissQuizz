@@ -7,9 +7,25 @@
 
 import SwiftUI
 
+struct ScoreView: View {
+    @ObservedObject var score: Score
+    
+    var body: some View {
+        Text("\(score.points) pts")
+    }
+}
+
 struct QuizMenuItemView: View {
     let quiz: Quiz
     var buttonFunction = {}
+    @EnvironmentObject var scores: Scores
+//    @StateObject private var scores: Scores.shared
+    
+//    init(quiz: Quiz, buttonFunction: @escaping () -> Void, maxScore: StateObject<MaxScore>) {
+//        self.quiz = quiz
+//        self.buttonFunction = buttonFunction
+//        self._maxScore = quiz.maxScore
+//    }
     
     var body: some View {
         Button {
@@ -23,7 +39,8 @@ struct QuizMenuItemView: View {
                                             
                     Spacer()
 
-                    Text("\(quiz.maxScore) pts")
+                    ScoreView(score: Scores.find(quiz.id))
+                    
                 }
                 .font(.custom("BubblegumSans-Regular", size: 24))
                 

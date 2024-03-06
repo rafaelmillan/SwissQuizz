@@ -11,7 +11,7 @@ struct ChoicesView: View {
     @StateObject var answer: Answer
     @State private var showCorrection = false
     var seed: Int
-    var onDismissal: () -> Void = {}
+    var onDismissal: @MainActor () -> Void = {}
     var onCorrection: (Bool) -> Void = { _ in }
     var question: Question {
         answer.question

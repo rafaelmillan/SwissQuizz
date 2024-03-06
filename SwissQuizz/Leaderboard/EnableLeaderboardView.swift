@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct EnableLeaderboardView: View {
-    @Binding var isGameCenterOn: Bool
+    @EnvironmentObject var leaderboard: Leaderboard
+    private var isGameCenterOn: Binding<Bool> {
+        Binding {
+            leaderboard.isGameCenterOn
+        } set: {
+            leaderboard.isGameCenterOn = $0
+        }
+    }
     
     var body: some View {
         GroupBox(label:
             Label("Game Center", systemImage: "person.3.fill")
         ) {
-            Text("Do you want to use Game Center to submit your scores and see other users' scores? You can always turn it off in the Settings.")
+            Text("Game Center is required to see the leaderboard and submit your scores.")
             .font(.footnote)
             .frame(maxWidth: .infinity, alignment: .leading)
-            Toggle(isOn: $isGameCenterOn.animation()) {
+            Toggle(isOn: isGameCenterOn.animation()) {
                 Text("Enable Game Center")
-            }.onChange(of: isGameCenterOn) {
-                Leaderboard.shared.isGameCenterOn = $0
             }
         }
         .padding()
@@ -28,5 +33,6 @@ struct EnableLeaderboardView: View {
 }
 
 #Preview {
-    EnableLeaderboardView(isGameCenterOn: .constant(false))
+    EnableLeaderboardView()
+        .environmentObject(Leaderboard.shared)
 }

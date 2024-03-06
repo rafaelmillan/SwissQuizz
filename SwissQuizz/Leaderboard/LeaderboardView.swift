@@ -11,11 +11,11 @@ import GameKit
 struct LeaderboardView: View {
     @State private var players: [Player]?
     @State private var error: LeaderboardError?
-    @State private var isGameCenterOn = Leaderboard.shared.isGameCenterOn
+    @EnvironmentObject var leaderboard: Leaderboard
 
     var body: some View {
-        if !isGameCenterOn {
-            EnableLeaderboardView(isGameCenterOn: $isGameCenterOn)
+        if !leaderboard.isGameCenterOn {
+            EnableLeaderboardView()
         } else if let players = players {
             VStack {
                 Text("Leaderboard")
@@ -53,4 +53,5 @@ struct LeaderboardView: View {
 
 #Preview {
     LeaderboardView()
+        .environmentObject(Leaderboard.shared)
 }

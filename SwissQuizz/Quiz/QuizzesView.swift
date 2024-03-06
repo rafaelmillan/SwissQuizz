@@ -9,6 +9,7 @@ import SwiftUI
 
 struct QuizzesView: View {
     @State private var currentQuiz: Quiz?
+    @EnvironmentObject private var scores: Scores
     private let quizes: [Quiz] = [Quiz.capitals, Quiz.cities, Quiz.flags, Quiz.food]
     private var gameMode: Binding<Bool> {
         Binding {
@@ -33,10 +34,10 @@ struct QuizzesView: View {
             ForEach(quizes) { quiz in
                 QuizMenuItemView(quiz: quiz) { currentQuiz = quiz }
             }
-            if Quiz.maxScoreSum > 0 {
+            if scores.sum > 0 {
                 HStack() {
                     Image(systemName: "star.fill")
-                    Text("\(Quiz.maxScoreSum) pts")                .font(.custom("BubblegumSans-Regular", size: 36))
+                    Text("\(scores.sum) pts")                .font(.custom("BubblegumSans-Regular", size: 36))
                     Image(systemName: "star.fill")
                 }
                 .foregroundStyle(.red)

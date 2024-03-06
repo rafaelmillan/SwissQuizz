@@ -13,19 +13,16 @@ enum LeaderboardError: Error {
     case loadingError
 }
 
-class Leaderboard {
+@MainActor class Leaderboard: ObservableObject {
     static let shared = Leaderboard()
     static let userDefaultsKey = "isGameCenterOn"
 
-    var isGameCenterOn: Bool {
-        get {
-            UserDefaults.standard.bool(forKey: Leaderboard.userDefaultsKey)
-        }
-        set(newIsGameCenterOn) {
-            UserDefaults.standard.set(newIsGameCenterOn, forKey: Leaderboard.userDefaultsKey)
+    @Published var isGameCenterOn = UserDefaults.standard.bool(forKey: Leaderboard.userDefaultsKey) {
+        didSet {
+            UserDefaults.standard.set(isGameCenterOn, forKey: Leaderboard.userDefaultsKey)
         }
     }
-    
+
     func players(completionHandler: @escaping (Result<[Player], LeaderboardError>) -> Void) {
         withAuthenticatedUser() {
             GKLeaderboard.loadLeaderboards(IDs: ["general"]) { leaderboards, error in

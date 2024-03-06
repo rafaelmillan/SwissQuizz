@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 1
+    @StateObject private var leaderboard = Leaderboard.shared
+    @StateObject private var scores = Scores.shared
     
     var body: some View {
         TabView(selection: $selection) {
@@ -22,7 +24,14 @@ struct ContentView: View {
                     Label("Leaderboard", systemImage: "list.star")
                 }
                 .tag(2)
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person.fill")
+                }
+                .tag(3)
         }
+        .environmentObject(leaderboard)
+        .environmentObject(scores)
     }
 }
 

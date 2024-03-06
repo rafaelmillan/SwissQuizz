@@ -11,7 +11,7 @@ struct QuestionView: View {
     var question: Question
     var seed: Int
     var onCorrection: (Bool) -> Void = { _ in }
-    var onDismissal: () -> Void = {}
+    var onDismissal: @MainActor () -> Void = {}
 
     var body: some View {
         VStack(spacing: 5) {

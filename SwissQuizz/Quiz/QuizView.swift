@@ -89,11 +89,11 @@ struct QuizView: View {
         }
     }
     
-    func calculateAndShowFinalScore() {
+    @MainActor func calculateAndShowFinalScore() {
         if quiz.questions.count == correctCount {
             score += (10_000 / Int(-startTime.timeIntervalSinceNow))
         }
-        quiz.updateMaxScore(score)
+        Scores.find(quiz.id).submit(score)
         showScoreScreen = true
     }
     
@@ -110,7 +110,7 @@ struct QuizView: View {
         }
     }
     
-    func advanceQuestion() {
+    @MainActor func advanceQuestion() {
         withAnimation {
             if currentQuestionIndex + 1 == quiz.questions.count {
                 calculateAndShowFinalScore()
