@@ -18,14 +18,6 @@ struct ScoreView: View {
 struct QuizMenuItemView: View {
     let quiz: Quiz
     var buttonFunction = {}
-    @EnvironmentObject var scores: Scores
-//    @StateObject private var scores: Scores.shared
-    
-//    init(quiz: Quiz, buttonFunction: @escaping () -> Void, maxScore: StateObject<MaxScore>) {
-//        self.quiz = quiz
-//        self.buttonFunction = buttonFunction
-//        self._maxScore = quiz.maxScore
-//    }
     
     var body: some View {
         Button {

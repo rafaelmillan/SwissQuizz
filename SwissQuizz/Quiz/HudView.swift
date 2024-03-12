@@ -11,31 +11,38 @@ struct HudView: View {
     var score: Int
     var questionCount: Int
     var currentQuestionIndex: Int
+    var overImage = true
     
     var body: some View {
-        ZStack {
-            HStack(spacing: 50) {
-                CloseButtonView()
+        HStack(alignment: .top) {
+            CloseButtonView(overImage: overImage)
 
-                Spacer()
-                
-                Text("\(score) pts")
-                    .font(.custom("BubblegumSans-Regular", size: 24))
-                    .foregroundStyle(.red)
-                    .contentTransition(.numericText())
+            Spacer()
+            
+            Group {
+                Gauge(value: Float(currentQuestionIndex + 1), in: 1...Float(questionCount)) {
+                    Text("PTS")
+                        .foregroundStyle(overImage ? .white : .secondary)
+                } currentValueLabel: {
+                    Text("\(score)")
+                        .contentTransition(.numericText())
+                        .foregroundStyle(overImage ? .white : .primary)
+                }
+                .gaugeStyle(AccessoryCircularGaugeStyle())
+                .tint(overImage ? .white : .red)
             }
             
-            ProgressView(value: Float(currentQuestionIndex + 1), total: Float(questionCount)) {} currentValueLabel: {
-                Text("\(currentQuestionIndex + 1)/\(questionCount) questions")
-            }
-            .progressViewStyle(.linear)
-            .tint(.red)
-            .frame(width: 150)
         }
         .padding()
     }
 }
 
 #Preview {
-    HudView(score: 10, questionCount: 5, currentQuestionIndex: 2)
+    VStack {
+        ZStack {
+            Color.black
+            HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2)
+        }
+        HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2, overImage: false)
+    }
 }

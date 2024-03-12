@@ -23,6 +23,12 @@ struct MapView: View {
                     .padding([.trailing])
             }
         }
+        .disabled(true)
+        .transition(.asymmetric(
+            insertion: .move(edge: .trailing),
+            removal: .move(edge: .leading)
+        ))
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

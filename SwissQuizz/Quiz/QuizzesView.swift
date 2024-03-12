@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuizzesView: View {
     @State private var currentQuiz: Quiz?
-    @EnvironmentObject private var scores: Scores
+    @EnvironmentObject var scores: Scores
     private let quizes: [Quiz] = [Quiz.capitals, Quiz.cities, Quiz.flags, Quiz.food]
     private var gameMode: Binding<Bool> {
         Binding {
@@ -56,5 +56,5 @@ struct QuizzesView: View {
 }
 
 #Preview {
-    QuizzesView()
+    QuizzesView().environmentObject(Scores.shared)
 }

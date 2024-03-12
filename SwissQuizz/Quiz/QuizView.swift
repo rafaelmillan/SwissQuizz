@@ -34,12 +34,6 @@ struct QuizView: View {
                     if let coordinates = currentQuestion.coordinates {
                         ZStack(alignment: .top) {
                             MapView(coordinates: coordinates)
-                                .disabled(true)
-                                .transition(.asymmetric(
-                                    insertion: .move(edge: .trailing),
-                                    removal: .move(edge: .leading)
-                                ))
-                                .edgesIgnoringSafeArea(.all)
                                 .id(currentQuestion.id)
                             
                             HudView(
@@ -47,32 +41,62 @@ struct QuizView: View {
                                 questionCount: quiz.questions.count,
                                 currentQuestionIndex: currentQuestionIndex
                             )
-                            .background(.thinMaterial)
-                            .clipShape(.capsule)
-                            .padding([.horizontal, .bottom])
+                            .shadow(color: .black.opacity(0.5), radius: 10)
                         }
                     } else {
-                        HudView(
-                            score: score,
-                            questionCount: quiz.questions.count,
-                            currentQuestionIndex: currentQuestionIndex
-                        )
-                        
                         if let image = currentQuestion.image {
-                            Image(image)
-                                .resizable()
-                                .scaledToFit()
-                                .border(.secondary)
-                                .id(currentQuestion.id)
-                                .frame(maxWidth: .infinity)
-                                .background()
-                                .transition(.asymmetric(
-                                    insertion: .move(edge: .trailing),
-                                    removal: .move(edge: .leading)
-                                ))
+                            if image.contains("flag") {
+                                HudView(
+                                    score: score,
+                                    questionCount: quiz.questions.count,
+                                    currentQuestionIndex: currentQuestionIndex,
+                                    overImage: false
+                                )
                                 
-
+                                Image(image)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .id(currentQuestion.id)
+                                    .shadow(color: .secondary, radius: 5)
+                                    .frame(maxWidth: .infinity)
+                                    .background()
+                                    .transition(.asymmetric(
+                                        insertion: .move(edge: .trailing),
+                                        removal: .move(edge: .leading)
+                                    ))
+                            } else {
+                                VStack {
+                                    HudView(
+                                        score: score,
+                                        questionCount: quiz.questions.count,
+                                        currentQuestionIndex: currentQuestionIndex
+                                    )
+                                    .shadow(color: .black.opacity(0.5), radius: 10)
+                                    Spacer()
+                                }
+                                .background(
+                                    GeometryReader { geo in
+                                        Image(image)
+                                            .resizable()
+                                            .scaledToFill()
+                                            .id(currentQuestion.id)
+                                            .transition(.asymmetric(
+                                                insertion: .move(edge: .trailing),
+                                                removal: .move(edge: .leading)
+                                            ))
+                                            .frame(width: geo.size.width, height: geo.size.height)
+                                            .clipped()
+                                            }
+                                        .ignoresSafeArea()
+                                )
+                            }
                         } else {
+                            HudView(
+                                score: score,
+                                questionCount: quiz.questions.count,
+                                currentQuestionIndex: currentQuestionIndex,
+                                overImage: false
+                            )
                             Spacer()
                         }
                     }
@@ -122,5 +146,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView(quiz: Quiz.cities)
+    QuizView(quiz: Quiz.flags)
 }

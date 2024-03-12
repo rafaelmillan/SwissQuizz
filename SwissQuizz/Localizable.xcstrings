@@ -7,16 +7,6 @@
     "%lld pts" : {
 
     },
-    "%lld/%lld questions" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld/%2$lld questions"
-          }
-        }
-      }
-    },
     "©swisstopo" : {
       "localizations" : {
         "fr" : {
@@ -295,6 +285,9 @@
 
     },
     "Profile" : {
+
+    },
+    "PTS" : {
 
     },
     "Quizzes" : {
