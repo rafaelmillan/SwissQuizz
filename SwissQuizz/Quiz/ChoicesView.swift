@@ -35,6 +35,7 @@ struct ChoicesView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.red)
+                .disabled(answer.choices.isEmpty)
             } else {
                 Button {
                     showCorrection = false
