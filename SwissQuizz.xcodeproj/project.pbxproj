@@ -14,6 +14,7 @@
 		532257E92B2B767C001660A1 /* Lakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532257E82B2B767C001660A1 /* Lakes.swift */; };
 		532257EB2B2B7681001660A1 /* Cantons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532257EA2B2B7681001660A1 /* Cantons.swift */; };
 		532257ED2B2B7AE2001660A1 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532257EC2B2B7AE2001660A1 /* Food.swift */; };
+		5322781C2BA0CB02006BCA91 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5322781B2BA0CB02006BCA91 /* Maps.swift */; };
 		5326F1492B7D5A7D00F5D81B /* QuizzesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326F1482B7D5A7D00F5D81B /* QuizzesView.swift */; };
 		5326F14B2B7D5B0000F5D81B /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326F14A2B7D5B0000F5D81B /* LeaderboardView.swift */; };
 		532AB0252B6CF01900048355 /* FinalScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AB0242B6CF01900048355 /* FinalScoreView.swift */; };
@@ -60,6 +61,7 @@
 		532257E82B2B767C001660A1 /* Lakes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lakes.swift; sourceTree = "<group>"; };
 		532257EA2B2B7681001660A1 /* Cantons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cantons.swift; sourceTree = "<group>"; };
 		532257EC2B2B7AE2001660A1 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		5322781B2BA0CB02006BCA91 /* Maps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		5326F1482B7D5A7D00F5D81B /* QuizzesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesView.swift; sourceTree = "<group>"; };
 		5326F14A2B7D5B0000F5D81B /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		532AB0242B6CF01900048355 /* FinalScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScoreView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				532257E02B2B759F001660A1 /* Capitals.swift */,
 				532257E22B2B75FC001660A1 /* Flags.swift */,
+				5322781B2BA0CB02006BCA91 /* Maps.swift */,
 				5350E0F62B78D3BF00BDAE35 /* Test.swift */,
 				532257E42B2B764F001660A1 /* Growth.swift */,
 				532257E62B2B7671001660A1 /* Cities.swift */,
@@ -312,6 +315,7 @@
 			files = (
 				53581B2D2B8E53E000286A67 /* LeaderboardItemView.swift in Sources */,
 				532AB0252B6CF01900048355 /* FinalScoreView.swift in Sources */,
+				5322781C2BA0CB02006BCA91 /* Maps.swift in Sources */,
 				539254742B80C994008E8EB9 /* GameCenterLeaderboardView.swift in Sources */,
 				53C45E3C2B1E47A1006C4836 /* ContentView.swift in Sources */,
 				5326F1492B7D5A7D00F5D81B /* QuizzesView.swift in Sources */,

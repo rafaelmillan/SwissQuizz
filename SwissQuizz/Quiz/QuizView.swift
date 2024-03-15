@@ -45,7 +45,7 @@ struct QuizView: View {
                         }
                     } else {
                         if let image = currentQuestion.image {
-                            if image.contains("flag") {
+                            if image.contains("flag") || image.contains("maps") {
                                 HudView(
                                     score: score,
                                     questionCount: quiz.questions.count,
@@ -53,17 +53,27 @@ struct QuizView: View {
                                     overImage: false
                                 )
                                 
-                                Image(image)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .id(currentQuestion.id)
-                                    .shadow(color: .secondary, radius: 5)
-                                    .frame(maxWidth: .infinity)
-                                    .background()
-                                    .transition(.asymmetric(
-                                        insertion: .move(edge: .trailing),
-                                        removal: .move(edge: .leading)
-                                    ))
+                                if image.contains("flag") {
+                                    Image(image)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .id(currentQuestion.id)
+                                        .shadow(color: .secondary, radius: 5)
+                                        .frame(maxWidth: .infinity)
+                                        .background()
+                                        .transition(.asymmetric(
+                                            insertion: .move(edge: .trailing),
+                                            removal: .move(edge: .leading)
+                                        ))
+                                } else {
+                                    // Map
+                                    Image(image)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .id(currentQuestion.id)
+                                        .frame(maxWidth: .infinity)
+                                        .background()
+                                }
                             } else {
                                 VStack {
                                     HudView(
@@ -146,5 +156,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView(quiz: Quiz.flags)
+    QuizView(quiz: Quiz.maps)
 }
