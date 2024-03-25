@@ -41,7 +41,6 @@
 		53626D4B2B28D31000931BE8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53626D4A2B28D31000931BE8 /* Question.swift */; };
 		53626D4D2B28D32300931BE8 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53626D4C2B28D32300931BE8 /* Choice.swift */; };
 		539045562B45D3E2006421FB /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539045552B45D3E2006421FB /* ChoiceView.swift */; };
-		539254742B80C994008E8EB9 /* GameCenterLeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539254732B80C994008E8EB9 /* GameCenterLeaderboardView.swift */; };
 		53C45E3A2B1E47A1006C4836 /* SwissQuizzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C45E392B1E47A1006C4836 /* SwissQuizzApp.swift */; };
 		53C45E3C2B1E47A1006C4836 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C45E3B2B1E47A1006C4836 /* ContentView.swift */; };
 		53C45E3E2B1E47A3006C4836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C45E3D2B1E47A3006C4836 /* Assets.xcassets */; };
@@ -87,8 +86,7 @@
 		53626D4C2B28D32300931BE8 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		539045552B45D3E2006421FB /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 		539254722B80C59D008E8EB9 /* SwissQuizz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwissQuizz.entitlements; sourceTree = "<group>"; };
-		539254732B80C994008E8EB9 /* GameCenterLeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterLeaderboardView.swift; sourceTree = "<group>"; };
-		53C45E362B1E47A1006C4836 /* SwissQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwissQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C45E362B1E47A1006C4836 /* SwissTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwissTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C45E392B1E47A1006C4836 /* SwissQuizzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwissQuizzApp.swift; sourceTree = "<group>"; };
 		53C45E3B2B1E47A1006C4836 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53C45E3D2B1E47A3006C4836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 				53581B302B8E555000286A67 /* EnableLeaderboardView.swift */,
 				53581B2E2B8E548E00286A67 /* LeaderboardLoadingView.swift */,
 				53581B2C2B8E53E000286A67 /* LeaderboardItemView.swift */,
-				539254732B80C994008E8EB9 /* GameCenterLeaderboardView.swift */,
 			);
 			path = Leaderboard;
 			sourceTree = "<group>";
@@ -178,7 +175,7 @@
 		53C45E372B1E47A1006C4836 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				53C45E362B1E47A1006C4836 /* SwissQuizz.app */,
+				53C45E362B1E47A1006C4836 /* SwissTrivia.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,9 +228,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		53C45E352B1E47A1006C4836 /* SwissQuizz */ = {
+		53C45E352B1E47A1006C4836 /* SwissTrivia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53C45E442B1E47A3006C4836 /* Build configuration list for PBXNativeTarget "SwissQuizz" */;
+			buildConfigurationList = 53C45E442B1E47A3006C4836 /* Build configuration list for PBXNativeTarget "SwissTrivia" */;
 			buildPhases = (
 				53C45E322B1E47A1006C4836 /* Sources */,
 				53C45E332B1E47A1006C4836 /* Frameworks */,
@@ -243,14 +240,14 @@
 			);
 			dependencies = (
 			);
-			name = SwissQuizz;
+			name = SwissTrivia;
 			packageProductDependencies = (
 				5350E1012B79157300BDAE35 /* SwisstopoMapSDK */,
 				5350E1032B79157300BDAE35 /* SwisstopoMapSDKSharedModule */,
 				5350E1052B79157300BDAE35 /* SwisstopoMapSDKSharedModuleCpp */,
 			);
 			productName = SwissQuizz;
-			productReference = 53C45E362B1E47A1006C4836 /* SwissQuizz.app */;
+			productReference = 53C45E362B1E47A1006C4836 /* SwissTrivia.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -288,7 +285,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				53C45E352B1E47A1006C4836 /* SwissQuizz */,
+				53C45E352B1E47A1006C4836 /* SwissTrivia */,
 			);
 		};
 /* End PBXProject section */
@@ -316,7 +313,6 @@
 				53581B2D2B8E53E000286A67 /* LeaderboardItemView.swift in Sources */,
 				532AB0252B6CF01900048355 /* FinalScoreView.swift in Sources */,
 				5322781C2BA0CB02006BCA91 /* Maps.swift in Sources */,
-				539254742B80C994008E8EB9 /* GameCenterLeaderboardView.swift in Sources */,
 				53C45E3C2B1E47A1006C4836 /* ContentView.swift in Sources */,
 				5326F1492B7D5A7D00F5D81B /* QuizzesView.swift in Sources */,
 				53626D4B2B28D31000931BE8 /* Question.swift in Sources */,
@@ -497,7 +493,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.delices.SwissQuizz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.delices.SwissTrivia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -532,7 +528,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.delices.SwissQuizz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.delices.SwissTrivia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -556,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53C45E442B1E47A3006C4836 /* Build configuration list for PBXNativeTarget "SwissQuizz" */ = {
+		53C45E442B1E47A3006C4836 /* Build configuration list for PBXNativeTarget "SwissTrivia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53C45E452B1E47A3006C4836 /* Debug */,

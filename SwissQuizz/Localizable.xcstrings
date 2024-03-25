@@ -122,6 +122,16 @@
     "Continue" : {
 
     },
+    "Correct answers: %lld/%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Correct answers: %1$lld/%2$lld"
+          }
+        }
+      }
+    },
     "Credits" : {
 
     },
@@ -341,6 +351,9 @@
     "Solothurn" : {
 
     },
+    "Speed bonus: %lld pts" : {
+
+    },
     "Speicher" : {
 
     },
@@ -359,10 +372,10 @@
     "Stein am Rhein" : {
 
     },
-    "SwissQuiz" : {
+    "swisstopo" : {
 
     },
-    "swisstopo" : {
+    "SwissTrivia" : {
 
     },
     "Teufen" : {

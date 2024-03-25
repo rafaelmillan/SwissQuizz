@@ -23,7 +23,7 @@ struct QuizzesView: View {
     
     var body: some View {
         ScrollView {
-            Text("SwissQuiz")
+            Text("SwissTrivia")
                 .font(.custom("BubblegumSans-Regular", size: 72))
                 .foregroundStyle(.red)
             

@@ -25,9 +25,9 @@ enum LeaderboardError: Error {
 
     func players(completionHandler: @escaping (Result<[Player], LeaderboardError>) -> Void) {
         withAuthenticatedUser() {
-            GKLeaderboard.loadLeaderboards(IDs: ["general"]) { leaderboards, error in
+            GKLeaderboard.loadLeaderboards(IDs: ["all"]) { leaderboards, error in
                 if let leaderboards = leaderboards {
-                    leaderboards[0].loadEntries(for: GKLeaderboard.PlayerScope.global, timeScope: GKLeaderboard.TimeScope.allTime, range: NSMakeRange(1, 100)) { _entry, entries, _count, _error in
+                    leaderboards[0].loadEntries(for: GKLeaderboard.PlayerScope.global, timeScope: GKLeaderboard.TimeScope.allTime, range: NSMakeRange(1, 100)) { _entry, entries, _count, error in
                         if let entries = entries {
                             let players = entries.map { entry in
                                 Player(
@@ -39,10 +39,12 @@ enum LeaderboardError: Error {
                             }
                             completionHandler(.success(players))
                         } else {
+                            print("Error: \(error?.localizedDescription).")
                             completionHandler(.failure(.loadingError))
                         }
                     }
                 } else {
+                    print("Error: \(error?.localizedDescription).")
                     completionHandler(.failure(.loadingError))
                 }
                 
@@ -66,7 +68,7 @@ enum LeaderboardError: Error {
         guard isGameCenterOn else { return }
         
         withAuthenticatedUser() {
-            GKLeaderboard.submitScore(score, context: 0, player: GKLocalPlayer.local, leaderboardIDs: ["general"]) { error in
+            GKLeaderboard.submitScore(score, context: 0, player: GKLocalPlayer.local, leaderboardIDs: ["all"]) { error in
                 if error != nil {
                     print("Error: \(error!.localizedDescription).")
                 }
@@ -86,6 +88,7 @@ enum LeaderboardError: Error {
             if error == nil {
                 onSuccess()
             } else {
+                print("Error: \(error?.localizedDescription).")
                 onError()
             }
         }

@@ -18,10 +18,6 @@ struct LeaderboardView: View {
             EnableLeaderboardView()
         } else if let players = players {
             VStack {
-                Text("Leaderboard")
-                    .font(.custom("BubblegumSans-Regular", size: 36))
-                    .foregroundStyle(.red)
-                    .padding()
                 List(players, id: \.displayName) { player in
                     LeaderboardItemView(player: player)
                 }
