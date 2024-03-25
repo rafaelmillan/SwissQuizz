@@ -7,11 +7,11 @@
 
 import Foundation
 
-@MainActor class Score: ObservableObject {
+@MainActor class HighScore: ObservableObject {
     let quizId: String
     @Published var points: Int {
         didSet {
-            Scores.update(self)
+            HighScores.update(self)
         }
     }
 

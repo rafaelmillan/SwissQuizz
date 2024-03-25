@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ScoreView: View {
-    @ObservedObject var score: Score
+    @ObservedObject var score: HighScore
     
     var body: some View {
         Text("\(score.points) pts")
@@ -31,7 +31,7 @@ struct QuizMenuItemView: View {
                                             
                     Spacer()
 
-                    ScoreView(score: Scores.find(quiz.id))
+                    ScoreView(score: HighScores.find(quiz.id))
                     
                 }
                 .font(.custom("BubblegumSans-Regular", size: 24))

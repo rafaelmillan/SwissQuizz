@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ScoreData {
+struct HighScoreData {
     static let persistenceKey = "scores"
     
     static var load: [String: Int] {

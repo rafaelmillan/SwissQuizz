@@ -43,7 +43,7 @@ struct ProfileView: View {
                 }
             }
             .confirmationDialog("Reset All High Scores", isPresented: $showResetDialog) {
-                Button("Reset", role: .destructive) { Scores.reset() }
+                Button("Reset", role: .destructive) { HighScores.reset() }
                 Button("Cancel", role: .cancel) { }
             } message: {
                 Text("Are you sure that you want to reset all your high scores?")

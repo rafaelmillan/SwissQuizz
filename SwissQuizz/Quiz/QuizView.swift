@@ -13,6 +13,7 @@ struct QuizView: View {
     var seed = Int.random(in: 1...1000)
 
     @State private var score: Int = 0
+    @State private var timeBonus: Int = 0
     @State private var correctCount: Int = 0
     @State private var currentQuestionIndex = 0
     @State private var showScoreScreen = false
@@ -26,7 +27,7 @@ struct QuizView: View {
     var body: some View {
         VStack {
             if showScoreScreen {
-                FinalScoreView(score: score)
+                FinalScoreView(score: score, timeBonus: timeBonus, correctCount: correctCount, questionCount: quiz.questions.count)
                     .background()
                     .transition(.move(edge: .bottom))
             } else {
@@ -125,9 +126,10 @@ struct QuizView: View {
     
     @MainActor func calculateAndShowFinalScore() {
         if quiz.questions.count == correctCount {
-            score += (10_000 / Int(-startTime.timeIntervalSinceNow))
+            timeBonus = (10_000 / Int(-startTime.timeIntervalSinceNow))
+            score += timeBonus
         }
-        Scores.find(quiz.id).submit(score)
+        HighScores.find(quiz.id).submit(score)
         showScoreScreen = true
     }
     
@@ -156,5 +158,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView(quiz: Quiz.maps)
+    QuizView(quiz: Quiz.cities)
 }

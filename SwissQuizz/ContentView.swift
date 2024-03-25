@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var selection = 1
     @StateObject private var leaderboard = Leaderboard.shared
-    @StateObject private var scores = Scores.shared
+    @StateObject private var scores = HighScores.shared
     
     var body: some View {
         TabView(selection: $selection) {

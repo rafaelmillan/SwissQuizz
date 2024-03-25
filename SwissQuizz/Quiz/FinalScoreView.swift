@@ -9,6 +9,9 @@ import SwiftUI
 
 struct FinalScoreView: View {
     var score: Int
+    var timeBonus: Int
+    var correctCount: Int
+    var questionCount: Int
     
     var body: some View {
         VStack {
@@ -20,15 +23,27 @@ struct FinalScoreView: View {
             Spacer()
 
             Group {
-                Image(systemName: "trophy")
+                Image(systemName: "trophy.circle.fill")
+                    .symbolRenderingMode(.hierarchical)
                     .resizable()
                     .frame(width: 150, height: 150)
+                    .foregroundStyle(.red)
                 Text("Your final score is")
                     .font(.custom("BubblegumSans-Regular", size: 24))
+                    .foregroundStyle(.red)
                 Text("\(score)")
                     .font(.custom("BubblegumSans-Regular", size: 48))
+                    .foregroundStyle(.red)
+                                
+                Group {
+                    Text("Correct answers: \(correctCount)/\(questionCount)")
+                    if timeBonus > 0 {
+                        Text("Speed bonus: \(timeBonus) pts")
+                    }
+                }
+                .foregroundStyle(.secondary)
             }
-            .foregroundStyle(.red)
+            
             
             Spacer()
         }
@@ -36,5 +51,5 @@ struct FinalScoreView: View {
     }
 }
 #Preview {
-    FinalScoreView(score: 50_000)
+    FinalScoreView(score: 50_000, timeBonus: 500, correctCount: 23, questionCount: 26)
 }
