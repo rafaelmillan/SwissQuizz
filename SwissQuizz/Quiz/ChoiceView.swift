@@ -63,12 +63,10 @@ struct CheckToggleStyle: ToggleStyle {
                 if showCorrection {
                     Spacer()
                     
-                    if configuration.isOn && isCorrect {
+                    if isCorrect {
                         Image(systemName: "checkmark.circle")
                     } else if configuration.isOn && !isCorrect  {
                         Image(systemName: "x.circle")
-                    } else if !configuration.isOn && isCorrect  {
-                        Image(systemName: "checkmark.circle.trianglebadge.exclamationmark")
                     }
                 }
             }
