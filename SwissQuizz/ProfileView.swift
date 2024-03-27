@@ -36,8 +36,21 @@ struct ProfileView: View {
                 Section {
                     NavigationLink("Credits") {
                         List {
-                            Text("swisstopo")
-                            Text("Wikipedia")
+                            Section("City Guesser") {
+                                Text("©swisstopo")
+                            }
+                            Section("Spot in map") {
+                                Link("CC BY-SA 3.0 Poulpy", destination: URL(string: "https://commons.wikimedia.org/wiki/Category:Switzerland_Locator_Map_(image_set_by_User:Poulpy)")!)
+                            }
+                            Section("Food") {
+                                Link("CC BY-SA 4.0 Gruyere alpage", destination: URL(string: "https://commons.wikimedia.org/wiki/File:Gruyere_alpage_th_wa.jpg")!)
+                                Link("CC BY-SA 4.0 Hubertl", destination: URL(string: "https://commons.wikimedia.org/wiki/File:2015-01-25_L’Etivaz_AOP_-_Der_Schweizer_-_WikiLovesCheese_Vienna_-hu_-_7802.jpg")!)
+                                Link("CC BY-SA 4.0 Martin Thurnherr", destination: URL(string: "https://commons.wikimedia.org/wiki/File:Poire_à_Botzi_FR_02.jpg")!)
+                                Link("CC BY-SA 4.0 Ulled", destination: URL(string: "https://commons.wikimedia.org/wiki/File:Sbr_product_0020_bc.jpg")!)
+                                Link("CC BY-SA 3.0 Mike Lehmann", destination: URL(string: "https://commons.wikimedia.org/wiki/File:Girolle_7910.jpg")!)
+                                Link("CC BY-SA 3.0 NEON ja", destination: URL(string: "https://commons.wikimedia.org/wiki/File:Vacherin_Mont_d%27Or.jpg")!)
+
+                            }
                         }
                     }
                 }
