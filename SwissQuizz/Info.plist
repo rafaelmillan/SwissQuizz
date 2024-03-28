@@ -4,17 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>CevicheOne-Regular.ttf</string>
 		<string>BubblegumSans-Regular.ttf</string>
 	</array>
-	<key>UILaunchScreen</key>
-	<dict>
-		<key>UIColorName</key>
-		<string>red</string>
-		<key>UIImageName</key>
-		<string>logo</string>
-		<key>UIImageRespectsSafeAreaInsets</key>
-		<true/>
-	</dict>
 </dict>
 </plist>

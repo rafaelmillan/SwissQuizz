@@ -20,9 +20,9 @@
 		532AB0252B6CF01900048355 /* FinalScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AB0242B6CF01900048355 /* FinalScoreView.swift */; };
 		532AB0272B6CF04F00048355 /* CloseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AB0262B6CF04F00048355 /* CloseButtonView.swift */; };
 		5334B1082B7C0D0300651944 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5334B1072B7C0D0300651944 /* Localizable.xcstrings */; };
+		534362F02BB48AA5001C3A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534362EF2BB48AA5001C3A3D /* LaunchScreen.storyboard */; };
 		5344001F2B4AC2F500D57D05 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5344001E2B4AC2F400D57D05 /* Quiz.swift */; };
 		5345AC272B498159002E80E7 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5345AC262B498159002E80E7 /* QuestionView.swift */; };
-		534F59A42B65193600659261 /* CevicheOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534F59A32B65193600659261 /* CevicheOne-Regular.ttf */; };
 		534F59A72B66646A00659261 /* BubblegumSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534F59A62B66646A00659261 /* BubblegumSans-Regular.ttf */; };
 		5350E0F72B78D3BF00BDAE35 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350E0F62B78D3BF00BDAE35 /* Test.swift */; };
 		5350E0F92B79095E00BDAE35 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350E0F82B79095E00BDAE35 /* Answer.swift */; };
@@ -66,9 +66,9 @@
 		532AB0242B6CF01900048355 /* FinalScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScoreView.swift; sourceTree = "<group>"; };
 		532AB0262B6CF04F00048355 /* CloseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButtonView.swift; sourceTree = "<group>"; };
 		5334B1072B7C0D0300651944 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		534362EF2BB48AA5001C3A3D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5344001E2B4AC2F400D57D05 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		5345AC262B498159002E80E7 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
-		534F59A32B65193600659261 /* CevicheOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CevicheOne-Regular.ttf"; sourceTree = "<group>"; };
 		534F59A52B6519A800659261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		534F59A62B66646A00659261 /* BubblegumSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BubblegumSans-Regular.ttf"; sourceTree = "<group>"; };
 		5350E0F62B78D3BF00BDAE35 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
@@ -148,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				534F59A62B66646A00659261 /* BubblegumSans-Regular.ttf */,
-				534F59A32B65193600659261 /* CevicheOne-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -188,6 +187,7 @@
 				534F59A22B65191200659261 /* Fonts */,
 				53C45E392B1E47A1006C4836 /* SwissQuizzApp.swift */,
 				53C45E3B2B1E47A1006C4836 /* ContentView.swift */,
+				534362EF2BB48AA5001C3A3D /* LaunchScreen.storyboard */,
 				53581B272B8E534300286A67 /* Leaderboard */,
 				53F6B9F82B90F75C0094AA5B /* Quiz */,
 				53F6B9F92B9253830094AA5B /* ProfileView.swift */,
@@ -298,8 +298,8 @@
 				53C45E412B1E47A3006C4836 /* Preview Assets.xcassets in Resources */,
 				5334B1082B7C0D0300651944 /* Localizable.xcstrings in Resources */,
 				53C45E3E2B1E47A3006C4836 /* Assets.xcassets in Resources */,
+				534362F02BB48AA5001C3A3D /* LaunchScreen.storyboard in Resources */,
 				534F59A72B66646A00659261 /* BubblegumSans-Regular.ttf in Resources */,
-				534F59A42B65193600659261 /* CevicheOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +485,7 @@
 				INFOPLIST_FILE = SwissQuizz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -520,6 +521,7 @@
 				INFOPLIST_FILE = SwissQuizz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
