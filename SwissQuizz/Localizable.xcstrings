@@ -282,7 +282,7 @@
     "Montreux" : {
 
     },
-    "Multiple answers are possible" : {
+    "Multiple answers possible" : {
 
     },
     "Murten" : {
@@ -366,7 +366,7 @@
     "Schwyz" : {
 
     },
-    "Select the quiz category that you want to play" : {
+    "Select a category to start playing:" : {
 
     },
     "Sierre" : {
@@ -420,7 +420,7 @@
     "Ticino" : {
 
     },
-    "Total max score" : {
+    "Total high score" : {
 
     },
     "Uri" : {
@@ -543,10 +543,10 @@
     "Where can Vacherin Mont-d’Or AOP come from?" : {
 
     },
-    "Which canton is located here?" : {
+    "Which canton is this flag from?" : {
 
     },
-    "Which canton is this flag from?" : {
+    "Which canton is this?" : {
 
     },
     "Which city is this?" : {

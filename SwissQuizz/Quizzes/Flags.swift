@@ -11,7 +11,7 @@ extension Quiz {
     static let flags = Quiz(
         id: "flags",
         label: "Flags",
-        description: "Find which canton a flag belongs to",
+        description: "Find the flag of each canton",
         systemImage: "flag.filled.and.flag.crossed",
         questions: [
             Question(

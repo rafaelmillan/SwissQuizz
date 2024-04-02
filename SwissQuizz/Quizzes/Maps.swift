@@ -11,11 +11,11 @@ extension Quiz {
     static let maps = Quiz(
         id: "maps",
         label: "Locate",
-        description: "Spot each canton on the map",
+        description: "Find each canton on the map",
         systemImage: "mappin.and.ellipse",
         questions: [
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/AG",
                 choices: [
                     Choice(text: String(localized: "Aargau"), isCorrect: true),
@@ -25,7 +25,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/AR",
                 choices: [
                     Choice(text: String(localized: "Appenzell Ausserrhoden"), isCorrect: true),
@@ -35,7 +35,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/AI",
                 choices: [
                     Choice(text: String(localized: "Appenzell Ausserrhoden")),
@@ -45,7 +45,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/BL",
                 choices: [
                     Choice(text: String(localized: "Basel-Landschaft"), isCorrect: true),
@@ -55,7 +55,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/BS",
                 choices: [
                     Choice(text: String(localized: "Basel-Stadt"), isCorrect: true),
@@ -65,7 +65,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/BE",
                 choices: [
                     Choice(text: String(localized: "Bern"), isCorrect: true),
@@ -75,7 +75,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/FR",
                 choices: [
                     Choice(text: String(localized: "Fribourg"), isCorrect: true),
@@ -85,7 +85,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/GE",
                 choices: [
                     Choice(text: String(localized: "Geneva"), isCorrect: true),
@@ -95,7 +95,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/GL",
                 choices: [
                     Choice(text: String(localized: "Glarus"), isCorrect: true),
@@ -105,7 +105,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/GR",
                 choices: [
                     Choice(text: String(localized: "Grisons"), isCorrect: true),
@@ -115,7 +115,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/JU",
                 choices: [
                     Choice(text: String(localized: "Jura"), isCorrect: true),
@@ -125,7 +125,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/LU",
                 choices: [
                     Choice(text: String(localized: "Lucerne"), isCorrect: true),
@@ -135,7 +135,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/NE",
                 choices: [
                     Choice(text: String(localized: "Neuchâtel"), isCorrect: true),
@@ -145,7 +145,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/NW",
                 choices: [
                     Choice(text: String(localized: "Nidwalden"), isCorrect: true),
@@ -155,7 +155,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/OW",
                 choices: [
                     Choice(text: String(localized: "Obwalden"), isCorrect: true),
@@ -165,7 +165,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/SH",
                 choices: [
                     Choice(text: String(localized: "Schaffhausen"), isCorrect: true),
@@ -175,7 +175,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/SZ",
                 choices: [
                     Choice(text: String(localized: "Schwyz"), isCorrect: true),
@@ -185,7 +185,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/SO",
                 choices: [
                     Choice(text: String(localized: "Solothurn"), isCorrect: true),
@@ -195,7 +195,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/SG",
                 choices: [
                     Choice(text: String(localized: "St. Gallen"), isCorrect: true),
@@ -205,7 +205,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/TG",
                 choices: [
                     Choice(text: String(localized: "Thurgau"), isCorrect: true),
@@ -215,7 +215,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/TI",
                 choices: [
                     Choice(text: String(localized: "Ticino"), isCorrect: true),
@@ -225,7 +225,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/UR",
                 choices: [
                     Choice(text: String(localized: "Uri"), isCorrect: true),
@@ -235,7 +235,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/VS",
                 choices: [
                     Choice(text: String(localized: "Valais"), isCorrect: true),
@@ -245,7 +245,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/VD",
                 choices: [
                     Choice(text: String(localized: "Vaud"), isCorrect: true),
@@ -255,7 +255,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/ZG",
                 choices: [
                     Choice(text: String(localized: "Zug"), isCorrect: true),
@@ -265,7 +265,7 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "Which canton is located here?"),
+                prompt: String(localized: "Which canton is this?"),
                 image: "maps/ZH",
                 choices: [
                     Choice(text: String(localized: "Zürich"), isCorrect: true),

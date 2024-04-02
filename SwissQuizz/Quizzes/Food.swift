@@ -11,7 +11,7 @@ extension Quiz {
     static let food = Quiz(
         id: "food",
         label: "Food",
-        description: "Find where AOP foods come from",
+        description: "Find where food comes from",
         systemImage: "fork.knife",
         questions: [
             Question(
@@ -83,7 +83,8 @@ extension Quiz {
                     Choice(text: String(localized: "Zug"), isCorrect: true),
                     Choice(text: String(localized: "Schwyz"), isCorrect: true),
                     Choice(text: String(localized: "Obwald"), isCorrect: true),
-                    Choice(text: String(localized: "Nidwald"), isCorrect: true)
+                    Choice(text: String(localized: "Nidwald"), isCorrect: true),
+                    Choice(text: String(localized: "St. Gallen"), isCorrect: true)
                 ]
             )
         ]

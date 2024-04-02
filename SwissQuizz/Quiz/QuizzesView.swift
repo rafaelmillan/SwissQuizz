@@ -27,7 +27,7 @@ struct QuizzesView: View {
                 .font(.custom("BubblegumSans-Regular", size: 72))
                 .foregroundStyle(.red)
             
-            Text("Select the quiz category that you want to play")
+            Text("Select a category to start playing:")
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .foregroundStyle(.secondary)
             
@@ -36,12 +36,12 @@ struct QuizzesView: View {
             }
             if scores.sum > 0 {
                 HStack() {
-                    Image(systemName: "star.fill")
+                    Image(systemName: "trophy.fill")
                     Text("\(scores.sum) pts")                .font(.custom("BubblegumSans-Regular", size: 36))
-                    Image(systemName: "star.fill")
+                    Image(systemName: "trophy.fill")
                 }
                 .foregroundStyle(.red)
-                Text("Total max score")
+                Text("Total high score")
                     .foregroundStyle(.secondary)
             }
         }

@@ -22,7 +22,7 @@ struct QuestionView: View {
                 .foregroundStyle(.red)
             
             if question.allowMultipleChoices {
-                Text("Multiple answers are possible")
+                Text("Multiple answers possible")
                     .font(.subheadline)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundStyle(.secondary)
