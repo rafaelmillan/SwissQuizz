@@ -79,11 +79,11 @@ extension Quiz {
                 image: "foods/sbrinz",
                 allowMultipleChoices: true,
                 choices: [
-                    Choice(text: String(localized: "Luzern"), isCorrect: true),
+                    Choice(text: String(localized: "Lucerne"), isCorrect: true),
                     Choice(text: String(localized: "Zug"), isCorrect: true),
                     Choice(text: String(localized: "Schwyz"), isCorrect: true),
-                    Choice(text: String(localized: "Obwald"), isCorrect: true),
-                    Choice(text: String(localized: "Nidwald"), isCorrect: true),
+                    Choice(text: String(localized: "Obwalden"), isCorrect: true),
+                    Choice(text: String(localized: "Nidwalden"), isCorrect: true),
                     Choice(text: String(localized: "St. Gallen"), isCorrect: true)
                 ]
             )

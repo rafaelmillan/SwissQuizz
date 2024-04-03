@@ -21,7 +21,7 @@ extension Quiz {
                 choices: [
                     Choice(text: String(localized: "Zürich"), isCorrect: true),
                     Choice(text: String(localized: "Geneva")),
-                    Choice(text: String(localized: "Luzerne")),
+                    Choice(text: String(localized: "Lucerne")),
                     Choice(text: String(localized: "Lausanne"))
                 ]
             ),
@@ -31,7 +31,7 @@ extension Quiz {
                 choices: [
                     Choice(text: String(localized: "Geneva"), isCorrect: true),
                     Choice(text: String(localized: "Zürich")),
-                    Choice(text: String(localized: "Luzerne")),
+                    Choice(text: String(localized: "Lucerne")),
                     Choice(text: String(localized: "Lugano"))
                 ]
             ),

@@ -9,6 +9,12 @@
     },
     "©swisstopo" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "©swisstopo"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19,6 +25,12 @@
     },
     "Aarau" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aarau"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29,6 +41,12 @@
     },
     "Aargau" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aargau"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -39,6 +57,12 @@
     },
     "Allschwil" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allschwil"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -48,61 +72,187 @@
       }
     },
     "Alpnach" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alpnach"
+          }
+        }
+      }
     },
     "Altdorf" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Altdorf"
+          }
+        }
+      }
     },
     "Appenzell" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appenzell"
+          }
+        }
+      }
     },
     "Appenzell Ausserrhoden" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appenzell Ausserrhoden"
+          }
+        }
+      }
     },
     "Appenzell Innerrhoden" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appenzell Innerrhoden"
+          }
+        }
+      }
     },
     "Arbon" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbon"
+          }
+        }
+      }
     },
     "Are you sure that you want to reset all your high scores?" : {
 
     },
     "Arth" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arth"
+          }
+        }
+      }
     },
     "Baar" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baar"
+          }
+        }
+      }
     },
     "Baden" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baden"
+          }
+        }
+      }
     },
     "Basel" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basel"
+          }
+        }
+      }
     },
     "Basel-Landschaft" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basel-Landschaft"
+          }
+        }
+      }
     },
     "Basel-Stadt" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basel-Stadt"
+          }
+        }
+      }
     },
     "Bellinzona" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bellinzona"
+          }
+        }
+      }
     },
     "Bern" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bern"
+          }
+        }
+      }
     },
     "Bettingen" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bettingen"
+          }
+        }
+      }
     },
     "Biel/Bienne" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biel"
+          }
+        }
+      }
     },
     "Bulle" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bulle"
+          }
+        }
+      }
     },
     "Bürglen" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bürglen"
+          }
+        }
+      }
     },
     "Cancel" : {
 
@@ -111,34 +261,97 @@
 
     },
     "CC BY-SA 3.0 Mike Lehmann" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CC BY-SA 3.0 Mike Lehmann"
+          }
+        }
+      }
     },
     "CC BY-SA 3.0 NEON ja" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CC BY-SA 3.0 NEON ja"
+          }
+        }
+      }
     },
     "CC BY-SA 3.0 Poulpy" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CC BY-SA 3.0 Poulpy"
+          }
+        }
+      }
     },
     "CC BY-SA 4.0 Gruyere alpage" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CC BY-SA 4.0 Gruyere alpage"
+          }
+        }
+      }
     },
     "CC BY-SA 4.0 Hubertl" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CC BY-SA 4.0 Hubertl"
+          }
+        }
+      }
     },
     "CC BY-SA 4.0 Martin Thurnherr" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CC BY-SA 4.0 Martin Thurnherr"
+          }
+        }
+      }
     },
     "CC BY-SA 4.0 Ulled" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CC BY-SA 4.0 Ulled"
+          }
+        }
+      }
     },
     "Cham" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cham"
+          }
+        }
+      }
     },
     "Check" : {
 
     },
     "Chur" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chur"
+          }
+        }
+      }
     },
     "City Guesser" : {
 
@@ -160,22 +373,57 @@
 
     },
     "Davos" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Davos"
+          }
+        }
+      }
     },
     "Delémont" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delsberg"
+          }
+        }
+      }
     },
     "Dübendorf" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dübendorf"
+          }
+        }
+      }
     },
     "Emmen" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emmen"
+          }
+        }
+      }
     },
     "Enable Game Center" : {
 
     },
     "Ennenda" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ennenda"
+          }
+        }
+      }
     },
     "Find the capital of each canton" : {
 
@@ -184,13 +432,34 @@
 
     },
     "Frauenfeld" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frauenfeld"
+          }
+        }
+      }
     },
     "Freienbach" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Freienbach"
+          }
+        }
+      }
     },
     "Fribourg" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Freiburg"
+          }
+        }
+      }
     },
     "Game Center" : {
 
@@ -199,127 +468,346 @@
 
     },
     "Geneva" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genf"
+          }
+        }
+      }
     },
     "Glarus" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Glarus"
+          }
+        }
+      }
     },
     "Gonten" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gonten"
+          }
+        }
+      }
     },
     "Gossau" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gossau"
+          }
+        }
+      }
     },
     "Grenchen" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grenchen"
+          }
+        }
+      }
     },
     "Grisons" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Graubünden"
+          }
+        }
+      }
     },
     "Herisau" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Herisau"
+          }
+        }
+      }
     },
     "Horw" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horw"
+          }
+        }
+      }
     },
     "Jura" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jura"
+          }
+        }
+      }
     },
     "Köniz" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Köniz"
+          }
+        }
+      }
     },
     "Kreuzlingen" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kreuzlingen"
+          }
+        }
+      }
     },
     "Kriens" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kriens"
+          }
+        }
+      }
     },
     "La Chaux-de-Fonds" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La Chaux-de-Fonds"
+          }
+        }
+      }
     },
     "Lachen" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lachen"
+          }
+        }
+      }
     },
     "Lancy" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lancy"
+          }
+        }
+      }
     },
     "Lausanne" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lausanne"
+          }
+        }
+      }
     },
     "Le Locle" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le Locle"
+          }
+        }
+      }
     },
     "Leaderboard" : {
 
     },
     "Liestal" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liestal"
+          }
+        }
+      }
     },
     "Loading leaderboard..." : {
 
     },
     "Locarno" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Locarno"
+          }
+        }
+      }
     },
     "Lucerne" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luzern"
+          }
+        }
+      }
     },
     "Lugano" : {
-
-    },
-    "Luzern" : {
-
-    },
-    "Luzerne" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lugano"
+          }
+        }
+      }
     },
     "Martigny" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Martigny"
+          }
+        }
+      }
     },
     "Meyrin" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meyrin"
+          }
+        }
+      }
     },
     "Montreux" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montreux"
+          }
+        }
+      }
     },
     "Multiple answers possible" : {
 
     },
     "Murten" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Murten"
+          }
+        }
+      }
     },
     "Netstal" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Netstal"
+          }
+        }
+      }
     },
     "Neuchâtel" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuenburg"
+          }
+        }
+      }
     },
     "Neuhausen am Rheinfall" : {
-
-    },
-    "Nidwald" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuhausen am Rheinfall"
+          }
+        }
+      }
     },
     "Nidwalden" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nidwalden"
+          }
+        }
+      }
     },
     "Oberegg" : {
-
-    },
-    "Obwald" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oberegg"
+          }
+        }
+      }
     },
     "Obwalden" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obwalden"
+          }
+        }
+      }
     },
     "Olten" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olten"
+          }
+        }
+      }
     },
     "Please log in to GameCenter to continue." : {
 
     },
     "Porrentruy" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pruntrut"
+          }
+        }
+      }
     },
     "Profile" : {
 
@@ -331,10 +819,24 @@
 
     },
     "Rapperswil-Jona" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rapperswil-Jona"
+          }
+        }
+      }
     },
     "Reinach" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reinach"
+          }
+        }
+      }
     },
     "Reset" : {
 
@@ -343,109 +845,312 @@
 
     },
     "Riedern" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riedern"
+          }
+        }
+      }
     },
     "Riehen" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riehen"
+          }
+        }
+      }
     },
     "Risch" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Risch"
+          }
+        }
+      }
     },
     "Saint-Ursanne" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saint-Ursanne"
+          }
+        }
+      }
     },
     "Sarnen" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sarnen"
+          }
+        }
+      }
     },
     "Schaffhausen" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schaffhausen"
+          }
+        }
+      }
     },
     "Schattdorf" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schattdorf"
+          }
+        }
+      }
     },
     "Schwyz" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schwyz"
+          }
+        }
+      }
     },
     "Select a category to start playing:" : {
 
     },
     "Sierre" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siders"
+          }
+        }
+      }
     },
     "Sion" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sitten"
+          }
+        }
+      }
     },
     "Solothurn" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solothurn"
+          }
+        }
+      }
     },
     "Speed bonus: %lld pts" : {
 
     },
     "Speicher" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speicher"
+          }
+        }
+      }
     },
     "Spot in map" : {
 
     },
     "St. Gallen" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "St. Gallen"
+          }
+        }
+      }
     },
     "St. Moritz" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "St. Moritz"
+          }
+        }
+      }
     },
     "Stans" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stans"
+          }
+        }
+      }
     },
     "Stansstad" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stansstad"
+          }
+        }
+      }
     },
     "Stein am Rhein" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stein am Rhein"
+          }
+        }
+      }
     },
     "SwissTrivia" : {
 
     },
     "Teufen" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teufen"
+          }
+        }
+      }
     },
     "There was an error loading the leaderboard." : {
 
     },
     "Thun" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thun"
+          }
+        }
+      }
     },
     "Thurgau" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thurgau"
+          }
+        }
+      }
     },
     "Ticino" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tessin"
+          }
+        }
+      }
     },
     "Total high score" : {
 
     },
     "Uri" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uri"
+          }
+        }
+      }
     },
     "Uster" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uster"
+          }
+        }
+      }
     },
     "Val-de-Travers" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Val-de-Travers"
+          }
+        }
+      }
     },
     "Valais" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wallis"
+          }
+        }
+      }
     },
     "Vaud" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waadt"
+          }
+        }
+      }
     },
     "Vernier" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vernier"
+          }
+        }
+      }
     },
     "Villars-sur-Glâne" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Villars-sur-Glâne"
+          }
+        }
+      }
     },
     "Wettingen" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wettingen"
+          }
+        }
+      }
     },
     "What is the capital of Aargau?" : {
 
@@ -553,25 +1258,67 @@
 
     },
     "Wil" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wil"
+          }
+        }
+      }
     },
     "Winterthur" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Winterthur"
+          }
+        }
+      }
     },
     "Your final score is" : {
 
     },
     "Yverdon-les-Bains" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yverdon-les-Bains"
+          }
+        }
+      }
     },
     "Zuchwil" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zuchwil"
+          }
+        }
+      }
     },
     "Zug" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zug"
+          }
+        }
+      }
     },
     "Zürich" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zürich"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

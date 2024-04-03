@@ -19,7 +19,7 @@ extension Quiz {
                 image: "flags/aargau",
                 choices: [
                     Choice(text: String(localized: "Aargau"), isCorrect: true),
-                    Choice(text: String(localized: "Luzern")),
+                    Choice(text: String(localized: "Lucerne")),
                     Choice(text: String(localized: "Zug")),
                     Choice(text: String(localized: "Zürich"))
                 ]
