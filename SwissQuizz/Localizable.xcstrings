@@ -1614,7 +1614,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Choisis une catégorie pour commencer:"
+            "value" : "Choisis une catégorie pour commencer :"
           }
         }
       }
@@ -2110,7 +2110,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Quelle est la capitale d'Argovie ?"
+            "value" : "Quelle est la capitale de Lucerne ?"
           }
         }
       }
@@ -2120,7 +2120,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Quelle est la capitale de Lucerne ?"
+            "value" : "Quelle est la capitale de Neuchâtel ?"
           }
         }
       }
