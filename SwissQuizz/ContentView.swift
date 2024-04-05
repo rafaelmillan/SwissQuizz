@@ -16,7 +16,7 @@ struct ContentView: View {
         TabView(selection: $selection) {
             QuizzesView()
                 .tabItem {
-                    Label("Quizzes", systemImage: "checkmark.rectangle.stack.fill")
+                    Label("Quizzes", systemImage: "rectangle.stack.fill")
                 }
                 .tag(1)
             LeaderboardView()
