@@ -10,8 +10,8 @@ import Foundation
 extension Quiz {
     static let flags = Quiz(
         id: "flags",
-        label: "Flags",
-        description: "Find the flag of each canton",
+        label: String(localized: "Flags"),
+        description: String(localized: "Find the flag of each canton"),
         systemImage: "flag.filled.and.flag.crossed",
         questions: [
             Question(

@@ -10,8 +10,8 @@ import Foundation
 extension Quiz {
     static let maps = Quiz(
         id: "maps",
-        label: "Locate",
-        description: "Find each canton on the map",
+        label: String(localized: "Locate"),
+        description: String(localized: "Find each canton on the map"),
         systemImage: "mappin.and.ellipse",
         questions: [
             Question(

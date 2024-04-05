@@ -10,8 +10,8 @@ import Foundation
 extension Quiz {
     static let food = Quiz(
         id: "food",
-        label: "Food",
-        description: "Find where food comes from",
+        label: String(localized: "Food"),
+        description: String(localized: "Find where food comes from"),
         systemImage: "fork.knife",
         questions: [
             Question(

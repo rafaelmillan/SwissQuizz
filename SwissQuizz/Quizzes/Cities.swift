@@ -11,8 +11,8 @@ import MapKit
 extension Quiz {
     static let cities = Quiz(
         id: "cities",
-        label: "City Guesser",
-        description: "Spot Swiss cities from above",
+        label: String(localized: "City Guesser"),
+        description: String(localized: "Spot Swiss cities from above"),
         systemImage: "building.2.fill",
         questions: [
             Question(

@@ -39,7 +39,7 @@ struct ProfileView: View {
                             Section("City Guesser") {
                                 Text("©swisstopo")
                             }
-                            Section("Spot in map") {
+                            Section("Locate") {
                                 Link("CC BY-SA 3.0 Poulpy", destination: URL(string: "https://w.wiki/9fjq")!)
                             }
                             Section("Food") {
