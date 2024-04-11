@@ -577,6 +577,16 @@
         }
       }
     },
+    "Correct" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correct"
+          }
+        }
+      }
+    },
     "Correct answers: %lld/%lld" : {
       "localizations" : {
         "en" : {
@@ -945,6 +955,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Horw"
+          }
+        }
+      }
+    },
+    "Incorrect" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incorrect"
           }
         }
       }

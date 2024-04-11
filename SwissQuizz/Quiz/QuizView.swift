@@ -18,6 +18,7 @@ struct QuizView: View {
     @State private var currentQuestionIndex = 0
     @State private var showScoreScreen = false
     @State private var startTime = Date()
+    @State private var correction: Bool? = nil
     var endGame = {}
     
     private var currentQuestion: Question {
@@ -40,7 +41,8 @@ struct QuizView: View {
                             HudView(
                                 score: score,
                                 questionCount: quiz.questions.count,
-                                currentQuestionIndex: currentQuestionIndex
+                                currentQuestionIndex: currentQuestionIndex,
+                                correction: correction
                             )
                             .shadow(color: .black.opacity(0.5), radius: 10)
                         }
@@ -51,7 +53,8 @@ struct QuizView: View {
                                     score: score,
                                     questionCount: quiz.questions.count,
                                     currentQuestionIndex: currentQuestionIndex,
-                                    overImage: false
+                                    overImage: false,
+                                    correction: correction
                                 )
                                 
                                 if image.contains("flag") {
@@ -80,7 +83,8 @@ struct QuizView: View {
                                     HudView(
                                         score: score,
                                         questionCount: quiz.questions.count,
-                                        currentQuestionIndex: currentQuestionIndex
+                                        currentQuestionIndex: currentQuestionIndex,
+                                        correction: correction
                                     )
                                     .shadow(color: .black.opacity(0.5), radius: 10)
                                     Spacer()
@@ -106,7 +110,8 @@ struct QuizView: View {
                                 score: score,
                                 questionCount: quiz.questions.count,
                                 currentQuestionIndex: currentQuestionIndex,
-                                overImage: false
+                                overImage: false,
+                                correction: correction
                             )
                             Spacer()
                         }
@@ -134,6 +139,10 @@ struct QuizView: View {
     }
     
     func updateScore(isCorrect: Bool) {
+        withAnimation {
+            correction = isCorrect
+        }
+
         if isCorrect {
             correctCount += 1
             withAnimation {
@@ -152,6 +161,7 @@ struct QuizView: View {
                 calculateAndShowFinalScore()
             } else {
                 currentQuestionIndex += 1
+                correction = nil
             }
         }
     }
