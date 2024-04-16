@@ -50,6 +50,7 @@
 		53D74CEC2B98E28700969E9C /* HighScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D74CEB2B98E28700969E9C /* HighScores.swift */; };
 		53D74CEE2B98E29400969E9C /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D74CED2B98E29400969E9C /* HighScore.swift */; };
 		53F6B9FA2B9253830094AA5B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6B9F92B9253830094AA5B /* ProfileView.swift */; };
+		53FA9DCA2BCE72CD004388CA /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 53FA9DC92BCE72CD004388CA /* InfoPlist.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		53D74CEB2B98E28700969E9C /* HighScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScores.swift; sourceTree = "<group>"; };
 		53D74CED2B98E29400969E9C /* HighScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
 		53F6B9F92B9253830094AA5B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		53FA9DC92BCE72CD004388CA /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				532257DF2B2B7574001660A1 /* Quizzes */,
 				53C45E3D2B1E47A3006C4836 /* Assets.xcassets */,
 				5334B1072B7C0D0300651944 /* Localizable.xcstrings */,
+				53FA9DC92BCE72CD004388CA /* InfoPlist.xcstrings */,
 				53C45E3F2B1E47A3006C4836 /* Preview Content */,
 			);
 			path = SwissQuizz;
@@ -295,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FA9DCA2BCE72CD004388CA /* InfoPlist.xcstrings in Resources */,
 				53C45E412B1E47A3006C4836 /* Preview Assets.xcassets in Resources */,
 				5334B1082B7C0D0300651944 /* Localizable.xcstrings in Resources */,
 				53C45E3E2B1E47A3006C4836 /* Assets.xcassets in Resources */,
