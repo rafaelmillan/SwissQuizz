@@ -27,7 +27,7 @@ enum LeaderboardError: Error {
         withAuthenticatedUser() {
             GKLeaderboard.loadLeaderboards(IDs: ["all"]) { leaderboards, error in
                 if let leaderboards = leaderboards {
-                    leaderboards[0].loadEntries(for: GKLeaderboard.PlayerScope.global, timeScope: GKLeaderboard.TimeScope.allTime, range: NSMakeRange(1, 100)) { _entry, entries, _count, error in
+                    leaderboards[0].loadEntries(for: GKLeaderboard.PlayerScope.global, timeScope: GKLeaderboard.TimeScope.allTime, range: NSMakeRange(1, 10)) { _entry, entries, _count, error in
                         if let entries = entries {
                             let players = entries.map { entry in
                                 Player(
