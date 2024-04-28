@@ -51,5 +51,5 @@ struct FinalScoreView: View {
     }
 }
 #Preview {
-    FinalScoreView(score: 50_000, timeBonus: 500, correctCount: 23, questionCount: 26)
+    FinalScoreView(score: 3_250, timeBonus: 500, correctCount: 23, questionCount: 26)
 }

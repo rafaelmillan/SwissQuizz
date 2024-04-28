@@ -9,7 +9,7 @@ import SwiftUI
 import GameKit
 
 struct LeaderboardView: View {
-    @State private var players: [Player]?
+    @State private var players: [Playable]?
     @State private var error: LeaderboardError?
     @EnvironmentObject var leaderboard: Leaderboard
 
@@ -40,6 +40,13 @@ struct LeaderboardView: View {
             switch result {
             case .success(let players):
                 self.players = players
+                
+                if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" && players.count < 10 {
+                    let missing_ranks = 10 - players.count
+                    for i in 1...missing_ranks {
+                        self.players!.append(DummyPlayer(rank: players.count + i, minScore: players[players.count - 1].score))
+                    }
+                }
             case .failure(let error):
                 self.error = error
             }
@@ -48,6 +55,22 @@ struct LeaderboardView: View {
 }
 
 #Preview {
-    LeaderboardView()
-        .environmentObject(Leaderboard.shared)
+    TabView(selection: .constant(2)) {
+        Text("dummy")
+            .tabItem {
+                Label("Quizzes", systemImage: "rectangle.stack.fill")
+            }
+            .tag(1)
+        LeaderboardView()
+            .environmentObject(Leaderboard.shared)
+            .tabItem {
+                Label("Leaderboard", systemImage: "list.star")
+            }
+            .tag(2)
+        Text("dummy")
+            .tabItem {
+                Label("Profile", systemImage: "person.fill")
+            }
+            .tag(3)
+    }
 }

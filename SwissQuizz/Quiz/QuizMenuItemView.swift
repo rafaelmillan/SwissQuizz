@@ -9,9 +9,16 @@ import SwiftUI
 
 struct ScoreView: View {
     @ObservedObject var score: HighScore
+    var points: Int {
+        if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" && score.points == 0 {
+            return Int.random(in: 1000...10_000)
+        } else {
+            return score.points
+        }
+    }
     
     var body: some View {
-        Text("\(score.points) pts")
+        Text("\(points) pts")
     }
 }
 

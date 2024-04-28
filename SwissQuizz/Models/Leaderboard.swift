@@ -39,12 +39,12 @@ enum LeaderboardError: Error {
                             }
                             completionHandler(.success(players))
                         } else {
-                            print("Error: \(error?.localizedDescription).")
+                            print("Entries loading error: \(error?.localizedDescription).")
                             completionHandler(.failure(.loadingError))
                         }
                     }
                 } else {
-                    print("Error: \(error?.localizedDescription).")
+                    print("Leaderboard loading error: \(error?.localizedDescription).")
                     completionHandler(.failure(.loadingError))
                 }
                 
@@ -70,7 +70,7 @@ enum LeaderboardError: Error {
         withAuthenticatedUser() {
             GKLeaderboard.submitScore(score, context: 0, player: GKLocalPlayer.local, leaderboardIDs: ["all"]) { error in
                 if error != nil {
-                    print("Error: \(error!.localizedDescription).")
+                    print("Sbmission error: \(error!.localizedDescription).")
                 }
             }
         } onError: {}
@@ -88,7 +88,7 @@ enum LeaderboardError: Error {
             if error == nil {
                 onSuccess()
             } else {
-                print("Error: \(error?.localizedDescription).")
+                print("Authentication error: \(error?.localizedDescription).")
                 onError()
             }
         }

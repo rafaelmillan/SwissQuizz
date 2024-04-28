@@ -9,7 +9,7 @@ import SwiftUI
 import GameKit
 
 struct LeaderboardItemView: View {
-    let player: Player
+    let player: Playable
     @State private var image: UIImage?
     
     var body: some View {
@@ -24,27 +24,36 @@ struct LeaderboardItemView: View {
                     .frame(width: 50, height: 50)
                 
             } else {
-                Image(systemName: "person.crop.circle.fill")
+                Image("memojis/\(player.rank)")
+                    .resizable()
                     .font(.title)
+                    .blur(radius: 3)
+                    .clipShape(Circle())
+                    .frame(width: 50, height: 50)
+                    .overlay() {
+                        ProgressView()
+                            .tint(.white)
+                    }
             }
             Text(player.displayName)
-                .font(.title3)
             Spacer()
             Text("\(player.score) pts")
         }
         .foregroundStyle(.red)
+        .font(.custom("BubblegumSans-Regular", size: 24))
         .onAppear {
-            loadImage()
-        }
-    }
-    
-    @MainActor func loadImage() {
-        Leaderboard.shared.playerPhoto(gkPlayer: player.gkPlayer) { image in
-            self.image = image
+            player.loadImage() { image in
+                withAnimation {
+                    self.image = image
+                }
+            }
         }
     }
 }
 
 #Preview {
-    LeaderboardItemView(player: Player(score: 1000, displayName: "Rafael", rank: 1, gkPlayer: GKLocalPlayer.local))
+    VStack {
+        LeaderboardItemView(player: Player(score: 1000, displayName: "Rafael", rank: 1, gkPlayer: GKLocalPlayer.local))
+        LeaderboardItemView(player: DummyPlayer(rank: 2, minScore: 1000))
+    }
 }
