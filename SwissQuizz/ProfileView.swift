@@ -34,7 +34,7 @@ struct ProfileView: View {
                 }
                 
                 Section {
-                    NavigationLink("Credits") {
+                    NavigationLink("Image credits") {
                         List {
                             Section("City Guesser") {
                                 Text("©swisstopo")

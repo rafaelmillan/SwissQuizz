@@ -131,7 +131,8 @@ struct QuizView: View {
     
     @MainActor func calculateAndShowFinalScore() {
         if quiz.questions.count == correctCount {
-            timeBonus = (10_000 / Int(-startTime.timeIntervalSinceNow))
+            let maxTimeBonus = 10_000 * quiz.questions.count
+            timeBonus = (maxTimeBonus / Int(-startTime.timeIntervalSinceNow))
             score += timeBonus
         }
         HighScores.find(quiz.id).submit(score)
