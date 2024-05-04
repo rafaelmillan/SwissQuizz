@@ -10,7 +10,7 @@ import SwiftUI
 struct QuizzesView: View {
     @State private var currentQuiz: Quiz?
     @EnvironmentObject var scores: HighScores
-    private let quizes: [Quiz] = [Quiz.capitals, Quiz.cities, Quiz.flags, Quiz.food, Quiz.maps]
+    private let quizes: [Quiz] = [Quiz.capitals, Quiz.cities, Quiz.flags, Quiz.food, Quiz.maps, Quiz.sweden, Quiz.records]
     private var gameMode: Binding<Bool> {
         Binding {
             currentQuiz != nil

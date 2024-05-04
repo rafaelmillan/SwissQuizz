@@ -31,7 +31,7 @@ struct QuizMenuItemView: View {
             buttonFunction()
         } label: {
             VStack {
-                HStack {
+                HStack(alignment: .top) {
                         Label(quiz.label, systemImage: quiz.systemImage)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .symbolRenderingMode(.hierarchical)
@@ -56,5 +56,6 @@ struct QuizMenuItemView: View {
 }
 
 #Preview {
-    QuizMenuItemView(quiz: Quiz.capitals)
+    QuizMenuItemView(quiz: Quiz.sweden)
+        .padding()
 }

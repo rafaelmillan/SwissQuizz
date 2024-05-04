@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		531C0FE22BE4EB8B005BBF0A /* Sweden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C0FE12BE4EB8B005BBF0A /* Sweden.swift */; };
+		531C0FE42BE4F20B005BBF0A /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C0FE32BE4F20B005BBF0A /* Records.swift */; };
 		532257E12B2B759F001660A1 /* Capitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532257E02B2B759F001660A1 /* Capitals.swift */; };
 		532257E32B2B75FC001660A1 /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532257E22B2B75FC001660A1 /* Flags.swift */; };
 		532257E52B2B764F001660A1 /* Growth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532257E42B2B764F001660A1 /* Growth.swift */; };
@@ -54,6 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		531C0FE12BE4EB8B005BBF0A /* Sweden.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sweden.swift; sourceTree = "<group>"; };
+		531C0FE32BE4F20B005BBF0A /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		532257E02B2B759F001660A1 /* Capitals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capitals.swift; sourceTree = "<group>"; };
 		532257E22B2B75FC001660A1 /* Flags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
 		532257E42B2B764F001660A1 /* Growth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Growth.swift; sourceTree = "<group>"; };
@@ -118,7 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				532257E02B2B759F001660A1 /* Capitals.swift */,
+				531C0FE12BE4EB8B005BBF0A /* Sweden.swift */,
 				532257E22B2B75FC001660A1 /* Flags.swift */,
+				531C0FE32BE4F20B005BBF0A /* Records.swift */,
 				5322781B2BA0CB02006BCA91 /* Maps.swift */,
 				5350E0F62B78D3BF00BDAE35 /* Test.swift */,
 				532257E42B2B764F001660A1 /* Growth.swift */,
@@ -344,9 +350,11 @@
 				5350E0FF2B790FBA00BDAE35 /* HudView.swift in Sources */,
 				532AB0272B6CF04F00048355 /* CloseButtonView.swift in Sources */,
 				53581B312B8E555000286A67 /* EnableLeaderboardView.swift in Sources */,
+				531C0FE42BE4F20B005BBF0A /* Records.swift in Sources */,
 				53C45E482B1E4A8D006C4836 /* QuizView.swift in Sources */,
 				53581B2F2B8E548E00286A67 /* LeaderboardLoadingView.swift in Sources */,
 				53581B292B8E53A100286A67 /* Player.swift in Sources */,
+				531C0FE22BE4EB8B005BBF0A /* Sweden.swift in Sources */,
 				53D74CEA2B98E27600969E9C /* HighScoreData.swift in Sources */,
 				532257E32B2B75FC001660A1 /* Flags.swift in Sources */,
 			);
