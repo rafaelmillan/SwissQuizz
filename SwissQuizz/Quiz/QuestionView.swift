@@ -10,7 +10,7 @@ import SwiftUI
 struct QuestionView: View {
     var question: Question
     var seed: Int
-    var onCorrection: (Bool) -> Void = { _ in }
+    var onCorrection: (DetailedCorrection) -> Void = { _ in }
     var onDismissal: @MainActor () -> Void = {}
 
     var body: some View {
@@ -29,11 +29,12 @@ struct QuestionView: View {
             }
             
             ChoicesView(answer: Answer(question: question), seed: seed, onDismissal: onDismissal, onCorrection: onCorrection)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .padding()
     }
 }
 
 #Preview {
-    QuestionView(question: Quiz.food.questions[0], seed: 1)
+    QuestionView(question: Quiz.records.questions[4], seed: 1)
 }

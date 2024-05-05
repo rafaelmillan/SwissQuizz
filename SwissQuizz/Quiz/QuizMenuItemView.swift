@@ -31,20 +31,22 @@ struct QuizMenuItemView: View {
             buttonFunction()
         } label: {
             VStack {
-                HStack(alignment: .top) {
-                        Label(quiz.label, systemImage: quiz.systemImage)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .symbolRenderingMode(.hierarchical)
+                Label(quiz.label, systemImage: quiz.systemImage)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .symbolRenderingMode(.hierarchical)
+                    .font(.custom("BubblegumSans-Regular", size: 24))
+                
+                HStack(alignment: .bottom) {
+                    Text(quiz.description)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                                             
                     Spacer()
 
                     ScoreView(score: HighScores.find(quiz.id))
-                    
                 }
-                .font(.custom("BubblegumSans-Regular", size: 24))
                 
-                Text(quiz.description)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                
+                
             }
             .padding()
             .background(Color.red.opacity(0.2))

@@ -18,7 +18,7 @@ struct QuizView: View {
     @State private var currentQuestionIndex = 0
     @State private var showScoreScreen = false
     @State private var startTime = Date()
-    @State private var correction: Bool? = nil
+    @State private var correction: DetailedCorrection? = nil
     var endGame = {}
     
     private var currentQuestion: Question {
@@ -139,12 +139,12 @@ struct QuizView: View {
         showScoreScreen = true
     }
     
-    func updateScore(isCorrect: Bool) {
+    func updateScore(detailedCorrection: DetailedCorrection) {
         withAnimation {
-            correction = isCorrect
+            correction = detailedCorrection
         }
 
-        if isCorrect {
+        if detailedCorrection == .correct {
             correctCount += 1
             withAnimation {
                 if score == 0 {
@@ -169,5 +169,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView(quiz: Quiz.cities)
+    QuizView(quiz: Quiz.records)
 }

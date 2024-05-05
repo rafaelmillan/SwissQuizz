@@ -65,6 +65,9 @@
         }
       }
     },
+    "Aare" : {
+
+    },
     "Aargau" : {
       "localizations" : {
         "de" : {
@@ -80,6 +83,12 @@
           }
         }
       }
+    },
+    "Absinthe" : {
+
+    },
+    "Adolf Deucher" : {
+
     },
     "Allschwil" : {
       "localizations" : {
@@ -208,6 +217,12 @@
           }
         }
       }
+    },
+    "Arolla (VS)" : {
+
+    },
+    "Arosa (GR)" : {
+
     },
     "Arth" : {
       "localizations" : {
@@ -369,6 +384,9 @@
         }
       }
     },
+    "Bobsled" : {
+
+    },
     "Bulle" : {
       "localizations" : {
         "de" : {
@@ -432,6 +450,9 @@
           }
         }
       }
+    },
+    "Carl Schenk" : {
+
     },
     "CC BY-SA 3.0 Mike Lehmann" : {
       "localizations" : {
@@ -561,6 +582,9 @@
         }
       }
     },
+    "Chandolin (VS)" : {
+
+    },
     "Check" : {
       "localizations" : {
         "de" : {
@@ -592,6 +616,9 @@
           }
         }
       }
+    },
+    "Cinnamon rolls" : {
+
     },
     "City Guesser" : {
       "localizations" : {
@@ -664,6 +691,7 @@
       }
     },
     "Credits" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -727,7 +755,13 @@
         }
       }
     },
+    "Dufourspitze" : {
+
+    },
     "dummy" : {
+
+    },
+    "Dynamite" : {
 
     },
     "Emmen" : {
@@ -922,6 +956,9 @@
         }
       }
     },
+    "Frick and Frack" : {
+
+    },
     "Game Center" : {
       "localizations" : {
         "de" : {
@@ -1050,6 +1087,9 @@
         }
       }
     },
+    "Guiseppe Motta" : {
+
+    },
     "Herisau" : {
       "localizations" : {
         "de" : {
@@ -1065,6 +1105,12 @@
           }
         }
       }
+    },
+    "Highest chocolate consumption per capita (11 kg, 2022)" : {
+
+    },
+    "Highest. Largest. Longest." : {
+
     },
     "Horw" : {
       "localizations" : {
@@ -1082,6 +1128,12 @@
         }
       }
     },
+    "Image credits" : {
+
+    },
+    "Incomplete" : {
+
+    },
     "Incorrect" : {
       "localizations" : {
         "de" : {
@@ -1097,6 +1149,15 @@
           }
         }
       }
+    },
+    "Jean-Pascal Delamuraz" : {
+
+    },
+    "Juf (GR)" : {
+
+    },
+    "Jungfrau" : {
+
     },
     "Jura" : {
       "localizations" : {
@@ -1193,6 +1254,18 @@
           }
         }
       }
+    },
+    "Lake Constance" : {
+
+    },
+    "Lake Geneva" : {
+
+    },
+    "Lake Maggiore" : {
+
+    },
+    "Lake Neuchâtel" : {
+
     },
     "Lancy" : {
       "localizations" : {
@@ -1322,6 +1395,9 @@
         }
       }
     },
+    "Longest railway tunnel (57.09 km)" : {
+
+    },
     "Lucerne" : {
       "localizations" : {
         "de" : {
@@ -1369,6 +1445,12 @@
           }
         }
       }
+    },
+    "Matterhorn" : {
+
+    },
+    "Max Petitpierre" : {
+
     },
     "Meyrin" : {
       "localizations" : {
@@ -1498,6 +1580,9 @@
         }
       }
     },
+    "Nordend" : {
+
+    },
     "Oberegg" : {
       "localizations" : {
         "de" : {
@@ -1529,6 +1614,9 @@
           }
         }
       }
+    },
+    "Oldest bank in continuous operation (1472)" : {
+
     },
     "Olten" : {
       "localizations" : {
@@ -1642,6 +1730,9 @@
         }
       }
     },
+    "Records" : {
+
+    },
     "Reinach" : {
       "localizations" : {
         "de" : {
@@ -1689,6 +1780,15 @@
           }
         }
       }
+    },
+    "Reuss" : {
+
+    },
+    "Rhine" : {
+
+    },
+    "Rhône" : {
+
     },
     "Riedern" : {
       "localizations" : {
@@ -2010,6 +2110,15 @@
         }
       }
     },
+    "Stone throwing" : {
+
+    },
+    "Sweden" : {
+
+    },
+    "Sweden or Switzerland?" : {
+
+    },
     "SwissTrivia" : {
       "localizations" : {
         "de" : {
@@ -2026,6 +2135,12 @@
         }
       }
     },
+    "Switzerland" : {
+
+    },
+    "Tallest gravity dam (285 m)" : {
+
+    },
     "Teufen" : {
       "localizations" : {
         "de" : {
@@ -2041,6 +2156,18 @@
           }
         }
       }
+    },
+    "The inventor of Tetra Pak" : {
+
+    },
+    "The modern zipper" : {
+
+    },
+    "The plumber wrench" : {
+
+    },
+    "The ultimate country rivalry" : {
+
     },
     "There was an error loading the leaderboard." : {
       "localizations" : {
@@ -2201,6 +2328,9 @@
           }
         }
       }
+    },
+    "Velcro" : {
+
     },
     "Vernier" : {
       "localizations" : {
@@ -2666,6 +2796,21 @@
         }
       }
     },
+    "What is the highest mountain in Switzerland? (4634 m)" : {
+
+    },
+    "What is the highest village in Switzerland? (2126 m)" : {
+
+    },
+    "What is the largest lake in Switzerland? (580.03 km2)" : {
+
+    },
+    "What is the longest river in Switzerland? (375 km)" : {
+
+    },
+    "What is the most recent Swiss canton to become a full member of the confederation? (1979)" : {
+
+    },
     "Where can Botzi pears AOP come from?" : {
       "localizations" : {
         "de" : {
@@ -2809,6 +2954,12 @@
           }
         }
       }
+    },
+    "Which of these world records are held by Switzerland?" : {
+
+    },
+    "Who is the longest serving federal councillor? (32 years)" : {
+
     },
     "Wil" : {
       "localizations" : {

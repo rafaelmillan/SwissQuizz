@@ -12,7 +12,31 @@ struct HudView: View {
     var questionCount: Int
     var currentQuestionIndex: Int
     var overImage = true
-    var correction: Bool? = nil
+    var correction: DetailedCorrection? = nil
+    var backround: Color {
+        switch correction {
+        case .correct: .green
+        case .incorrect: .red
+        case .incomplete: .orange
+        default: .black
+        }
+    }
+    var icon: String {
+        switch correction {
+        case .correct: "checkmark.circle.fill"
+        case .incorrect: "exclamationmark.circle.fill"
+        case .incomplete: "exclamationmark.circle.fill"
+        default: ""
+        }
+    }
+    var label: String {
+        switch correction {
+        case .correct: String(localized: "Correct")
+        case .incorrect: String(localized: "Incorrect")
+        case .incomplete: String(localized: "Incomplete")
+        default: ""
+        }
+    }
     
     var body: some View {
         ZStack {
@@ -36,15 +60,15 @@ struct HudView: View {
                 
             }
             .padding()
-            if let correction = correction {
+            if (correction != nil) {
                 HStack {
-                    Image(systemName: correction ? "checkmark.circle.fill" : "exclamationmark.circle.fill")
-                    Text(correction ? "Correct" : "Incorrect")
+                    Image(systemName: icon)
+                    Text(label)
                 }
                 .font(.custom("BubblegumSans-Regular", size: 24))
                 .padding(.horizontal, 20)
                 .padding(.vertical, 10)
-                .background(correction ? .green : .red)
+                .background(backround)
                 .clipShape(Capsule())
                 .foregroundStyle(.white)
                 .transition(.asymmetric(
@@ -65,13 +89,19 @@ struct HudView: View {
         HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2, overImage: false)
         ZStack {
             Color.black
-            HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2, correction: true)
+            HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2, correction: .correct)
         }
-        HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2, overImage: false, correction: true)
+        HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2, overImage: false, correction: .correct)
         ZStack {
             Color.black
-            HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2, correction: false)
+            HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2, correction: .incorrect)
         }
-        HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2, overImage: false, correction: false)
+        HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2, overImage: false, correction: .incorrect)
+        
+        ZStack {
+            Color.black
+            HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2, correction: .incomplete)
+        }
+        HudView(score: 3510, questionCount: 5, currentQuestionIndex: 2, overImage: false, correction: .incomplete)
     }
 }

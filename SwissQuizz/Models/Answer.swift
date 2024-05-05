@@ -7,12 +7,26 @@
 
 import Foundation
 
+enum DetailedCorrection {
+    case correct, incorrect, incomplete
+}
+
 @MainActor
 class Answer: ObservableObject {
     @Published var choices: Set<Choice>
     let question: Question
     var isCorrect: Bool {
-        Set(question.choices.filter { $0.isCorrect }) == choices
+        correctChoices == choices
+    }
+    
+    var detailedCorrection: DetailedCorrection {
+        if isCorrect {
+            return .correct
+        } else if correctChoices.subtracting(choices).count == correctChoices.count || !choices.allSatisfy({ correctChoices.contains($0) }) {
+            return .incorrect
+        } else {
+            return .incomplete
+        }
     }
     
     func isSelected(_ choice: Choice) -> Bool {
@@ -34,5 +48,9 @@ class Answer: ObservableObject {
     init(question: Question) {
         self.choices = []
         self.question = question
+    }
+    
+    private var correctChoices: Set<Choice> {
+        Set(question.choices.filter { $0.isCorrect })
     }
 }

@@ -11,7 +11,7 @@ extension Quiz {
     static let sweden = Quiz(
         id: "sweden",
         label: String(localized: "Sweden or Switzerland?"),
-        description: String(localized: "The ultimate country rilvalry"),
+        description: String(localized: "The ultimate country rivalry"),
         systemImage: "crown.fill",
         questions: [
             Question(

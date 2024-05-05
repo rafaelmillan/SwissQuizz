@@ -45,6 +45,17 @@ struct CheckToggleStyle: ToggleStyle {
     private var unselectedIcon: String {
         multipleChoice ? "square" : "circle"
     }
+    private func color(_ configuration: Configuration) -> Color {
+        if !showCorrection {
+            return .red
+        } else if isCorrect {
+            return .green
+        } else if !isCorrect && configuration.isOn {
+            return .red
+        } else {
+            return .secondary
+        }
+    }
     
     func makeBody(configuration: Configuration) -> some View {
         Button {
@@ -52,10 +63,11 @@ struct CheckToggleStyle: ToggleStyle {
         } label: {
             HStack {
                 Label {
-                    if showCorrection && !isCorrect {
+                    if showCorrection && !isCorrect && configuration.isOn {
                         configuration.label
                             .foregroundStyle(.secondary)
-                            .overlay(Rectangle().frame(height: 3))
+                            .overlay(Rectangle().frame(height: 3)
+                                .rotationEffect(.degrees(175)))
                     } else {
                         configuration.label
                     }
@@ -67,9 +79,15 @@ struct CheckToggleStyle: ToggleStyle {
                 .font(.custom("BubblegumSans-Regular", size: 24))
             }
             .padding(10)
-            .foregroundStyle(.red)
-            .background(Color.red.opacity(0.2))
+            .foregroundStyle(color(configuration))
+            .background(color(configuration).opacity(0.2))
             .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
+            .overlay(
+                RoundedRectangle(cornerRadius: 15, style: .continuous)
+                    .stroke(color(configuration), lineWidth: 2)
+                    .opacity(showCorrection && isCorrect && !configuration.isOn ? 1 : 0)
+            )
+            
         }
     }
 }
@@ -85,6 +103,7 @@ struct CheckToggleStyle: ToggleStyle {
         ChoiceView(choice: Quiz.capitals.questions[0].choices[0], answer: answer, showCorrection: true)
         ChoiceView(choice: Quiz.capitals.questions[0].choices[0], answer: answer2, showCorrection: true)
         ChoiceView(choice: Quiz.capitals.questions[0].choices[2], answer: answer, showCorrection: true)
+        ChoiceView(choice: Quiz.capitals.questions[0].choices[3], answer: answer, showCorrection: true)
         ChoiceView(choice: Quiz.food.questions[0].choices[1], answer: answer3, showCorrection: true)
     }
     .padding()

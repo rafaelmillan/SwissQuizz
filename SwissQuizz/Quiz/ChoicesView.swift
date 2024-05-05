@@ -12,7 +12,7 @@ struct ChoicesView: View {
     @State private var showCorrection = false
     var seed: Int
     var onDismissal: @MainActor () -> Void = {}
-    var onCorrection: (Bool) -> Void = { _ in }
+    var onCorrection: (DetailedCorrection) -> Void = { _ in }
     var question: Question {
         answer.question
     }
@@ -27,7 +27,7 @@ struct ChoicesView: View {
             if !showCorrection {
                 Button {
                     showCorrection = true
-                    onCorrection(answer.isCorrect)
+                    onCorrection(answer.detailedCorrection)
                 } label: {
                     Text("Check")
                         .frame(maxWidth: .infinity)
