@@ -63,17 +63,13 @@ struct CheckToggleStyle: ToggleStyle {
         } label: {
             HStack {
                 Label {
-                    if showCorrection && !isCorrect && configuration.isOn {
-                        configuration.label
-                            .foregroundStyle(.secondary)
-                            .overlay(Rectangle().frame(height: 3)
-                                .rotationEffect(.degrees(175)))
-                    } else {
-                        configuration.label
-                    }
+                    configuration.label
+                        .foregroundStyle(color(configuration).opacity(showCorrection && !isCorrect ? 0.5 : 1))
+                        .overlay(Rectangle().frame(height: 3)
+                            .rotationEffect(.degrees(175))
+                            .opacity(showCorrection && !isCorrect && configuration.isOn ? 1 : 0))
                 } icon: {
                     Image(systemName: configuration.isOn ? selectedIcon : unselectedIcon)
-                        .imageScale(.large)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.custom("BubblegumSans-Regular", size: 24))

@@ -61,7 +61,7 @@ extension Quiz {
                 choices: [
                     Choice(text: String(localized: "Highest chocolate consumption per capita (11 kg, 2022)"), isCorrect: true),
                     Choice(text: String(localized: "Oldest bank in continuous operation (1472)")),
-                    Choice(text: String(localized: "Longest railway tunnel (57.09 km)"), isCorrect: true),
+                    Choice(text: String(localized: "Longest railway tunnel (57 km)"), isCorrect: true),
                     Choice(text: String(localized: "Tallest gravity dam (285 m)"), isCorrect: true)
                 ]
             ),

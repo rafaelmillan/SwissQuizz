@@ -21,8 +21,10 @@ struct ChoicesView: View {
         VStack {
             ForEach(question.shuffledChoices(seed: seed), id: \.text) { choice in
                 ChoiceView(choice: choice, answer: answer, showCorrection: showCorrection)
+                    .animation(.easeInOut, value: showCorrection)
             }
             .id(question.id)
+            .modifier(BackwardCompatibleFeedback(isCorrect: answer.isCorrect, showCorrection: showCorrection))
             
             if !showCorrection {
                 Button {
@@ -48,6 +50,25 @@ struct ChoicesView: View {
                 .buttonStyle(.borderedProminent)
                 .tint(.red)
             }
+        }
+    }
+}
+
+struct BackwardCompatibleFeedback: ViewModifier {
+    var isCorrect: Bool
+    var showCorrection: Bool
+    
+    func body(content: Content) -> some View {
+        if #available(iOS 17.0, *) {
+            content
+                .sensoryFeedback(.success, trigger: showCorrection) { _old, new in
+                    new && isCorrect
+                }
+                .sensoryFeedback(.error, trigger: showCorrection) { _old, new in
+                    new && !isCorrect
+                }
+        } else {
+            content
         }
     }
 }
