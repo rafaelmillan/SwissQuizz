@@ -11,7 +11,7 @@ extension Quiz {
     static let records = Quiz(
         id: "records",
         label: String(localized: "Records"),
-        description: String(localized: "Highest. Largest. Longest."),
+        description: String(localized: "Spot local and world records"),
         systemImage: "medal.fill",
         questions: [
             Question(
@@ -35,12 +35,12 @@ extension Quiz {
                 ]
             ),
             Question(
-                prompt: String(localized: "What is the largest lake in Switzerland? (580.03 km2)"),
+                prompt: String(localized: "What is the largest lake fully within Swiss territory? (215 km2)"),
                 image: "records/lake",
                 choices: [
-                    Choice(text: String(localized: "Lake Geneva"), isCorrect: true),
+                    Choice(text: String(localized: "Lake Geneva")),
                     Choice(text: String(localized: "Lake Constance")),
-                    Choice(text: String(localized: "Lake Neuchâtel")),
+                    Choice(text: String(localized: "Lake Neuchâtel"), isCorrect: true),
                     Choice(text: String(localized: "Lake Maggiore"))
                 ]
             ),

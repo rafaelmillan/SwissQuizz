@@ -66,7 +66,14 @@
       }
     },
     "Aare" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'Aar"
+          }
+        }
+      }
     },
     "Aargau" : {
       "localizations" : {
@@ -84,11 +91,15 @@
         }
       }
     },
-    "Absinthe" : {
-
-    },
     "Adolf Deucher" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adolf Deucher"
+          }
+        }
+      }
     },
     "Allschwil" : {
       "localizations" : {
@@ -219,10 +230,24 @@
       }
     },
     "Arolla (VS)" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arolla (VS)"
+          }
+        }
+      }
     },
     "Arosa (GR)" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arosa (GR)"
+          }
+        }
+      }
     },
     "Arth" : {
       "localizations" : {
@@ -384,9 +409,6 @@
         }
       }
     },
-    "Bobsled" : {
-
-    },
     "Bulle" : {
       "localizations" : {
         "de" : {
@@ -452,7 +474,14 @@
       }
     },
     "Carl Schenk" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carl Schenk"
+          }
+        }
+      }
     },
     "CC BY-SA 3.0 Mike Lehmann" : {
       "localizations" : {
@@ -583,7 +612,14 @@
       }
     },
     "Chandolin (VS)" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chandolin (VS)"
+          }
+        }
+      }
     },
     "Check" : {
       "localizations" : {
@@ -616,9 +652,6 @@
           }
         }
       }
-    },
-    "Cinnamon rolls" : {
-
     },
     "City Guesser" : {
       "localizations" : {
@@ -756,13 +789,24 @@
       }
     },
     "Dufourspitze" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pointe Dufour"
+          }
+        }
+      }
     },
     "dummy" : {
-
-    },
-    "Dynamite" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dummy"
+          }
+        }
+      }
     },
     "Emmen" : {
       "localizations" : {
@@ -956,9 +1000,6 @@
         }
       }
     },
-    "Frick and Frack" : {
-
-    },
     "Game Center" : {
       "localizations" : {
         "de" : {
@@ -1088,7 +1129,14 @@
       }
     },
     "Guiseppe Motta" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guiseppe Motta"
+          }
+        }
+      }
     },
     "Herisau" : {
       "localizations" : {
@@ -1107,10 +1155,14 @@
       }
     },
     "Highest chocolate consumption per capita (11 kg, 2022)" : {
-
-    },
-    "Highest. Largest. Longest." : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consommation de chocolat la plus élevée par habitant (11 kg, 2022)"
+          }
+        }
+      }
     },
     "Horw" : {
       "localizations" : {
@@ -1129,10 +1181,24 @@
       }
     },
     "Image credits" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crédits images"
+          }
+        }
+      }
     },
     "Incomplete" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incomplet"
+          }
+        }
+      }
     },
     "Incorrect" : {
       "localizations" : {
@@ -1151,13 +1217,34 @@
       }
     },
     "Jean-Pascal Delamuraz" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jean-Pascal Delamuraz"
+          }
+        }
+      }
     },
     "Juf (GR)" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Juf (GR)"
+          }
+        }
+      }
     },
     "Jungfrau" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jungfrau"
+          }
+        }
+      }
     },
     "Jura" : {
       "localizations" : {
@@ -1256,16 +1343,44 @@
       }
     },
     "Lake Constance" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lac de Constance"
+          }
+        }
+      }
     },
     "Lake Geneva" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Léman"
+          }
+        }
+      }
     },
     "Lake Maggiore" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lac Majeur"
+          }
+        }
+      }
     },
     "Lake Neuchâtel" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lac de Neuchâtel"
+          }
+        }
+      }
     },
     "Lancy" : {
       "localizations" : {
@@ -1396,7 +1511,14 @@
       }
     },
     "Longest railway tunnel (57 km)" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tunnel ferroviaire le plus long (57 km)"
+          }
+        }
+      }
     },
     "Lucerne" : {
       "localizations" : {
@@ -1447,10 +1569,24 @@
       }
     },
     "Matterhorn" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cervin"
+          }
+        }
+      }
     },
     "Max Petitpierre" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Max Petitpierre"
+          }
+        }
+      }
     },
     "Meyrin" : {
       "localizations" : {
@@ -1581,7 +1717,14 @@
       }
     },
     "Nordend" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nordend"
+          }
+        }
+      }
     },
     "Oberegg" : {
       "localizations" : {
@@ -1616,7 +1759,14 @@
       }
     },
     "Oldest bank in continuous operation (1472)" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La plus ancienne banque en activité continue (1472)"
+          }
+        }
+      }
     },
     "Olten" : {
       "localizations" : {
@@ -1731,7 +1881,14 @@
       }
     },
     "Records" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Records"
+          }
+        }
+      }
     },
     "Reinach" : {
       "localizations" : {
@@ -1782,13 +1939,34 @@
       }
     },
     "Reuss" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La Reuss"
+          }
+        }
+      }
     },
     "Rhine" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le Rhin"
+          }
+        }
+      }
     },
     "Rhône" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le Rhône"
+          }
+        }
+      }
     },
     "Riedern" : {
       "localizations" : {
@@ -2014,6 +2192,16 @@
         }
       }
     },
+    "Spot local and world records" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repére les records locaux et mondiaux"
+          }
+        }
+      }
+    },
     "Spot Swiss cities from above" : {
       "localizations" : {
         "de" : {
@@ -2110,14 +2298,25 @@
         }
       }
     },
-    "Stone throwing" : {
-
-    },
     "Sweden" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suède"
+          }
+        }
+      }
     },
     "Sweden or Switzerland?" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suède ou Suisse ?"
+          }
+        }
+      }
     },
     "SwissTrivia" : {
       "localizations" : {
@@ -2136,10 +2335,24 @@
       }
     },
     "Switzerland" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suisse"
+          }
+        }
+      }
     },
     "Tallest gravity dam (285 m)" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le plus haut barrage-poids (285 m)"
+          }
+        }
+      }
     },
     "Teufen" : {
       "localizations" : {
@@ -2157,17 +2370,15 @@
         }
       }
     },
-    "The inventor of Tetra Pak" : {
-
-    },
-    "The modern zipper" : {
-
-    },
-    "The plumber wrench" : {
-
-    },
     "The ultimate country rivalry" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La rivalité ultime entre pays"
+          }
+        }
+      }
     },
     "There was an error loading the leaderboard." : {
       "localizations" : {
@@ -2328,9 +2539,6 @@
           }
         }
       }
-    },
-    "Velcro" : {
-
     },
     "Vernier" : {
       "localizations" : {
@@ -2797,19 +3005,74 @@
       }
     },
     "What is the highest mountain in Switzerland? (4634 m)" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelle est la plus haute montagne de Suisse ? (4634 m)"
+          }
+        }
+      }
     },
     "What is the highest village in Switzerland? (2126 m)" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel est le village le plus haut de Suisse ? (2126 m)"
+          }
+        }
+      }
     },
-    "What is the largest lake in Switzerland? (580.03 km2)" : {
-
+    "What is the largest lake fully within Swiss territory? (215 km2)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel est le plus grand lac entièrement situé sur le territoire suisse ? (215 km2)"
+          }
+        }
+      }
     },
     "What is the longest river in Switzerland? (375 km)" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel est le plus long fleuve de Suisse ? (375km)"
+          }
+        }
+      }
     },
     "What is the most recent Swiss canton to become a full member of the confederation? (1979)" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel est le canton suisse le plus récent à devenir membre à part entière de la confédération ? (1979)"
+          }
+        }
+      }
+    },
+    "Where are cinnamon rolls from?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "D'où viennent les brioches à la cannelle ?"
+          }
+        }
+      }
+    },
+    "Where are Frick and Frack from?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "D’où viennent Frick et Frack ?"
+          }
+        }
+      }
     },
     "Where can Botzi pears AOP come from?" : {
       "localizations" : {
@@ -2907,6 +3170,86 @@
         }
       }
     },
+    "Where is absinthe from?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "D’où vient l’absinthe ?"
+          }
+        }
+      }
+    },
+    "Where is stone throwing from?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "D'où vient le lancer de pierre ?"
+          }
+        }
+      }
+    },
+    "Where is the designer of the zipper from?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "D'où vient le créateur de la fermeture éclair ?"
+          }
+        }
+      }
+    },
+    "Where is the inventor of dynamite from?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "D'où vient l'inventeur de la dynamite ?"
+          }
+        }
+      }
+    },
+    "Where is the inventor of Tetra Pak from?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "D'où vient l'inventeur de Tetra Pak ?"
+          }
+        }
+      }
+    },
+    "Where is the inventor of the plumber wrench from?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "D’où vient l’inventeur de la clé de plombier ?"
+          }
+        }
+      }
+    },
+    "Where is the inventor of velcro from?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "D'où vient l'inventeur du velcro ?"
+          }
+        }
+      }
+    },
+    "Where was bobsled invented?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Où a été inventé le bobsled ?"
+          }
+        }
+      }
+    },
     "Which canton is this flag from?" : {
       "localizations" : {
         "de" : {
@@ -2956,10 +3299,24 @@
       }
     },
     "Which of these world records are held by Switzerland?" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lesquels de ces records du monde sont détenus par la Suisse ?"
+          }
+        }
+      }
     },
     "Who is the longest serving federal councillor? (32 years)" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qui est le conseiller fédéral le plus ancien ? (32 ans)"
+          }
+        }
+      }
     },
     "Wil" : {
       "localizations" : {
