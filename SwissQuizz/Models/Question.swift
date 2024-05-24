@@ -16,6 +16,7 @@ struct Question {
     var allowMultipleChoices = false
     var choices: [Choice]
     var id = UUID()
+    var credit: Credit?
 
     func shuffledChoices(seed: Int) -> [Choice] {
         GKMersenneTwisterRandomSource(seed: UInt64(seed)).arrayByShufflingObjects(in: choices) as! [Choice]
@@ -25,4 +26,13 @@ struct Question {
 struct Coordinates {
     let latitude: Double
     let longitude: Double
+}
+
+struct Credit {
+    let label: String
+    let urlString: String
+    
+    var url: URL {
+        URL(string: urlString)!
+    }
 }

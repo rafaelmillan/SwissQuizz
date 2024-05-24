@@ -77,6 +77,17 @@ struct QuizView: View {
                                         .id(currentQuestion.id)
                                         .frame(maxWidth: .infinity)
                                         .background()
+                                    HStack {
+                                        Spacer()
+                                        Link(destination: URL(string: "https://w.wiki/9fjq")!) {
+                                            Text("Image: CC BY-SA 3.0 Poulpy")
+                                                .font(.caption)
+                                                .padding([.trailing])
+                                                .padding(.top, 5)
+                                                .underline()
+                                        }
+                                        .foregroundStyle(.secondary)
+                                    }
                                 }
                             } else {
                                 VStack {
@@ -104,6 +115,24 @@ struct QuizView: View {
                                             }
                                         .ignoresSafeArea()
                                 )
+                                if let credit = currentQuestion.credit {
+                                    HStack {
+                                        Spacer()
+                                        Link(destination: credit.url) {
+                                            Text("Image: \(credit.label)")
+                                                .font(.caption)
+                                                .padding([.trailing])
+                                                .padding(.top, 5)
+                                                .underline()
+                                        }
+                                        .foregroundStyle(.secondary)
+                                    }
+                                    .id(currentQuestion.id)
+                                    .transition(.asymmetric(
+                                        insertion: .move(edge: .trailing),
+                                        removal: .move(edge: .leading)
+                                    ))
+                                }
                             }
                         } else {
                             HudView(
@@ -169,5 +198,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView(quiz: Quiz.records)
+    QuizView(quiz: Quiz.maps)
 }

@@ -22,7 +22,8 @@ extension Quiz {
                     Choice(text: String(localized: "Nordend")),
                     Choice(text: String(localized: "Jungfrau")),
                     Choice(text: String(localized: "Matterhorn"))
-                ]
+                ],
+                credit: Credit(label: "Warburg, CC BY-SA 3.0", urlString: "https://w.wiki/AAZC")
             ),
             Question(
                 prompt: String(localized: "What is the highest village in Switzerland? (2126 m)"),
@@ -32,7 +33,8 @@ extension Quiz {
                     Choice(text: String(localized: "Chandolin (VS)")),
                     Choice(text: String(localized: "Arolla (VS)")),
                     Choice(text: String(localized: "Arosa (GR)"))
-                ]
+                ],
+                credit: Credit(label: "Roland Zumbühl, CC BY-SA 3.0", urlString: "https://w.wiki/AAZF")
             ),
             Question(
                 prompt: String(localized: "What is the largest lake fully within Swiss territory? (215 km2)"),
@@ -42,7 +44,8 @@ extension Quiz {
                     Choice(text: String(localized: "Lake Constance")),
                     Choice(text: String(localized: "Lake Neuchâtel"), isCorrect: true),
                     Choice(text: String(localized: "Lake Maggiore"))
-                ]
+                ],
+                credit: Credit(label: "Dominique Dubied, CC BY-SA 4.0", urlString: "https://w.wiki/AAZV")
             ),
             Question(
                 prompt: String(localized: "What is the longest river in Switzerland? (375 km)"),
@@ -52,7 +55,8 @@ extension Quiz {
                     Choice(text: String(localized: "Aare")),
                     Choice(text: String(localized: "Rhône")),
                     Choice(text: String(localized: "Reuss"))
-                ]
+                ],
+                credit: Credit(label: "Dominicus Johannes Bergsma, CC BY-SA 4.0", urlString: "https://w.wiki/AAZY")
             ),
             Question(
                 prompt: String(localized: "Which of these world records are held by Switzerland?"),
@@ -63,7 +67,8 @@ extension Quiz {
                     Choice(text: String(localized: "Oldest bank in continuous operation (1472)")),
                     Choice(text: String(localized: "Longest railway tunnel (57 km)"), isCorrect: true),
                     Choice(text: String(localized: "Tallest gravity dam (285 m)"), isCorrect: true)
-                ]
+                ],
+                credit: Credit(label: "Generation Grundeinkommen, CC BY 2.0", urlString: "https://w.wiki/AAZd")
             ),
             Question(
                 prompt: String(localized: "Who is the longest serving federal councillor? (32 years)"),
@@ -74,7 +79,8 @@ extension Quiz {
                     Choice(text: String(localized: "Guiseppe Motta")),
                     Choice(text: String(localized: "Max Petitpierre")),
                     Choice(text: String(localized: "Jean-Pascal Delamuraz"))
-                ]
+                ],
+                credit: Credit(label: "Library Am Guisanplatz, CC BY-SA 4.0", urlString: "https://w.wiki/AAZh")
             ),
             Question(
                 prompt: String(localized: "What is the most recent Swiss canton to become a full member of the confederation? (1979)"),

@@ -483,118 +483,6 @@
         }
       }
     },
-    "CC BY-SA 3.0 Mike Lehmann" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 3.0 Mike Lehmann"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 3.0 Mike Lehmann"
-          }
-        }
-      }
-    },
-    "CC BY-SA 3.0 NEON ja" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 3.0 NEON ja"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 3.0 NEON ja"
-          }
-        }
-      }
-    },
-    "CC BY-SA 3.0 Poulpy" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 3.0 Poulpy"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 3.0 Poulpy"
-          }
-        }
-      }
-    },
-    "CC BY-SA 4.0 Gruyere alpage" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 4.0 Gruyere alpage"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 4.0 Gruyere alpage"
-          }
-        }
-      }
-    },
-    "CC BY-SA 4.0 Hubertl" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 4.0 Hubertl"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 4.0 Hubertl"
-          }
-        }
-      }
-    },
-    "CC BY-SA 4.0 Martin Thurnherr" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 4.0 Martin Thurnherr"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 4.0 Martin Thurnherr"
-          }
-        }
-      }
-    },
-    "CC BY-SA 4.0 Ulled" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 4.0 Ulled"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CC BY-SA 4.0 Ulled"
-          }
-        }
-      }
-    },
     "Cham" : {
       "localizations" : {
         "de" : {
@@ -719,23 +607,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réponses correctes : %1$lld/%2$lld"
-          }
-        }
-      }
-    },
-    "Credits" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Credits"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Crédits"
           }
         }
       }
@@ -1180,12 +1051,22 @@
         }
       }
     },
-    "Image credits" : {
+    "Image: %@" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Crédits images"
+            "value" : "Image : %@"
+          }
+        }
+      }
+    },
+    "Image: CC BY-SA 3.0 Poulpy" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image : CC BY-SA 3.0 Poulpy"
           }
         }
       }

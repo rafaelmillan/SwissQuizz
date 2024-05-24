@@ -32,28 +32,6 @@ struct ProfileView: View {
                         showResetDialog = true
                     }
                 }
-                
-                Section {
-                    NavigationLink("Image credits") {
-                        List {
-                            Section("City Guesser") {
-                                Text("©swisstopo")
-                            }
-                            Section("Locate") {
-                                Link("CC BY-SA 3.0 Poulpy", destination: URL(string: "https://w.wiki/9fjq")!)
-                            }
-                            Section("Food") {
-                                Link("CC BY-SA 4.0 Gruyere alpage", destination: URL(string: "https://w.wiki/9fjp")!)
-                                Link("CC BY-SA 4.0 Hubertl", destination: URL(string: "https://w.wiki/9fjW")!)
-                                Link("CC BY-SA 4.0 Martin Thurnherr", destination: URL(string: "https://w.wiki/9fji")!)
-                                Link("CC BY-SA 4.0 Ulled", destination: URL(string: "https://w.wiki/9fjk")!)
-                                Link("CC BY-SA 3.0 Mike Lehmann", destination: URL(string: "https://w.wiki/9fjn")!)
-                                Link("CC BY-SA 3.0 NEON ja", destination: URL(string: "https://w.wiki/9fjo")!)
-
-                            }
-                        }
-                    }
-                }
             }
             .confirmationDialog("Reset All High Scores", isPresented: $showResetDialog) {
                 Button("Reset", role: .destructive) { HighScores.reset() }
