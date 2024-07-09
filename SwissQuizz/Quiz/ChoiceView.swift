@@ -80,7 +80,7 @@ struct CheckToggleStyle: ToggleStyle {
             .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: 15, style: .continuous)
-                    .stroke(color(configuration), lineWidth: 2)
+                    .stroke(color(configuration), style: StrokeStyle(lineWidth: 2, dash: [5]))
                     .opacity(showCorrection && isCorrect && !configuration.isOn ? 1 : 0)
             )
             

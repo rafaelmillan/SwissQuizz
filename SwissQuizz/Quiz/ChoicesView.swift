@@ -61,9 +61,6 @@ struct BackwardCompatibleFeedback: ViewModifier {
     func body(content: Content) -> some View {
         if #available(iOS 17.0, *) {
             content
-                .sensoryFeedback(.success, trigger: showCorrection) { _old, new in
-                    new && isCorrect
-                }
                 .sensoryFeedback(.error, trigger: showCorrection) { _old, new in
                     new && !isCorrect
                 }
